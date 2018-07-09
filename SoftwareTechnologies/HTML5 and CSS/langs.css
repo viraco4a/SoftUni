@@ -1,0 +1,11 @@
+.lang{
+    background: #CCC;
+    border: 1px #AAA;
+    border-radius: 3px;
+    padding: 2px;
+}
+.body{
+    background: #EEE;
+    line-height: 1.5em;
+    fint-size: 24pt;
+}
