@@ -1,0 +1,17 @@
+.blue{
+    border: dotted blue;
+    border-radius: 6px;
+    padding: 5px;
+}
+.red{
+    border: dashed red;
+    border-radius: 6px;
+    padding: 5px;
+}
+.green{
+    border: solid green;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    font-size: xx-large;
+}
