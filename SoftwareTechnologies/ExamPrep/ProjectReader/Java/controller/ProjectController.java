@@ -26,7 +26,7 @@ public class ProjectController {
 		List<Project> projectList = this.projectRepository.findAll();
 
 		model.addAttribute("view", "project/index");
-		model.addAttribute("projects", "projectList");
+		model.addAttribute("projects", projectList);
 
 		return "base-layout";
 	}
@@ -54,7 +54,7 @@ public class ProjectController {
 	public String edit(Model model, @PathVariable int id) {
 	 	Project pesho = this.projectRepository.findOne(id);
 		model.addAttribute("view", "project/edit");
-		model.addAttribute("project", "pesho");
+		model.addAttribute("project", pesho);
 		return "base-layout";
 	}
 
@@ -75,7 +75,7 @@ public class ProjectController {
 	public String delete(Model model, @PathVariable int id) {
 		Project pesho = this.projectRepository.findOne(id);
 		model.addAttribute("view", "project/delete");
-		model.addAttribute("project", "pesho");
+		model.addAttribute("project", pesho);
 		return "base-layout";
 	}
 
