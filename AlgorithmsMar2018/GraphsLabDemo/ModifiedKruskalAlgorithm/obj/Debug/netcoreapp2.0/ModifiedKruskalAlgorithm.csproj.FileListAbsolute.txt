@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\bin\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\bin\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\bin\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\bin\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\bin\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\obj\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\obj\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\obj\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\obj\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\obj\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\ModifiedKruskalAlgorithm\obj\Debug\netcoreapp2.0\ModifiedKruskalAlgorithm.pdb

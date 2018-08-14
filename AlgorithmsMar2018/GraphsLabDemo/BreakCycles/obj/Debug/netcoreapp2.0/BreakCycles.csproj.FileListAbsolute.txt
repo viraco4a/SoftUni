@@ -1,0 +1,10 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\bin\Debug\netcoreapp2.0\BreakCycles.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\bin\Debug\netcoreapp2.0\BreakCycles.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\bin\Debug\netcoreapp2.0\BreakCycles.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\bin\Debug\netcoreapp2.0\BreakCycles.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\bin\Debug\netcoreapp2.0\BreakCycles.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\obj\Debug\netcoreapp2.0\BreakCycles.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\obj\Debug\netcoreapp2.0\BreakCycles.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\obj\Debug\netcoreapp2.0\BreakCycles.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\obj\Debug\netcoreapp2.0\BreakCycles.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\BreakCycles\obj\Debug\netcoreapp2.0\BreakCycles.pdb

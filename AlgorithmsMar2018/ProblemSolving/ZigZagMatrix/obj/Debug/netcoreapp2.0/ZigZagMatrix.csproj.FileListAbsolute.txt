@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\bin\Debug\netcoreapp2.0\ZigZagMatrix.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\bin\Debug\netcoreapp2.0\ZigZagMatrix.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\bin\Debug\netcoreapp2.0\ZigZagMatrix.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\bin\Debug\netcoreapp2.0\ZigZagMatrix.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\bin\Debug\netcoreapp2.0\ZigZagMatrix.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\obj\Debug\netcoreapp2.0\ZigZagMatrix.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\obj\Debug\netcoreapp2.0\ZigZagMatrix.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\obj\Debug\netcoreapp2.0\ZigZagMatrix.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\obj\Debug\netcoreapp2.0\ZigZagMatrix.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\obj\Debug\netcoreapp2.0\ZigZagMatrix.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ZigZagMatrix\obj\Debug\netcoreapp2.0\ZigZagMatrix.pdb

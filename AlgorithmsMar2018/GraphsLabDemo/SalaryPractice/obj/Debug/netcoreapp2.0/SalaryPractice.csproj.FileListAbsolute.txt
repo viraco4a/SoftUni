@@ -1,0 +1,10 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\bin\Debug\netcoreapp2.0\SalaryPractice.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\bin\Debug\netcoreapp2.0\SalaryPractice.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\bin\Debug\netcoreapp2.0\SalaryPractice.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\bin\Debug\netcoreapp2.0\SalaryPractice.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\bin\Debug\netcoreapp2.0\SalaryPractice.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\obj\Debug\netcoreapp2.0\SalaryPractice.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\obj\Debug\netcoreapp2.0\SalaryPractice.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\obj\Debug\netcoreapp2.0\SalaryPractice.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\obj\Debug\netcoreapp2.0\SalaryPractice.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalaryPractice\obj\Debug\netcoreapp2.0\SalaryPractice.pdb

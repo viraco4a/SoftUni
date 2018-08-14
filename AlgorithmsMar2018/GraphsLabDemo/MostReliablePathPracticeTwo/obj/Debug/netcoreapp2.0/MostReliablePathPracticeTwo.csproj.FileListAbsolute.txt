@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\bin\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\bin\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\bin\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\bin\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\obj\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\obj\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\obj\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\bin\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\obj\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\obj\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MostReliablePathPracticeTwo\obj\Debug\netcoreapp2.0\MostReliablePathPracticeTwo.pdb

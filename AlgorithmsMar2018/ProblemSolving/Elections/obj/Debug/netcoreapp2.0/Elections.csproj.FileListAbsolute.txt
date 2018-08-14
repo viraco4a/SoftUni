@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\bin\Debug\netcoreapp2.0\Elections.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\bin\Debug\netcoreapp2.0\Elections.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\bin\Debug\netcoreapp2.0\Elections.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\bin\Debug\netcoreapp2.0\Elections.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\bin\Debug\netcoreapp2.0\Elections.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\obj\Debug\netcoreapp2.0\Elections.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\obj\Debug\netcoreapp2.0\Elections.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\obj\Debug\netcoreapp2.0\Elections.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\obj\Debug\netcoreapp2.0\Elections.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\obj\Debug\netcoreapp2.0\Elections.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Elections\obj\Debug\netcoreapp2.0\Elections.pdb

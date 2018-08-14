@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\bin\Debug\netcoreapp2.0\Demo.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\bin\Debug\netcoreapp2.0\Demo.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\bin\Debug\netcoreapp2.0\Demo.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\bin\Debug\netcoreapp2.0\Demo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\bin\Debug\netcoreapp2.0\Demo.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\obj\Debug\netcoreapp2.0\Demo.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\obj\Debug\netcoreapp2.0\Demo.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\obj\Debug\netcoreapp2.0\Demo.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\obj\Debug\netcoreapp2.0\Demo.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\obj\Debug\netcoreapp2.0\Demo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Demo\obj\Debug\netcoreapp2.0\Demo.pdb

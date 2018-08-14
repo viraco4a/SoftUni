@@ -1,0 +1,10 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\bin\Debug\netcoreapp2.0\LCSpractice.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\bin\Debug\netcoreapp2.0\LCSpractice.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\bin\Debug\netcoreapp2.0\LCSpractice.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\bin\Debug\netcoreapp2.0\LCSpractice.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\bin\Debug\netcoreapp2.0\LCSpractice.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\obj\Debug\netcoreapp2.0\LCSpractice.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\obj\Debug\netcoreapp2.0\LCSpractice.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\obj\Debug\netcoreapp2.0\LCSpractice.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\obj\Debug\netcoreapp2.0\LCSpractice.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\LCSpractice\obj\Debug\netcoreapp2.0\LCSpractice.pdb

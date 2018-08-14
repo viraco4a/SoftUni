@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\bin\Debug\netcoreapp2.0\MoveDownRight.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\bin\Debug\netcoreapp2.0\MoveDownRight.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\bin\Debug\netcoreapp2.0\MoveDownRight.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\bin\Debug\netcoreapp2.0\MoveDownRight.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\bin\Debug\netcoreapp2.0\MoveDownRight.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\obj\Debug\netcoreapp2.0\MoveDownRight.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\obj\Debug\netcoreapp2.0\MoveDownRight.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\obj\Debug\netcoreapp2.0\MoveDownRight.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\obj\Debug\netcoreapp2.0\MoveDownRight.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\obj\Debug\netcoreapp2.0\MoveDownRight.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\MoveDownRight\obj\Debug\netcoreapp2.0\MoveDownRight.pdb

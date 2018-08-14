@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\bin\Debug\netcoreapp2.0\ShortestPathStolen.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\bin\Debug\netcoreapp2.0\ShortestPathStolen.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\bin\Debug\netcoreapp2.0\ShortestPathStolen.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\bin\Debug\netcoreapp2.0\ShortestPathStolen.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\bin\Debug\netcoreapp2.0\ShortestPathStolen.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\obj\Debug\netcoreapp2.0\ShortestPathStolen.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\obj\Debug\netcoreapp2.0\ShortestPathStolen.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\obj\Debug\netcoreapp2.0\ShortestPathStolen.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\obj\Debug\netcoreapp2.0\ShortestPathStolen.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\obj\Debug\netcoreapp2.0\ShortestPathStolen.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathStolen\obj\Debug\netcoreapp2.0\ShortestPathStolen.pdb

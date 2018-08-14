@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\bin\Debug\netcoreapp2.0\RodCutting.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\bin\Debug\netcoreapp2.0\RodCutting.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\bin\Debug\netcoreapp2.0\RodCutting.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\bin\Debug\netcoreapp2.0\RodCutting.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\bin\Debug\netcoreapp2.0\RodCutting.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\obj\Debug\netcoreapp2.0\RodCutting.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\obj\Debug\netcoreapp2.0\RodCutting.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\obj\Debug\netcoreapp2.0\RodCutting.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\obj\Debug\netcoreapp2.0\RodCutting.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\obj\Debug\netcoreapp2.0\RodCutting.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\RodCutting\obj\Debug\netcoreapp2.0\RodCutting.csprojResolveAssemblyReference.cache

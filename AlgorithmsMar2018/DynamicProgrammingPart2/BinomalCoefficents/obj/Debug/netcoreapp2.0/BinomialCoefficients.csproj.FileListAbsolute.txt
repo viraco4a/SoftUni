@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\bin\Debug\netcoreapp2.0\BinomialCoefficients.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\bin\Debug\netcoreapp2.0\BinomialCoefficients.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\bin\Debug\netcoreapp2.0\BinomialCoefficients.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\bin\Debug\netcoreapp2.0\BinomialCoefficients.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\bin\Debug\netcoreapp2.0\BinomialCoefficients.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\obj\Debug\netcoreapp2.0\BinomialCoefficients.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\obj\Debug\netcoreapp2.0\BinomialCoefficients.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\obj\Debug\netcoreapp2.0\BinomialCoefficients.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\obj\Debug\netcoreapp2.0\BinomialCoefficients.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\obj\Debug\netcoreapp2.0\BinomialCoefficients.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\BinomalCoefficents\obj\Debug\netcoreapp2.0\BinomialCoefficients.pdb

@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\bin\Debug\netcoreapp2.0\TravellingPoliceman.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\bin\Debug\netcoreapp2.0\TravellingPoliceman.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\bin\Debug\netcoreapp2.0\TravellingPoliceman.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\bin\Debug\netcoreapp2.0\TravellingPoliceman.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\bin\Debug\netcoreapp2.0\TravellingPoliceman.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\obj\Debug\netcoreapp2.0\TravellingPoliceman.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\obj\Debug\netcoreapp2.0\TravellingPoliceman.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\obj\Debug\netcoreapp2.0\TravellingPoliceman.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\obj\Debug\netcoreapp2.0\TravellingPoliceman.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\obj\Debug\netcoreapp2.0\TravellingPoliceman.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TravellingPoliceman\obj\Debug\netcoreapp2.0\TravellingPoliceman.pdb

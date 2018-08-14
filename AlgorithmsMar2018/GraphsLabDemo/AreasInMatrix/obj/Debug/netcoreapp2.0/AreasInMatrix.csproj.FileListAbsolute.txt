@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\bin\Debug\netcoreapp2.0\AreasInMatrix.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\bin\Debug\netcoreapp2.0\AreasInMatrix.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\bin\Debug\netcoreapp2.0\AreasInMatrix.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\bin\Debug\netcoreapp2.0\AreasInMatrix.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\bin\Debug\netcoreapp2.0\AreasInMatrix.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\obj\Debug\netcoreapp2.0\AreasInMatrix.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\obj\Debug\netcoreapp2.0\AreasInMatrix.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\obj\Debug\netcoreapp2.0\AreasInMatrix.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\obj\Debug\netcoreapp2.0\AreasInMatrix.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\obj\Debug\netcoreapp2.0\AreasInMatrix.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\AreasInMatrix\obj\Debug\netcoreapp2.0\AreasInMatrix.csprojResolveAssemblyReference.cache

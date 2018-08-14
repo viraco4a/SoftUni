@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\bin\Debug\netcoreapp2.0\TopologicalSortGraph.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\bin\Debug\netcoreapp2.0\TopologicalSortGraph.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\bin\Debug\netcoreapp2.0\TopologicalSortGraph.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\bin\Debug\netcoreapp2.0\TopologicalSortGraph.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\bin\Debug\netcoreapp2.0\TopologicalSortGraph.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\obj\Debug\netcoreapp2.0\TopologicalSortGraph.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\obj\Debug\netcoreapp2.0\TopologicalSortGraph.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\obj\Debug\netcoreapp2.0\TopologicalSortGraph.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\obj\Debug\netcoreapp2.0\TopologicalSortGraph.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\obj\Debug\netcoreapp2.0\TopologicalSortGraph.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\TopologicalSortGraph\obj\Debug\netcoreapp2.0\TopologicalSortGraph.pdb

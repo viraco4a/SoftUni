@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\bin\Debug\netcoreapp2.0\Parenthesis.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\bin\Debug\netcoreapp2.0\Parenthesis.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\bin\Debug\netcoreapp2.0\Parenthesis.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\bin\Debug\netcoreapp2.0\Parenthesis.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\bin\Debug\netcoreapp2.0\Parenthesis.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\obj\Debug\netcoreapp2.0\Parenthesis.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\obj\Debug\netcoreapp2.0\Parenthesis.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\obj\Debug\netcoreapp2.0\Parenthesis.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\obj\Debug\netcoreapp2.0\Parenthesis.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\obj\Debug\netcoreapp2.0\Parenthesis.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Parenthesis\obj\Debug\netcoreapp2.0\Parenthesis.pdb

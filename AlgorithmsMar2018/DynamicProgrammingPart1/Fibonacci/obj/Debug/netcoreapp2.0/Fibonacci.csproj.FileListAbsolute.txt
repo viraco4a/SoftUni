@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\bin\Debug\netcoreapp2.0\Fibonacci.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\bin\Debug\netcoreapp2.0\Fibonacci.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\bin\Debug\netcoreapp2.0\Fibonacci.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\bin\Debug\netcoreapp2.0\Fibonacci.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\bin\Debug\netcoreapp2.0\Fibonacci.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\obj\Debug\netcoreapp2.0\Fibonacci.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\obj\Debug\netcoreapp2.0\Fibonacci.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\obj\Debug\netcoreapp2.0\Fibonacci.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\obj\Debug\netcoreapp2.0\Fibonacci.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\obj\Debug\netcoreapp2.0\Fibonacci.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgramming\DynamicProgrammingPart1\Fibonacci\obj\Debug\netcoreapp2.0\Fibonacci.pdb

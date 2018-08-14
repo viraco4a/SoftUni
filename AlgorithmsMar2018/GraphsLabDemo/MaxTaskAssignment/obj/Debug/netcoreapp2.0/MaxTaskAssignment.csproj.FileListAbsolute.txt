@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\bin\Debug\netcoreapp2.0\MaxTaskAssignment.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\bin\Debug\netcoreapp2.0\MaxTaskAssignment.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\bin\Debug\netcoreapp2.0\MaxTaskAssignment.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\bin\Debug\netcoreapp2.0\MaxTaskAssignment.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\bin\Debug\netcoreapp2.0\MaxTaskAssignment.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\obj\Debug\netcoreapp2.0\MaxTaskAssignment.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\obj\Debug\netcoreapp2.0\MaxTaskAssignment.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\obj\Debug\netcoreapp2.0\MaxTaskAssignment.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\obj\Debug\netcoreapp2.0\MaxTaskAssignment.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\obj\Debug\netcoreapp2.0\MaxTaskAssignment.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\MaxTaskAssignment\obj\Debug\netcoreapp2.0\MaxTaskAssignment.csprojResolveAssemblyReference.cache
