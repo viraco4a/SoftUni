@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\bin\Debug\netcoreapp2.0\ShortestPathDijkstraMine.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\bin\Debug\netcoreapp2.0\ShortestPathDijkstraMine.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\bin\Debug\netcoreapp2.0\ShortestPathDijkstraMine.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\bin\Debug\netcoreapp2.0\ShortestPathDijkstraMine.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\bin\Debug\netcoreapp2.0\ShortestPathDijkstraMine.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\obj\Debug\netcoreapp2.0\ShortestPathDijkstraMine.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\obj\Debug\netcoreapp2.0\ShortestPathDijkstraMine.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\obj\Debug\netcoreapp2.0\ShortestPathDijkstraMine.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\obj\Debug\netcoreapp2.0\ShortestPathDijkstraMine.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\obj\Debug\netcoreapp2.0\ShortestPathDijkstraMine.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijkstra\obj\Debug\netcoreapp2.0\ShortestPathDijkstraMine.pdb

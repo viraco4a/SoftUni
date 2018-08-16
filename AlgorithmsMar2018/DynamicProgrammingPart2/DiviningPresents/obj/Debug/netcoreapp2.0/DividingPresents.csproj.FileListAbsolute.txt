@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\bin\Debug\netcoreapp2.0\DividingPresents.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\bin\Debug\netcoreapp2.0\DividingPresents.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\bin\Debug\netcoreapp2.0\DividingPresents.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\bin\Debug\netcoreapp2.0\DividingPresents.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\bin\Debug\netcoreapp2.0\DividingPresents.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\obj\Debug\netcoreapp2.0\DividingPresents.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\obj\Debug\netcoreapp2.0\DividingPresents.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\obj\Debug\netcoreapp2.0\DividingPresents.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\obj\Debug\netcoreapp2.0\DividingPresents.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\obj\Debug\netcoreapp2.0\DividingPresents.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\DiviningPresents\obj\Debug\netcoreapp2.0\DividingPresents.pdb

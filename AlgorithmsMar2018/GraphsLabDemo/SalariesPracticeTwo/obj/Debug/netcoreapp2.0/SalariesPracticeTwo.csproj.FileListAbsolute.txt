@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\bin\Debug\netcoreapp2.0\SalariesPracticeTwo.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\bin\Debug\netcoreapp2.0\SalariesPracticeTwo.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\bin\Debug\netcoreapp2.0\SalariesPracticeTwo.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\bin\Debug\netcoreapp2.0\SalariesPracticeTwo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\bin\Debug\netcoreapp2.0\SalariesPracticeTwo.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\obj\Debug\netcoreapp2.0\SalariesPracticeTwo.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\obj\Debug\netcoreapp2.0\SalariesPracticeTwo.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\obj\Debug\netcoreapp2.0\SalariesPracticeTwo.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\obj\Debug\netcoreapp2.0\SalariesPracticeTwo.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\obj\Debug\netcoreapp2.0\SalariesPracticeTwo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\SalariesPracticeTwo\obj\Debug\netcoreapp2.0\SalariesPracticeTwo.pdb

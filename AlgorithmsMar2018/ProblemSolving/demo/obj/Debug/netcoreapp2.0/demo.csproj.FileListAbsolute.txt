@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\bin\Debug\netcoreapp2.0\demo.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\bin\Debug\netcoreapp2.0\demo.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\bin\Debug\netcoreapp2.0\demo.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\bin\Debug\netcoreapp2.0\demo.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\bin\Debug\netcoreapp2.0\demo.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\obj\Debug\netcoreapp2.0\demo.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\obj\Debug\netcoreapp2.0\demo.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\obj\Debug\netcoreapp2.0\demo.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\obj\Debug\netcoreapp2.0\demo.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\obj\Debug\netcoreapp2.0\demo.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\demo\obj\Debug\netcoreapp2.0\demo.csprojAssemblyReference.cache

@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\bin\Debug\netcoreapp2.0\Snake.deps.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\bin\Debug\netcoreapp2.0\Snake.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\bin\Debug\netcoreapp2.0\Snake.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\bin\Debug\netcoreapp2.0\Snake.dll
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\bin\Debug\netcoreapp2.0\Snake.pdb
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\obj\Debug\netcoreapp2.0\Snake.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\obj\Debug\netcoreapp2.0\Snake.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\obj\Debug\netcoreapp2.0\Snake.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\obj\Debug\netcoreapp2.0\Snake.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\obj\Debug\netcoreapp2.0\Snake.dll
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Snake\obj\Debug\netcoreapp2.0\Snake.pdb

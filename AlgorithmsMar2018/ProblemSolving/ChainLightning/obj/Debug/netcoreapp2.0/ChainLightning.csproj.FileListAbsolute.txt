@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\bin\Debug\netcoreapp2.0\ChainLightning.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\bin\Debug\netcoreapp2.0\ChainLightning.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\bin\Debug\netcoreapp2.0\ChainLightning.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\bin\Debug\netcoreapp2.0\ChainLightning.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\bin\Debug\netcoreapp2.0\ChainLightning.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\obj\Debug\netcoreapp2.0\ChainLightning.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\obj\Debug\netcoreapp2.0\ChainLightning.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\obj\Debug\netcoreapp2.0\ChainLightning.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\obj\Debug\netcoreapp2.0\ChainLightning.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\obj\Debug\netcoreapp2.0\ChainLightning.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ChainLightning\obj\Debug\netcoreapp2.0\ChainLightning.pdb

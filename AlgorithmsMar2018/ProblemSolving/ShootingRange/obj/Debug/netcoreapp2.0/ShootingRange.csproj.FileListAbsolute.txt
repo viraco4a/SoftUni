@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\bin\Debug\netcoreapp2.0\ShootingRange.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\bin\Debug\netcoreapp2.0\ShootingRange.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\bin\Debug\netcoreapp2.0\ShootingRange.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\bin\Debug\netcoreapp2.0\ShootingRange.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\bin\Debug\netcoreapp2.0\ShootingRange.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\obj\Debug\netcoreapp2.0\ShootingRange.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\obj\Debug\netcoreapp2.0\ShootingRange.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\obj\Debug\netcoreapp2.0\ShootingRange.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\obj\Debug\netcoreapp2.0\ShootingRange.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\obj\Debug\netcoreapp2.0\ShootingRange.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShootingRange\obj\Debug\netcoreapp2.0\ShootingRange.pdb

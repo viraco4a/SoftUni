@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\bin\Debug\netcoreapp2.0\KnapSack.deps.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\bin\Debug\netcoreapp2.0\KnapSack.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\bin\Debug\netcoreapp2.0\KnapSack.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\bin\Debug\netcoreapp2.0\KnapSack.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\bin\Debug\netcoreapp2.0\KnapSack.pdb
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\obj\Debug\netcoreapp2.0\KnapSack.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\obj\Debug\netcoreapp2.0\KnapSack.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\obj\Debug\netcoreapp2.0\KnapSack.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\obj\Debug\netcoreapp2.0\KnapSack.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\obj\Debug\netcoreapp2.0\KnapSack.dll
+D:\Coding\SoftUni\Algorithms\DynamicProgrammingPart2\DynamicProgrammingPart2\KnapSack\obj\Debug\netcoreapp2.0\KnapSack.pdb

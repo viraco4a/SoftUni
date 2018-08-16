@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\obj\Debug\netcoreapp2.0\FastAndFurious.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\obj\Debug\netcoreapp2.0\FastAndFurious.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\obj\Debug\netcoreapp2.0\FastAndFurious.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\obj\Debug\netcoreapp2.0\FastAndFurious.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\bin\Debug\netcoreapp2.0\FastAndFurious.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\bin\Debug\netcoreapp2.0\FastAndFurious.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\bin\Debug\netcoreapp2.0\FastAndFurious.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\bin\Debug\netcoreapp2.0\FastAndFurious.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\bin\Debug\netcoreapp2.0\FastAndFurious.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\obj\Debug\netcoreapp2.0\FastAndFurious.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\FastAndFurious\obj\Debug\netcoreapp2.0\FastAndFurious.pdb

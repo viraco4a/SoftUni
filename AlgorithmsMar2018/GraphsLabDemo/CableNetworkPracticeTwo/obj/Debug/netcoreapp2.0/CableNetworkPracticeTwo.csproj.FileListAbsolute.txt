@@ -1,0 +1,10 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\bin\Debug\netcoreapp2.0\CableNetworkPracticeTwo.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\bin\Debug\netcoreapp2.0\CableNetworkPracticeTwo.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\bin\Debug\netcoreapp2.0\CableNetworkPracticeTwo.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\bin\Debug\netcoreapp2.0\CableNetworkPracticeTwo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\obj\Debug\netcoreapp2.0\CableNetworkPracticeTwo.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\obj\Debug\netcoreapp2.0\CableNetworkPracticeTwo.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\obj\Debug\netcoreapp2.0\CableNetworkPracticeTwo.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\bin\Debug\netcoreapp2.0\CableNetworkPracticeTwo.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\obj\Debug\netcoreapp2.0\CableNetworkPracticeTwo.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\CableNetworkPracticeTwo\obj\Debug\netcoreapp2.0\CableNetworkPracticeTwo.pdb

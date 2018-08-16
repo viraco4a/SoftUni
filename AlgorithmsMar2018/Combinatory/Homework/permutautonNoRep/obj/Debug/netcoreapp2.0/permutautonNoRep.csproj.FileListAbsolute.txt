@@ -1,0 +1,10 @@
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\bin\Debug\netcoreapp2.0\permutautonNoRep.deps.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\bin\Debug\netcoreapp2.0\permutautonNoRep.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\bin\Debug\netcoreapp2.0\permutautonNoRep.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\bin\Debug\netcoreapp2.0\permutautonNoRep.dll
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\bin\Debug\netcoreapp2.0\permutautonNoRep.pdb
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\obj\Debug\netcoreapp2.0\permutautonNoRep.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\obj\Debug\netcoreapp2.0\permutautonNoRep.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\obj\Debug\netcoreapp2.0\permutautonNoRep.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\obj\Debug\netcoreapp2.0\permutautonNoRep.dll
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\permutautonNoRep\obj\Debug\netcoreapp2.0\permutautonNoRep.pdb

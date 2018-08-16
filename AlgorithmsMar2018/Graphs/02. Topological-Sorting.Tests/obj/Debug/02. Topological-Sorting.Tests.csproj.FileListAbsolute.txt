@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\bin\Debug\_02.Topological_Sorting.Tests.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\bin\Debug\_02.Topological_Sorting.Tests.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\bin\Debug\_02.Topological_Sorting.exe
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\bin\Debug\_02.Topological_Sorting.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\bin\Debug\_02.Topological_Sorting.exe.config
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\obj\Debug\02. Topological-Sorting.Tests.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\obj\Debug\02. Topological-Sorting.Tests.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\obj\Debug\02. Topological-Sorting.Tests.csproj.CopyComplete
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\obj\Debug\_02.Topological_Sorting.Tests.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Skelet\06. Graphs-and-Graph-Algorithms-Lab-Skeleton\Graphs\02. Topological-Sorting.Tests\obj\Debug\_02.Topological_Sorting.Tests.pdb

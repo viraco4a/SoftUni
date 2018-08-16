@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\bin\Debug\netcoreapp2.0\Cubes.deps.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\bin\Debug\netcoreapp2.0\Cubes.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\bin\Debug\netcoreapp2.0\Cubes.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\bin\Debug\netcoreapp2.0\Cubes.dll
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\bin\Debug\netcoreapp2.0\Cubes.pdb
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\obj\Debug\netcoreapp2.0\Cubes.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\obj\Debug\netcoreapp2.0\Cubes.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\obj\Debug\netcoreapp2.0\Cubes.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\obj\Debug\netcoreapp2.0\Cubes.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\obj\Debug\netcoreapp2.0\Cubes.dll
+D:\Coding\SoftUni\Algorithms\Combinatory\Homework\Cubes\obj\Debug\netcoreapp2.0\Cubes.pdb

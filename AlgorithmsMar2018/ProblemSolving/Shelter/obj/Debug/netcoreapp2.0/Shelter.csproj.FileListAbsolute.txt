@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\bin\Debug\netcoreapp2.0\Shelter.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\bin\Debug\netcoreapp2.0\Shelter.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\bin\Debug\netcoreapp2.0\Shelter.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\bin\Debug\netcoreapp2.0\Shelter.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\bin\Debug\netcoreapp2.0\Shelter.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\obj\Debug\netcoreapp2.0\Shelter.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\obj\Debug\netcoreapp2.0\Shelter.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\obj\Debug\netcoreapp2.0\Shelter.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\obj\Debug\netcoreapp2.0\Shelter.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\obj\Debug\netcoreapp2.0\Shelter.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\Shelter\obj\Debug\netcoreapp2.0\Shelter.pdb

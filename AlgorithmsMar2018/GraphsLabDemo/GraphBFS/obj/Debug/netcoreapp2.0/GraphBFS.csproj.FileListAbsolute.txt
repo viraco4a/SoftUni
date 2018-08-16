@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\bin\Debug\netcoreapp2.0\GraphBFS.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\bin\Debug\netcoreapp2.0\GraphBFS.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\bin\Debug\netcoreapp2.0\GraphBFS.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\bin\Debug\netcoreapp2.0\GraphBFS.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\bin\Debug\netcoreapp2.0\GraphBFS.pdb
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\obj\Debug\netcoreapp2.0\GraphBFS.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\obj\Debug\netcoreapp2.0\GraphBFS.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\obj\Debug\netcoreapp2.0\GraphBFS.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\obj\Debug\netcoreapp2.0\GraphBFS.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\obj\Debug\netcoreapp2.0\GraphBFS.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\GraphBFS\obj\Debug\netcoreapp2.0\GraphBFS.pdb

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{A1E8A58E-9C3B-492F-868F-307352B8FEEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasingSubsequence", "LongestIncreasingSubsequence\LongestIncreasingSubsequence.csproj", "{38408ED2-0C78-4995-BA75-B6457477BBC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveDownRight", "MoveDownRight\MoveDownRight.csproj", "{750977FB-2210-46F1-8B50-53CA91DDEBAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveDownRightPractice", "MoveDownRightPractice\MoveDownRightPractice.csproj", "{765AA253-E2F3-4DB3-B747-15C87D30474E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodCutting", "RodCutting\RodCutting.csproj", "{00E21D0C-8BC6-454A-B004-9F13AA303284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RodCuttingPractice", "RodCuttingPractice\RodCuttingPractice.csproj", "{A13BC06E-25EC-43C7-8EA0-DCEB1925D560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1E8A58E-9C3B-492F-868F-307352B8FEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E8A58E-9C3B-492F-868F-307352B8FEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E8A58E-9C3B-492F-868F-307352B8FEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E8A58E-9C3B-492F-868F-307352B8FEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38408ED2-0C78-4995-BA75-B6457477BBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38408ED2-0C78-4995-BA75-B6457477BBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38408ED2-0C78-4995-BA75-B6457477BBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38408ED2-0C78-4995-BA75-B6457477BBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750977FB-2210-46F1-8B50-53CA91DDEBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750977FB-2210-46F1-8B50-53CA91DDEBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750977FB-2210-46F1-8B50-53CA91DDEBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750977FB-2210-46F1-8B50-53CA91DDEBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765AA253-E2F3-4DB3-B747-15C87D30474E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765AA253-E2F3-4DB3-B747-15C87D30474E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765AA253-E2F3-4DB3-B747-15C87D30474E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765AA253-E2F3-4DB3-B747-15C87D30474E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E21D0C-8BC6-454A-B004-9F13AA303284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E21D0C-8BC6-454A-B004-9F13AA303284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E21D0C-8BC6-454A-B004-9F13AA303284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E21D0C-8BC6-454A-B004-9F13AA303284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13BC06E-25EC-43C7-8EA0-DCEB1925D560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13BC06E-25EC-43C7-8EA0-DCEB1925D560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13BC06E-25EC-43C7-8EA0-DCEB1925D560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13BC06E-25EC-43C7-8EA0-DCEB1925D560}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B858C6B3-7849-43C5-86A9-0D39F3F39837}
+	EndGlobalSection
+EndGlobal

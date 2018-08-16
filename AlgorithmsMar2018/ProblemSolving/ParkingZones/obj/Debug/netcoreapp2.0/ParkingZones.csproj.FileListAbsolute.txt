@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\bin\Debug\netcoreapp2.0\ParkingZones.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\bin\Debug\netcoreapp2.0\ParkingZones.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\bin\Debug\netcoreapp2.0\ParkingZones.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\bin\Debug\netcoreapp2.0\ParkingZones.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\bin\Debug\netcoreapp2.0\ParkingZones.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\obj\Debug\netcoreapp2.0\ParkingZones.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\obj\Debug\netcoreapp2.0\ParkingZones.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\obj\Debug\netcoreapp2.0\ParkingZones.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\obj\Debug\netcoreapp2.0\ParkingZones.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\obj\Debug\netcoreapp2.0\ParkingZones.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ParkingZones\obj\Debug\netcoreapp2.0\ParkingZones.csprojResolveAssemblyReference.cache

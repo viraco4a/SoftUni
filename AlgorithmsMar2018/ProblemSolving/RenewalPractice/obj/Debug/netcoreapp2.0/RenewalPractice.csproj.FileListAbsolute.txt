@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\bin\Debug\netcoreapp2.0\RenewalPractice.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\bin\Debug\netcoreapp2.0\RenewalPractice.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\bin\Debug\netcoreapp2.0\RenewalPractice.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\bin\Debug\netcoreapp2.0\RenewalPractice.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\bin\Debug\netcoreapp2.0\RenewalPractice.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\obj\Debug\netcoreapp2.0\RenewalPractice.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\obj\Debug\netcoreapp2.0\RenewalPractice.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\obj\Debug\netcoreapp2.0\RenewalPractice.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\obj\Debug\netcoreapp2.0\RenewalPractice.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\obj\Debug\netcoreapp2.0\RenewalPractice.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\RenewalPractice\obj\Debug\netcoreapp2.0\RenewalPractice.pdb

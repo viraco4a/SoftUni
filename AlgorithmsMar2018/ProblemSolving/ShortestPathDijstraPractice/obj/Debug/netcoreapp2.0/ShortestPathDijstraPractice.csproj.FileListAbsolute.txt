@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\bin\Debug\netcoreapp2.0\ShortestPathDijstraPractice.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\bin\Debug\netcoreapp2.0\ShortestPathDijstraPractice.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\bin\Debug\netcoreapp2.0\ShortestPathDijstraPractice.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\bin\Debug\netcoreapp2.0\ShortestPathDijstraPractice.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\bin\Debug\netcoreapp2.0\ShortestPathDijstraPractice.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\obj\Debug\netcoreapp2.0\ShortestPathDijstraPractice.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\obj\Debug\netcoreapp2.0\ShortestPathDijstraPractice.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\obj\Debug\netcoreapp2.0\ShortestPathDijstraPractice.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\obj\Debug\netcoreapp2.0\ShortestPathDijstraPractice.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\obj\Debug\netcoreapp2.0\ShortestPathDijstraPractice.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\ShortestPathDijstraPractice\obj\Debug\netcoreapp2.0\ShortestPathDijstraPractice.csprojResolveAssemblyReference.cache

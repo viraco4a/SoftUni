@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\bin\Debug\netcoreapp2.0\TourDeSofia.deps.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\bin\Debug\netcoreapp2.0\TourDeSofia.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\bin\Debug\netcoreapp2.0\TourDeSofia.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\bin\Debug\netcoreapp2.0\TourDeSofia.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\bin\Debug\netcoreapp2.0\TourDeSofia.pdb
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\obj\Debug\netcoreapp2.0\TourDeSofia.csprojAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\obj\Debug\netcoreapp2.0\TourDeSofia.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\obj\Debug\netcoreapp2.0\TourDeSofia.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\obj\Debug\netcoreapp2.0\TourDeSofia.AssemblyInfo.cs
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\obj\Debug\netcoreapp2.0\TourDeSofia.dll
+D:\Coding\SoftUni\Algorithms\ProblemSolving\ProblemSolving\TourDeSofia\obj\Debug\netcoreapp2.0\TourDeSofia.pdb

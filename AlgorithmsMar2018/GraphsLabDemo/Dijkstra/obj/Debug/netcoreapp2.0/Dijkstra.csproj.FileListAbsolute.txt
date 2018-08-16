@@ -1,0 +1,8 @@
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\bin\Debug\netcoreapp2.0\Dijkstra.deps.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\bin\Debug\netcoreapp2.0\Dijkstra.runtimeconfig.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\bin\Debug\netcoreapp2.0\Dijkstra.runtimeconfig.dev.json
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\bin\Debug\netcoreapp2.0\Dijkstra.dll
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\obj\Debug\netcoreapp2.0\Dijkstra.csprojResolveAssemblyReference.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\obj\Debug\netcoreapp2.0\Dijkstra.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\obj\Debug\netcoreapp2.0\Dijkstra.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\Algorithms\Graph_lab\Lecture\GraphsLabDemo\Dijkstra\obj\Debug\netcoreapp2.0\Dijkstra.AssemblyInfo.cs
