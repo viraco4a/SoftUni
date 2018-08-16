@@ -23,9 +23,8 @@ public class MaxSeqIncreasingElements {
             }
             else{
                 localmax = 1;
-                prev = current;
-
             }
+            prev = current;
         }
         int[] result = new int[max];
         for (int i = indexToStart, j = 0; i < indexToStart + max; i++, j++) {
