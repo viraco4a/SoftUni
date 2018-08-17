@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BombNumbers {
+public class bombNumbers {
     private static ArrayList<Integer> numbers = new ArrayList<>();
 
     public static void main(String[] args) {
