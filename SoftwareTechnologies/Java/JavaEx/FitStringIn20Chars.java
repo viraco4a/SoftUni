@@ -8,11 +8,14 @@ public class FitStringIn20Chars {
             System.out.println(word.substring(0, 20));
         }
         else {
-            String result = padRight(word, 20, '*');
+            padRight(word, 20, '*');
         }
     }
 
-    private static String padRight(String word, int i, char c) {
-        //TODO
+    private static void padRight(String word, int i, char c) {
+        System.out.print(word);
+        for (int j = i - word.length(); j > 0; j--) {
+             System.out.print(c);
+        }
     }
 }
