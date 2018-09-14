@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -20,7 +19,7 @@ public class LegendaryFarming {
 
             for (int i = 0; i < splitted.length; i += 2) {
                 String material = splitted[i + 1].toLowerCase();
-                int count = Integer.valueOf(splitted[i]);
+                int count = Integer.parseInt(splitted[i]);
                 if (legends.containsKey(material)) {
                     legends.put(material, legends.get(material) + count);
                     if (legends.get(material) >= 250) {
@@ -49,11 +48,7 @@ public class LegendaryFarming {
     }
 
     private static void printJunk() {
-        junk.entrySet().stream()
-                .sorted(Comparator.comparing(Map.Entry::getKey))
-                .forEach(mat -> {
-                    System.out.printf("%s: %d%n", mat.getKey(), mat.getValue());
-                });
+        junk.forEach((key, value) -> System.out.printf("%s: %d%n", key, value));
     }
 
     private static void printLegendaryMaterials() {
