@@ -80,8 +80,8 @@ public class LegendaryFarming {
     }
 
     private static void createLegends() {
-        legends.put("shards", 0);
         legends.put("fragments", 0);
         legends.put("motes", 0);
+        legends.put("shards", 0);
     }
 }
