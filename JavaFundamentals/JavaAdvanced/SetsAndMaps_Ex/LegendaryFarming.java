@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -15,7 +16,7 @@ public class LegendaryFarming {
         createLegends();
 
         while (true) {
-            String[] splitted = reader.readLine().split(" ");
+            String[] splitted = reader.readLine().split("\\s");
 
             for (int i = 0; i < splitted.length; i += 2) {
                 String material = splitted[i + 1].toLowerCase();
@@ -43,11 +44,30 @@ public class LegendaryFarming {
 
     private static void print(String material) {
         printObtainedLegendary(material);
+        printLegendaryMaterials();
+        printJunk();
+    }
+
+    private static void printJunk() {
+        junk.entrySet().stream()
+                .sorted(Comparator.comparing(Map.Entry::getKey))
+                .forEach(mat -> {
+                    System.out.printf("%s: %d%n", mat.getKey(), mat.getValue());
+                });
+    }
+
+    private static void printLegendaryMaterials() {
         legends.entrySet().stream()
-                .sorted((c1, c2) -> legends.get(c2).compareTo(legends.get(c1)));
-        for (Map.Entry<String, Integer> entry : legends.entrySet()) {
-            System.out.printf("%s: %d%n", entry.getKey(), entry.getValue());
-        }
+                .sorted((c1, c2) ->{
+                   if (c1.getValue() == c2.getValue()){
+                       return c1.getKey().compareTo(c2.getKey());
+                   } else {
+                       return c2.getValue() - c1.getValue();
+                   }
+                })
+                .forEach(mat -> {
+                    System.out.printf("%s: %d%n", mat.getKey(), mat.getValue());
+                });
     }
 
     private static void printObtainedLegendary(String material) {
