@@ -3,8 +3,8 @@ import java.io.IOException;
 
 public class ReadFiles {
     public static void main(String[] args) {
-        String resourceFolder = "D:\\Coding\\SoftUni\\JavaFundamentals\\JavaAdvanced" +
-                "\\FilesAndDirectories_Lab\\FilesAndDirectories_Lab\\resources\\";
+        String resourceFolder = "C:\\Coding\\SoftUni\\JavaFundamentals\\JavaAdvanced" +
+                "\\FilesAndDirectories_Lab\\resources\\";
 
         String path = resourceFolder + "input.txt";
         try (FileInputStream fis = new FileInputStream(path)) {

@@ -1,28 +1,30 @@
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 
-public class WriteToFile {
+public class CopyBites {
     public static void main(String[] args) {
         String resourceFolder = "C:\\Coding\\SoftUni\\JavaFundamentals\\JavaAdvanced" +
                 "\\FilesAndDirectories_Lab\\resources\\";
 
         String inputPath = resourceFolder + "input.txt";
-        String ouputPath = resourceFolder + "output.txt";
-
-        Set<Character> punctoation = new HashSet<>();
-        Collections.addAll(punctoation, '.', ',', '!', '?');
+        String outputPath = resourceFolder + "output.txt";
 
         try (FileInputStream fis = new FileInputStream(inputPath);
-             FileOutputStream fos = new FileOutputStream(ouputPath)) {
+             FileOutputStream fos = new FileOutputStream(outputPath)) {
             int oneByte = fis.read();
 
+            int asciiCodeSpace = 32;
+            int asciiCodeNewLine = 10;
+
             while (oneByte >= 0){
-                if (!punctoation.contains((char)oneByte)){
+                if (asciiCodeNewLine == oneByte || asciiCodeSpace == oneByte){
                     fos.write(oneByte);
+                } else {
+                    char[] characters = String.valueOf(oneByte).toCharArray();
+                    for (char character : characters) {
+                        fos.write(character);
+                    }
                 }
                 oneByte = fis.read();
             }
