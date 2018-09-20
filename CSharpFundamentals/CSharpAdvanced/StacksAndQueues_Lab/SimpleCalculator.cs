@@ -7,21 +7,23 @@ class SimpleCalculator
     static void Main()
     {
         string[] input = Console.ReadLine().Split();
-        Stack<string> stack = new Stack<string>();
-
-        for (int i = 0; i < input.Length; i++)
+        Stack<string> stack = new Stack<string>(input.Reverse());
+        while (stack.Count > 1)
         {
-            try
+            int first = int.Parse(stack.Pop());
+            string op = stack.Pop();
+            int second = int.Parse(stack.Pop());
+            switch (op)
             {
-                int num = int.Parse(input[i]);
-                stack.Push(num)
+                case "+":
+                    stack.Push((first + second).ToString());
+                    break;
+                case "-":
+                    stack.Push((first - second).ToString());
+                    break;
             }
-            catch (Exception)
-            {
 
-                throw;
-            }
         }
-
+        Console.WriteLine(stack.Pop());
     }
 }
