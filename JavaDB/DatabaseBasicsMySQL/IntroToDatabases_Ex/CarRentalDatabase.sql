@@ -185,6 +185,35 @@ CREATE TABLE employees(
     notes TEXT
 );
 
+CREATE TABLE customers(
+	id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    driver_licence_number INT(11) NOT NULL,
+    full_name VARCHAR(200) NOT NULL,
+    address TEXT NOT NULL,
+    city VARCHAR(30) NOT NULL,
+    zip_code INT(11) NOT NULL,
+    notes TEXT
+);
+
+CREATE TABLE rental_orders(
+	id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    employee_id INT(11) NOT NULL,
+    customer_id INT(11) NOT NULL,
+    car_id INT(11) NOT NULL,
+    car_condition TEXT,
+    tank_level DOUBLE DEFAULT 1,
+    kilometrage_start INT(11) NOT NULL,
+    kilometrage_end INT(11) NOT NULL,
+    total_kilometrage INT(11) NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    total_days INT(11) NOT NULL,
+    rate_applied INT(11) NOT NULL,
+    tax_rate INT(11) NOT NULL,
+    order_status ENUM('Accepted', 'Finished', 'In process') NOT NULL,
+    notes TEXT
+);
+
 INSERT INTO categories
 		(id, category)
 VALUES
@@ -195,14 +224,28 @@ VALUES
 INSERT INTO cars
 		(id, plate_number, make, model, car_year, category_id, available)
 VALUES
-		(1, 'jhdjkd', 'Germany', 'dsada', '2017', 2, TRUE),
-		(1, 'jhsddjkd', 'Gearsmany', 'dsasda', '2016', 3, FALSE),
-		(1, 'jhdjgfkd', 'Germsany', 'dssada', '2015', 2, TRUE);
+		(1, 1223, 'Germany', 'dsada', '2017', 2, TRUE),
+		(2, 9999, 'Gearsmany', 'dsasda', '2016', 3, FALSE),
+		(3, 4667, 'Germsany', 'dssada', '2015', 2, TRUE);
         
 INSERT INTO employees
 		(id, first_name, last_name, title)
 VALUES
 		(1, 'Petar', 'sadsafga', 'acc'),
-		(1, 'sadfPetar', 'sadsdsadafga', 'acsdac'),
-		(1, 'Petfgadaar', 'sfadsdadasafga', 'acdsadc');
+		(2, 'sadfPetar', 'sadsdsadafga', 'acsdac'),
+		(3, 'Petfgadaar', 'sfadsdadasafga', 'acdsadc');
+
+INSERT INTO customers
+		(id, driver_licence_number, full_name, address, city, zip_code)
+VALUES
+		(1, 23545464, 'sdadad', 'sdada', 'sdadasd', 19345),
+		(2, 23548464, 'sdasddad', 'sdsdada', 'sgdfdadasd', 19345),
+		(3, 23545124, 'sdabzbzdad', 'szvdada', 'sdadavsd', 19345);
+        
+INSERT INTO rental_orders
+		(id, employee_id, customer_id, car_id, kilometrage_start, kilometrage_end, total_kilometrage, start_date, end_date, total_days, rate_applied, tax_rate, order_status)
+VALUES
+		(1, 1, 2, 1, 234, 256, 23, '1945-05-29', '1965-01-10', 232, 2324, 123, 'Accepted'),
+		(2, 2, 3, 3, 23634, 2546, 253, '1945-05-29', '1965-01-10', 2342, 23324, 1223, 'Accepted'),
+		(3, 1, 3, 2, 2374, 2556, 263, '1945-05-29', '1965-01-10', 2322, 23324, 1123, 'Accepted');
 
