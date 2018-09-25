@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript in the HTML page</h1>
+    <script>
+        function multiplicationTable(n){
+            var order = '<table border="1">';
+            order += '<tr>';
+            for (let i = 0; i <= n; i++) {
+                order += '<th>';
+                if (i == 0){
+                    order += 'x';
+                } else {
+                    order += i;
+                }
+                order += `</th>`;
+            }
+            order += `</tr>`;
+            for (let i = 1; i <= n; i++) {
+                order += '<tr>';
+                for (let j = 0; j <= n; j++) {
+                    if (j == 0){
+                        order += '<th>';
+                    } else {
+                        order += '<td>';
+                    }
+                    if (j == 0){
+                        order += i;
+                    } else {
+                        order += i * j;
+                    }
+                    if (j == 0){
+                        order += '</th>';
+                    } else {
+                        order += '</td>';
+                    }
+                }
+                order += `</tr>`;
+            }
+            order += '</table>';
+            return order;
+        }
+        document.body.innerHTML = multiplicationTable(5);
+    </script>
+</body>
+</html>
