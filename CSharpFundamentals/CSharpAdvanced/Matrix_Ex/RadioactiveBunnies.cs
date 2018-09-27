@@ -31,6 +31,7 @@ namespace RadioactiveBunnies
                 SpreadBunnies();
                 if (dead)
                 {
+                    MovePlayer(commands);
                     PrintDeath();
                     return;
                 }
@@ -55,13 +56,21 @@ namespace RadioactiveBunnies
         private static void MovePlayer(string commands)
         {
             char command = commands[timer];
-            lair[pRow, pCol] = '.';
+            if (!dead)
+            {
+                lair[pRow, pCol] = '.';
+            }
             switch (command)
             {
                 case 'U':
                     pRow--;
                     if (pRow < 0)
                     {
+                        if (dead)
+                        {
+                            pRow = 0;
+                            break;
+                        }
                         Win(pRow + 1, pCol);
                         escape = true;
                         break;
@@ -76,6 +85,11 @@ namespace RadioactiveBunnies
                     pRow++;
                     if (pRow > lair.GetLength(0))
                     {
+                        if (dead)
+                        {
+                            pRow = lair.GetLength(0) - 1;
+                            break;
+                        }
                         Win(pRow - 1, pCol);
                         escape = true;
                         break;
@@ -90,6 +104,11 @@ namespace RadioactiveBunnies
                     pCol--;
                     if (pCol < 0)
                     {
+                        if (dead)
+                        {
+                            pCol = 0;
+                            break;
+                        }
                         Win(pRow, pCol + 1);
                         escape = true;
                         break;
@@ -103,8 +122,13 @@ namespace RadioactiveBunnies
                     break;
                 case 'R':
                     pCol++;
-                    if (pRow > lair.GetLength(1))
+                    if (pCol > lair.GetLength(1))
                     {
+                        if (dead)
+                        {
+                            pCol = lair.GetLength(1) - 1;
+                            break;
+                        }
                         Win(pRow, pCol - 1);
                         escape = true;
                         break;
@@ -182,7 +206,7 @@ namespace RadioactiveBunnies
             lair = new char[rows, cols];
             for (int row = 0; row < rows; row++)
             {
-                char[] line = Console.ReadLine().ToCharArray();
+                char[] line = Console.ReadLine().ToUpper().ToCharArray();
                 for (int col = 0; col < cols; col++)
                 {
                     lair[row, col] = line[col];
@@ -198,6 +222,7 @@ namespace RadioactiveBunnies
         private static int[] ReadLine()
         {
             return Console.ReadLine()
+                .ToUpper()
                 .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
