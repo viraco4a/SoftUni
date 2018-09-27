@@ -6,227 +6,192 @@ namespace RadioactiveBunnies
 {
     class RadioactiveBunnies
     {
-        private static char[,] lair;
-        private static int pRow = 0;
-        private static int pCol = 0;
-        private static int timer = 0;
-        private static bool dead = false;
-        private static bool escape = false;
-
+        private static char[][] jaggedArray;
+        private static int playerRow;
+        private static int playerCol;
+        private static bool isOutside;
+        private static bool isDead;
         static void Main(string[] args)
         {
-            ReadLairData();
-            string commands = Console.ReadLine();
-            while (true)
-            {
-                if (dead)
-                {
-                    PrintDeath();
-                    return;
-                }
-                if (escape)
-                {
-                    return;
-                }
-                SpreadBunnies();
-                if (dead)
-                {
-                    MovePlayer(commands);
-                    PrintDeath();
-                    return;
-                }
-                MovePlayer(commands);
-                timer++;
-            }
+            int[] dimentions = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int rows = dimentions[0];
+            int cols = dimentions[1];
+            jaggedArray = new char[rows][];
+
+            GetJaggedArray(cols);
+
+            string directions = Console.ReadLine();
+
+            MovePlayer(directions);
         }
 
-        private static void PrintDeath()
+        private static void MovePlayer(string directions)
         {
-            for (int r = 0; r < lair.GetLength(0); r++)
+            for (int i = 0; i < directions.Length; i++)
             {
-                for (int c = 0; c < lair.GetLength(1); c++)
+                char currentStep = directions[i];
+                if (currentStep == 'U')
                 {
-                    Console.Write(lair[r, c]);
+                    Move(-1, 0);
                 }
-                Console.WriteLine();
-            }
-            Console.WriteLine($"dead: {pRow} {pCol}");
-        }
+                else if (currentStep == 'L')
+                {
+                    Move(0, -1);
+                }
+                else if (currentStep == 'D')
+                {
+                    Move(1, 0);
+                }
+                else if (currentStep == 'R')
+                {
+                    Move(0, 1);
+                }
 
-        private static void MovePlayer(string commands)
-        {
-            char command = commands[timer];
-            if (!dead)
-            {
-                lair[pRow, pCol] = '.';
-            }
-            switch (command)
-            {
-                case 'U':
-                    pRow--;
-                    if (pRow < 0)
-                    {
-                        if (dead)
-                        {
-                            pRow = 0;
-                            break;
-                        }
-                        Win(pRow + 1, pCol);
-                        escape = true;
-                        break;
-                    }
-                    if (lair[pRow, pCol] == 'B')
-                    {
-                        dead = true;
-                        break;
-                    }
+                Spread();
+
+                if (isDead)
+                {
+                    PrintJaggedArray();
+                    Console.WriteLine($"dead: {playerRow} {playerCol}");
                     break;
-                case 'D':
-                    pRow++;
-                    if (pRow > lair.GetLength(0))
-                    {
-                        if (dead)
-                        {
-                            pRow = lair.GetLength(0) - 1;
-                            break;
-                        }
-                        Win(pRow - 1, pCol);
-                        escape = true;
-                        break;
-                    }
-                    if (lair[pRow, pCol] == 'B')
-                    {
-                        dead = true;
-                        break;
-                    }
-                    break;
-                case 'L':
-                    pCol--;
-                    if (pCol < 0)
-                    {
-                        if (dead)
-                        {
-                            pCol = 0;
-                            break;
-                        }
-                        Win(pRow, pCol + 1);
-                        escape = true;
-                        break;
-                    }
-                    if (lair[pRow, pCol] == 'B')
-                    {
-                        dead = true;
-                        break;
-                    }
-
-                    break;
-                case 'R':
-                    pCol++;
-                    if (pCol > lair.GetLength(1))
-                    {
-                        if (dead)
-                        {
-                            pCol = lair.GetLength(1) - 1;
-                            break;
-                        }
-                        Win(pRow, pCol - 1);
-                        escape = true;
-                        break;
-                    }
-                    if (lair[pRow, pCol] == 'B')
-                    {
-                        dead = true;
-                        break;
-                    }
-                    break;
-                default:
-                    break;
-            }
-            if (dead || escape)
-            {
-                return;
-            }
-            lair[pRow, pCol] = 'P';
-        }
-
-        private static void Win(int row, int col)
-        {
-            for (int r = 0; r < lair.GetLength(0); r++)
-            {
-                for (int c = 0; c < lair.GetLength(1); c++)
-                {
-                    Console.Write(lair[r, c]);
                 }
-                Console.WriteLine();
+                else if (isOutside)
+                {
+                    PrintJaggedArray();
+                    Console.WriteLine($"won: {playerRow} {playerCol}");
+                    break;
+                }
             }
-            Console.WriteLine($"won: {row} {col}");
         }
 
-        private static void SpreadBunnies()
+        private static void Spread()
         {
-            Stack<int[]> bunnies = new Stack<int[]>();
-            for (int row = 0; row < lair.GetLength(0); row++)
+            Queue<int[]> indexes = new Queue<int[]>();
+
+            for (int row = 0; row < jaggedArray.Length; row++)
             {
-                for (int col = 0; col < lair.GetLength(1); col++)
+                for (int col = 0; col < jaggedArray[row].Length; col++)
                 {
-                    if (lair[row, col] == 'B')
+                    if (jaggedArray[row][col] == 'B')
                     {
-                        bunnies.Push(new int[] { row + 1, col });
-                        bunnies.Push(new int[] { row - 1, col });
-                        bunnies.Push(new int[] { row, col - 1 });
-                        bunnies.Push(new int[] { row, col + 1 });
+                        indexes.Enqueue(new int[] { row, col });
                     }
                 }
             }
-            while (bunnies.Count > 0)
+
+            while (indexes.Count > 0)
             {
-                int[] currentBunny = bunnies.Pop();
-                if (IsInsideLair(currentBunny))
+                int[] curretnIndex = indexes.Dequeue();
+
+                int targetRow = curretnIndex[0];
+                int targetCol = curretnIndex[1];
+
+                if (IsInside(targetRow - 1, targetCol))
                 {
-                    lair[currentBunny[0], currentBunny[1]] = 'B';
+                    if (isPlayer(targetRow - 1, targetCol))
+                    {
+                        isDead = true;
+                    }
+                    jaggedArray[targetRow - 1][targetCol] = 'B';
+                }
+
+                if (IsInside(targetRow + 1, targetCol))
+                {
+                    if (isPlayer(targetRow + 1, targetCol))
+                    {
+                        isDead = true;
+                    }
+                    jaggedArray[targetRow + 1][targetCol] = 'B';
+                }
+
+                if (IsInside(targetRow, targetCol - 1))
+                {
+                    if (isPlayer(targetRow, targetCol - 1))
+                    {
+                        isDead = true;
+                    }
+                    jaggedArray[targetRow][targetCol - 1] = 'B';
+                }
+
+                if (IsInside(targetRow, targetCol + 1))
+                {
+                    if (isPlayer(targetRow, targetCol + 1))
+                    {
+                        isDead = true;
+                    }
+                    jaggedArray[targetRow][targetCol + 1] = 'B';
                 }
             }
-            if(lair[pRow, pCol] == 'B')
+        }
+
+        private static bool isPlayer(int row, int col)
+        {
+            return jaggedArray[row][col] == 'P';
+        }
+
+        private static void Move(int row, int col)
+        {
+            int targetRow = playerRow + row;
+            int targetCol = playerCol + col;
+
+            if (!IsInside(targetRow, targetCol))
             {
-                dead = true;
+                jaggedArray[playerRow][playerCol] = '.';
+                isOutside = true;
+
+            }
+            else if (isBunny(targetRow, targetCol))
+            {
+                jaggedArray[playerRow][playerCol] = '.';
+                playerRow += row;
+                playerCol += col;
+                isDead = true;
+            }
+            else
+            {
+                jaggedArray[playerRow][playerCol] = '.';
+
+                playerRow += row;
+                playerCol += col;
+
+                jaggedArray[playerRow][playerCol] = 'P';
             }
         }
 
-        private static bool IsInsideLair(int[] cell)
+        private static bool isBunny(int targetRow, int targetCol)
         {
-            return cell[0] >= 0 && cell[0] < lair.GetLength(0)
-                && cell[1] >= 0 && cell[1] < lair.GetLength(1);
+            return jaggedArray[targetRow][targetCol] == 'B';
         }
 
-        private static void ReadLairData()
+        private static bool IsInside(int row, int col)
         {
-            int[] tokens = ReadLine();
-            int rows = tokens[0];
-            int cols = tokens[1];
-            lair = new char[rows, cols];
-            for (int row = 0; row < rows; row++)
+            return row >= 0 && row < jaggedArray.Length && col >= 0 && col < jaggedArray[0].Length;
+        }
+
+        private static void PrintJaggedArray()
+        {
+            for (int row = 0; row < jaggedArray.Length; row++)
             {
-                char[] line = Console.ReadLine().ToUpper().ToCharArray();
+                Console.WriteLine(string.Join("", jaggedArray[row]));
+            }
+        }
+
+        private static void GetJaggedArray(int cols)
+        {
+            for (int row = 0; row < jaggedArray.Length; row++)
+            {
+                string line = Console.ReadLine();
+                jaggedArray[row] = new char[cols];
                 for (int col = 0; col < cols; col++)
                 {
-                    lair[row, col] = line[col];
+                    jaggedArray[row][col] = line[col];
                     if (line[col] == 'P')
                     {
-                        pRow = row;
-                        pCol = col;
+                        playerRow = row;
+                        playerCol = col;
                     }
                 }
             }
         }
-
-        private static int[] ReadLine()
-        {
-            return Console.ReadLine()
-                .ToUpper()
-                .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                .Select(int.Parse)
-                .ToArray();
-        }
-
     }
 }

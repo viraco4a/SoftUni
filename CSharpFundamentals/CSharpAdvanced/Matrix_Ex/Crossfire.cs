@@ -1,126 +1,96 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Crossfire
 {
     class Crossfire
     {
-        private static long[][] matrix;
-
+        private static List<List<int>> matrix = new List<List<int>>();
         static void Main(string[] args)
-        {
-            CreateMatrix();
-            string command = Console.ReadLine();
+        {            
+            int[] dimensions = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            while (command != "Nuke it from orbit")
+            int rows = dimensions[0];
+            int cols = dimensions[1];
+
+            GetMatrix(rows, cols);
+
+            string input = Console.ReadLine();
+
+            while (input != "Nuke it from orbit")
             {
-                int[] hit = ReadLine(command);
-                int row = hit[0];
-                int col  = hit[1];
-                int radius = hit[2];
-                MarkTarget(row, col, radius);
-                DestroyCells();
-                command = Console.ReadLine();
+                int[] coordinates = input.Split().Select(int.Parse).ToArray();
+
+                int row = coordinates[0];
+                int col = coordinates[1];
+                int radius = coordinates[2];
+
+                Attack(row, col, radius);
+
+                input = Console.ReadLine();
             }
-            PrintMatrix();
+
+            Print();
         }
 
-        private static void PrintMatrix()
+        private static void Attack(int targetRow, int targetCol, int radius)
         {
-            for (int row = 0; row < matrix.Length; row++)
+            for (int row = targetRow - radius; row <= targetRow + radius; row++)
             {
-                for (int col = 0; col < matrix[0].Length; col++)
+                if (IsInside(row, targetCol))
                 {
-                    if (matrix[row][col] == 0)
-                    {
-                        continue;
-                    }
-                    Console.Write(matrix[row][col] + " ");
-                }
-                Console.WriteLine();
-            }
-        }
-
-        private static void DestroyCells()
-        {
-            for (int row = 0; row < matrix.Length; row++)
-            {
-                for (int col = 0; col < matrix[0].Length - 1; col++)
-                {
-                    if (matrix[row][col] == 0 && matrix[row][col + 1] != 0)
-                    {
-                        MoveLeft(row, col);
-                    }
+                    matrix[row][targetCol] = 0;
                 }
             }
-        }
 
-        private static void MoveLeft(int row, int col)
-        {
-            while (col >= 0)
+            for (int col = targetCol - radius; col <= targetCol + radius; col++)
             {
-                if (matrix[row][col] == 0)
+                if (IsInside(targetRow, col))
                 {
-                    long tmp = matrix[row][col + 1];
-                    matrix[row][col + 1] = matrix[row][col];
-                    matrix[row][col] = tmp;
-                    col--;
+                    matrix[targetRow][col] = 0;
                 }
-                else
+            }
+
+            for (int row = 0; row < matrix.Count; row++)
+            {
+                matrix[row].RemoveAll(s => s == 0);
+
+                if (matrix[row].Count == 0)
                 {
-                    return;
+                    matrix.RemoveAt(row--);
                 }
             }
         }
 
-        private static void MarkTarget(int rowBlast, int colBlast, int radius)
+        private static bool IsInside(int row, int col)
         {
-            if (!ValidIndex(rowBlast, colBlast))
+            return row >= 0 && row < matrix.Count && col >= 0 && col < matrix[row].Count;
+        }
+
+        private static void Print()
+        {
+            foreach (var row in matrix)
             {
-                return;
-            }
-            int leftIndex = Math.Max(0, rowBlast - radius);
-            int rightIndex = Math.Min(matrix.Length - 1, rowBlast + radius);
-            int upIndex = Math.Max(0, colBlast - radius);
-            int downIndex = Math.Min(matrix[0].Length - 1, colBlast + radius);
-            for (int row = leftIndex; row <= rightIndex; row++)
-            {
-                matrix[row][colBlast] = 0;
-            }
-            for (int col = upIndex; col <= downIndex; col++)
-            {
-                matrix[rowBlast][col] = 0;
+                Console.WriteLine(string.Join(" ", row));
             }
         }
 
-        private static bool ValidIndex(int rowBlast, int colBlast)
+        private static void GetMatrix(int rows, int cols)
         {
-            return (rowBlast >= 0 && colBlast >= 0 &&
-                rowBlast < matrix.Length && colBlast < matrix[0].Length);
-        }
+            int counter = 1;
 
-        private static void CreateMatrix()
-        {
-            int[] dimentions = ReadLine(Console.ReadLine());
-            int rows = dimentions[0];
-            int cols = dimentions[1];
-            matrix = new long[rows][];
             for (int row = 0; row < rows; row++)
             {
-                matrix[row] = new long[cols];
+                List<int> currentNumbers = new List<int>();
+
                 for (int col = 0; col < cols; col++)
                 {
-                    matrix[row][col] = row * cols + col + 1;
+                    currentNumbers.Add(counter++);
                 }
-            }
-        }
 
-        private static int[] ReadLine(string input)
-        {
-            return input
-                            .Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                            .Select(int.Parse)
-                            .ToArray();
+                matrix.Add(currentNumbers);
+            }
         }
     }
 }
