@@ -48,5 +48,5 @@ function DNAhelix(n) {
     }
 }
 
-// DNAhelix(4);
+DNAhelix(4);
 DNAhelix(10);
