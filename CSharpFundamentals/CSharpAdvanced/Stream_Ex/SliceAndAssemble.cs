@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.IO.Compression;
 
 namespace ZippingSlicedFiles
 {
     class ZippingSlicedFiles
     {
         private static List<string> paths = new List<string>();
-
         static void Main(string[] args)
         {
             string dir = "../../../";
@@ -21,6 +19,7 @@ namespace ZippingSlicedFiles
             Assemble(dir + "//assembled.mp4");
         }
 
+
         private static void Assemble(string destinationDirectory)
         {
             using (FileStream writeFile = new FileStream(destinationDirectory, FileMode.Create))
@@ -29,8 +28,7 @@ namespace ZippingSlicedFiles
 
                 foreach (var path in paths)
                 {
-                    using (GZipStream readFile = new GZipStream(new FileStream(path + ".gz", FileMode.Open),
-                        CompressionMode.Decompress))
+                    using (FileStream readFile = new FileStream(path, FileMode.Open))
                     {
 
                         while (true)
@@ -59,23 +57,16 @@ namespace ZippingSlicedFiles
 
                 for (int i = 0; i < parts; i++)
                 {
+                    long readedBytes = 0;
 
                     string destPath = $"{destinationDirectory}Part{i + 1}.mp4";
-                    
+
                     paths.Add(destPath);
 
-                    long readedBytes = 0;
-                    
                     using (FileStream writeFile = new FileStream(destPath, FileMode.Create))
                     {
                         int bytesCouynt = readFile.Read(buffer, 0, buffer.Length);
                         writeFile.Write(buffer, 0, buffer.Length);
-                    }
-
-                    using (GZipStream gz = new GZipStream(new FileStream(destPath + ".gz", FileMode.Create), 
-                        CompressionMode.Compress, false))
-                    {
-                        gz.Write(buffer, 0, buffer.Length);
                     }
                 }
             }
