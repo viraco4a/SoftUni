@@ -1,6 +1,3 @@
-CREATE DATABASE `company`;
-USE `company`;
-
 CREATE TABLE projects(
 	id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     client_id INT(11) NOT NULL,
