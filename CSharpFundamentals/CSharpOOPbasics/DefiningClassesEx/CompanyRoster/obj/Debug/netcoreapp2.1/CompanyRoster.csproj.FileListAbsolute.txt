@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\bin\Debug\netcoreapp2.1\CompanyRoster.deps.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\bin\Debug\netcoreapp2.1\CompanyRoster.runtimeconfig.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\bin\Debug\netcoreapp2.1\CompanyRoster.runtimeconfig.dev.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\bin\Debug\netcoreapp2.1\CompanyRoster.dll
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\bin\Debug\netcoreapp2.1\CompanyRoster.pdb
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\obj\Debug\netcoreapp2.1\CompanyRoster.csprojAssemblyReference.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\obj\Debug\netcoreapp2.1\CompanyRoster.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\obj\Debug\netcoreapp2.1\CompanyRoster.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\obj\Debug\netcoreapp2.1\CompanyRoster.AssemblyInfo.cs
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\obj\Debug\netcoreapp2.1\CompanyRoster.dll
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\DefiningClassesEx\CompanyRoster\obj\Debug\netcoreapp2.1\CompanyRoster.pdb
