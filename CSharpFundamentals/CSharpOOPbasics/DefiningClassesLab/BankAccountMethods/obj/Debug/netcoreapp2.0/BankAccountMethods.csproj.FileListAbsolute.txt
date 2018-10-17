@@ -1,0 +1,10 @@
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\bin\Debug\netcoreapp2.0\BankAccountMethods.deps.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\bin\Debug\netcoreapp2.0\BankAccountMethods.runtimeconfig.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\bin\Debug\netcoreapp2.0\BankAccountMethods.runtimeconfig.dev.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\bin\Debug\netcoreapp2.0\BankAccountMethods.dll
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\bin\Debug\netcoreapp2.0\BankAccountMethods.pdb
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\obj\Debug\netcoreapp2.0\BankAccountMethods.csproj.CoreCompileInputs.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\obj\Debug\netcoreapp2.0\BankAccountMethods.AssemblyInfoInputs.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\obj\Debug\netcoreapp2.0\BankAccountMethods.AssemblyInfo.cs
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\obj\Debug\netcoreapp2.0\BankAccountMethods.dll
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\BankAccountMethods\obj\Debug\netcoreapp2.0\BankAccountMethods.pdb

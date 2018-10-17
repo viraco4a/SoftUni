@@ -1,0 +1,11 @@
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\bin\Debug\netcoreapp2.1\TestClient.deps.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\bin\Debug\netcoreapp2.1\TestClient.runtimeconfig.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\bin\Debug\netcoreapp2.1\TestClient.runtimeconfig.dev.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\bin\Debug\netcoreapp2.1\TestClient.dll
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\bin\Debug\netcoreapp2.1\TestClient.pdb
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\obj\Debug\netcoreapp2.1\TestClient.csprojAssemblyReference.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\obj\Debug\netcoreapp2.1\TestClient.csproj.CoreCompileInputs.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\obj\Debug\netcoreapp2.1\TestClient.AssemblyInfoInputs.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\obj\Debug\netcoreapp2.1\TestClient.AssemblyInfo.cs
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\obj\Debug\netcoreapp2.1\TestClient.dll
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\DefiningClasses\TestClient\obj\Debug\netcoreapp2.1\TestClient.pdb
