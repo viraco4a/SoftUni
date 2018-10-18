@@ -13,6 +13,16 @@ namespace CompanyRoster
         private string email;
         private int age;
 
+        public Employee(string name, decimal salary, string position, string department)
+        {
+            this.Name = name;
+            this.Salary = salary;
+            this.Position = position;
+            this.Department = department;
+            this.Email = "n/a";
+            this.Age = -1;
+        }
+
         public string Name
         {
             get { return this.name; }
@@ -43,17 +53,6 @@ namespace CompanyRoster
         {
             get { return this.age; }
             set { this.age = value; }
-        }
-
-        public Employee(string name, decimal salary, string position, 
-            string department, string email, int age)
-        {
-            this.name = name;
-            this.salary = salary;
-            this.position = position;
-            this.department = department;
-            this.Email = email;
-            this.Age = age;
         }
     }
 }
