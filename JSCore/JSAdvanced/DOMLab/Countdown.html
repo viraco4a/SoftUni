@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <input type="text" id="time" style="border:3px solid blue; text-align:center; font-size:2em;" disabled="true"/>
+        <script>window.onload = function() { 
+            countdown(600);         
+        }
+
+        function countdown(seconds) {
+            let minutes = Math.trunc((seconds) / 60);
+            let time = seconds % 60;
+            let input = document.getElementById('time');
+            
+            setInterval(changeTime, 1000);
+
+            function changeTime() {
+                time--;
+                if (time < 0){
+                    time = 59;
+                    minutes--;
+                }
+
+                if (time <= 9){
+                    time = `0${time}`
+                }
+
+                input.value = `${minutes}:${time}`
+            }            
+        }
+        
+        </script>
+    </body>
+</html>
