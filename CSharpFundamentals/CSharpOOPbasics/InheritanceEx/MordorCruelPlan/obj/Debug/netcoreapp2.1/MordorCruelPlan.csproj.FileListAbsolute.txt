@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\bin\Debug\netcoreapp2.1\MordorCruelPlan.deps.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\bin\Debug\netcoreapp2.1\MordorCruelPlan.runtimeconfig.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\bin\Debug\netcoreapp2.1\MordorCruelPlan.runtimeconfig.dev.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\bin\Debug\netcoreapp2.1\MordorCruelPlan.dll
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\bin\Debug\netcoreapp2.1\MordorCruelPlan.pdb
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\obj\Debug\netcoreapp2.1\MordorCruelPlan.csprojAssemblyReference.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\obj\Debug\netcoreapp2.1\MordorCruelPlan.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\obj\Debug\netcoreapp2.1\MordorCruelPlan.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\obj\Debug\netcoreapp2.1\MordorCruelPlan.AssemblyInfo.cs
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\obj\Debug\netcoreapp2.1\MordorCruelPlan.dll
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\InheritanceEx\InheritanceEx\MordorCruelPlan\obj\Debug\netcoreapp2.1\MordorCruelPlan.pdb
