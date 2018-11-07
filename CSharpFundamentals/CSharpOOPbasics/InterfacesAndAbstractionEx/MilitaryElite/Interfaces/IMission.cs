@@ -4,7 +4,7 @@
     public interface IMission
     {
         string CodeName { get; }
-        MissionState MissionState { get; }
+        MissionState State { get; }
         void CompleteMission();
     }
 }
