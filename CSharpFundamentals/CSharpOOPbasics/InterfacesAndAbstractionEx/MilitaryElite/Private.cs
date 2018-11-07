@@ -2,14 +2,19 @@
 {
     using MilitaryElite.Interfaces;
 
-    public class Private : IPrivate
+    public class Private : Soldier, IPrivate
     {
-        public decimal Salary => throw new System.NotImplementedException();
+        public decimal Salary { get; private set; }
 
-        public int Id => throw new System.NotImplementedException();
+        public Private(int id, string firstName, string lastName, decimal salary)
+            : base(id, firstName, lastName)
+        {
+            Salary = salary;
+        }
 
-        public string FirstName => throw new System.NotImplementedException();
-
-        public string LastName => throw new System.NotImplementedException();
+        public override string ToString()
+        {
+            return base.ToString() + $"Salary: {Salary}";
+        }
     }
 }
