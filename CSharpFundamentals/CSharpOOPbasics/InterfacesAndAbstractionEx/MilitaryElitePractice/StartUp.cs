@@ -1,4 +1,4 @@
-﻿using System;
+﻿using MilitaryElitePractice.Core;
 
 namespace MilitaryElitePractice
 {
@@ -6,7 +6,8 @@ namespace MilitaryElitePractice
     {
         static void Main(string[] args)
         {
-
+            Engine engine = new Engine();
+            engine.Run();
         }
     }
 }

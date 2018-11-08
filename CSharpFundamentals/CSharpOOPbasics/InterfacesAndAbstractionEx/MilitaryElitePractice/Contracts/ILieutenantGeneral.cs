@@ -4,6 +4,6 @@ namespace MilitaryElitePractice.Contracts
 {
     public interface ILieutenantGeneral : IPrivate
     {
-        ICollection<ISoldier> privates { get; }
+        ICollection<IPrivate> Privates { get; }
     }
 }
