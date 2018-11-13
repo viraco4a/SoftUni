@@ -16,7 +16,7 @@ namespace WildFarm.Animals.Mammals.Factory
                 case "dog":
                     return new Dog(name, weight, livingRegion);
                 default:
-                    throw new ArgumentException("Invalid mamal type!");
+                    return null;
             }
         }
     }

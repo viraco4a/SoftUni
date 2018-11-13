@@ -16,7 +16,7 @@ namespace WildFarm.Animals.Felines.Factory
                 case "tiger":
                     return new Tiger(name, weight, livingRegion, breed);
                 default:
-                    throw new ArgumentException("Invalid feline type!");
+                    return null;
             }
         }
     }

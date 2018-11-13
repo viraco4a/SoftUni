@@ -18,7 +18,7 @@ namespace WildFarm.Foods.Factory
                 case "seeds":
                     return new Vegetable(quantity);
                 default:
-                    throw new ArgumentException("Invalid food type!");
+                    return null;
             }
         }
     }

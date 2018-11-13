@@ -18,10 +18,11 @@ namespace WildFarm.Animals.Felines
             if (food is Vegetable || food is Meat)
             {
                 this.Weight += food.Quantity * BODY_COEFFICIENT;
+                this.FoodEaten += food.Quantity;
             }
             else
             {
-                throw new AggregateException(
+                Console.WriteLine(
                     $"{this.GetType().Name} does not eat {food.GetType().Name}!");
             }
         }

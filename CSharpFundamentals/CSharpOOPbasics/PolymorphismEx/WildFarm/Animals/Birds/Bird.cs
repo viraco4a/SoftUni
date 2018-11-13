@@ -17,5 +17,11 @@ namespace WildFarm.Animals.Birds
         {
             this.WingSize = wingSize;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                $"{this.WingSize}, {this.Weight}, {this.FoodEaten}]";
+        }
     }
 }

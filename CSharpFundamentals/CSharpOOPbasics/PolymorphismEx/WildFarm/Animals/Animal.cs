@@ -36,5 +36,10 @@ namespace WildFarm.Animals
         public abstract void ProduceSound();
 
         public abstract void Eat(Food food);
+
+        public override string ToString()
+        {
+            return $"{this.GetType().Name} [{this.Name}, ";
+        }
     }
 }

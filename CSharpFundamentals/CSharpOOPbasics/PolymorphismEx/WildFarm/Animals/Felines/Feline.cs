@@ -17,5 +17,11 @@ namespace WildFarm.Animals.Mammals.Felines
         {
             this.Breed = breed;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                $"{this.Breed}, {this.Weight}, {this.LivingRegion}, {this.FoodEaten}]";
+        }
     }
 }

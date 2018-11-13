@@ -14,7 +14,7 @@ namespace WildFarm.Animals.Birds.Factory
                 case "hen":
                     return new Hen(name, weight, wingSize);
                 default:
-                    throw new ArgumentException("Invalid bird type!");
+                    return null;
             }
         }
     }

@@ -17,10 +17,11 @@ namespace WildFarm.Animals.Mammals
             if (food is Meat)
             {
                 this.Weight += food.Quantity * BODY_COEFFICIENT;
+                this.FoodEaten += food.Quantity;
             }
             else
             {
-                throw new AggregateException(
+                Console.WriteLine(
                     $"{this.GetType().Name} does not eat {food.GetType().Name}!");
             }
         }
@@ -28,6 +29,12 @@ namespace WildFarm.Animals.Mammals
         public override void ProduceSound()
         {
             Console.WriteLine("Woof!");
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                $"{this.Weight}, {this.LivingRegion}, {this.FoodEaten}]";
         }
     }
 }
