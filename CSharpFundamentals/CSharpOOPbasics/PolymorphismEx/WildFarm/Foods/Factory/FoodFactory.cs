@@ -12,11 +12,11 @@ namespace WildFarm.Foods.Factory
                 case "vegetable":
                     return new Vegetable(quantity);
                 case "fruit":
-                    return new Vegetable(quantity);
+                    return new Fruit(quantity);
                 case "meat":
-                    return new Vegetable(quantity);
+                    return new Meat(quantity);
                 case "seeds":
-                    return new Vegetable(quantity);
+                    return new Seeds(quantity);
                 default:
                     return null;
             }

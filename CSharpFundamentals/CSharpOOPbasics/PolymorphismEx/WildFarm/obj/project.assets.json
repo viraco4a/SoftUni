@@ -681,23 +681,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kalojanz\\.nuget\\packages\\": {},
+    "C:\\Users\\user1\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\SoftUni\\CSharpFundamentals\\CSharpOOPbasics\\PolymorphismEx\\PolymorphismEx\\WildFarm\\WildFarm.csproj",
+      "projectUniqueName": "C:\\Coding\\SoftUni\\CSharpFundamentals\\CSharpOOPbasic\\PolymorphismEx\\PolymorphismEx\\WildFarm\\WildFarm.csproj",
       "projectName": "WildFarm",
-      "projectPath": "D:\\Coding\\SoftUni\\CSharpFundamentals\\CSharpOOPbasics\\PolymorphismEx\\PolymorphismEx\\WildFarm\\WildFarm.csproj",
-      "packagesPath": "C:\\Users\\kalojanz\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\SoftUni\\CSharpFundamentals\\CSharpOOPbasics\\PolymorphismEx\\PolymorphismEx\\WildFarm\\obj\\",
+      "projectPath": "C:\\Coding\\SoftUni\\CSharpFundamentals\\CSharpOOPbasic\\PolymorphismEx\\PolymorphismEx\\WildFarm\\WildFarm.csproj",
+      "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
+      "outputPath": "C:\\Coding\\SoftUni\\CSharpFundamentals\\CSharpOOPbasic\\PolymorphismEx\\PolymorphismEx\\WildFarm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kalojanz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

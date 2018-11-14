@@ -9,3 +9,14 @@ D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\PolymorphismEx\Polymorphism
 D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.AssemblyInfo.cs
 D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.dll
 D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.pdb
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\bin\Debug\netcoreapp2.1\WildFarm.deps.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\bin\Debug\netcoreapp2.1\WildFarm.runtimeconfig.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\bin\Debug\netcoreapp2.1\WildFarm.runtimeconfig.dev.json
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\bin\Debug\netcoreapp2.1\WildFarm.dll
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\bin\Debug\netcoreapp2.1\WildFarm.pdb
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.csprojAssemblyReference.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.csproj.CoreCompileInputs.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.AssemblyInfoInputs.cache
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.AssemblyInfo.cs
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.dll
+C:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasic\PolymorphismEx\PolymorphismEx\WildFarm\obj\Debug\netcoreapp2.1\WildFarm.pdb
