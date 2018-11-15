@@ -1,0 +1,11 @@
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\bin\Debug\netcoreapp2.1\StorageMaster.deps.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\bin\Debug\netcoreapp2.1\StorageMaster.runtimeconfig.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\bin\Debug\netcoreapp2.1\StorageMaster.runtimeconfig.dev.json
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\bin\Debug\netcoreapp2.1\StorageMaster.dll
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\bin\Debug\netcoreapp2.1\StorageMaster.pdb
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\obj\Debug\netcoreapp2.1\StorageMaster.csprojAssemblyReference.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\obj\Debug\netcoreapp2.1\StorageMaster.csproj.CoreCompileInputs.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\obj\Debug\netcoreapp2.1\StorageMaster.AssemblyInfoInputs.cache
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\obj\Debug\netcoreapp2.1\StorageMaster.AssemblyInfo.cs
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\obj\Debug\netcoreapp2.1\StorageMaster.dll
+D:\Coding\SoftUni\CSharpFundamentals\CSharpOOPbasics\ExamPrep1\ExamPrep1\StorageMaster\obj\Debug\netcoreapp2.1\StorageMaster.pdb
