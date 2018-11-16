@@ -1,5 +1,5 @@
-﻿using StorageMaster.Models.Storages;
-using System;
+﻿using System;
+using StorageMaster.Entities.Storages;
 
 namespace StorageMaster.Factories
 {
@@ -8,6 +8,7 @@ namespace StorageMaster.Factories
         public Storage CreateStorage(string type, string name)
         {
             Storage storage = null;
+
             switch (type)
             {
                 case "AutomatedWarehouse":

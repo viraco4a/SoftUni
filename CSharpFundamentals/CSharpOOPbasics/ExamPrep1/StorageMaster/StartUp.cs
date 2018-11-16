@@ -1,12 +1,13 @@
-﻿using System;
-
-namespace StorageMaster
+﻿namespace StorageMaster
 {
+    using Core;
+
     public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-
+            Engine engine = new Engine(new StorageMaster());
+            engine.Run();
         }
     }
 }
