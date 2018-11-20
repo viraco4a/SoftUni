@@ -24,10 +24,20 @@ public class Smartphone implements Callable, Browsable {
     }
 
     private boolean isValidSite(String site){
-        return site.matches("\\D+");
+        for (int i = 0; i < site.length(); i++) {
+             if (Character.isDigit(site.charAt(i))){
+                 return  false;
+             }
+        }
+        return true;
     }
 
-    private boolean isValidNumber(String site) {
-        return site.matches("\\d+");
+    private boolean isValidNumber(String number) {
+        for (int i = 0; i < number.length(); i++) {
+            if (!Character.isDigit(number.charAt(i))){
+                return  false;
+            }
+        }
+        return true;
     }
 }
