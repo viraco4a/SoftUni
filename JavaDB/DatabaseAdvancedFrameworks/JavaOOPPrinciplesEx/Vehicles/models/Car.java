@@ -1,7 +1,5 @@
 package Vehicles.models;
 
-import Vehicles.contracts.Mobile;
-
 public class Car extends Vehicle {
     private static final double AC_CONSUMPTION = 0.9;
 
@@ -11,12 +9,12 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void drive(double distance) {
-        //TODO
+    public void refuel(double liters) {
+        this.setFuelQuantity(liters);
     }
 
     @Override
-    public void refuel(double liters) {
-        this.setFuelQuantity(liters);
+    public String toString() {
+        return "Car" + super.toString();
     }
 }

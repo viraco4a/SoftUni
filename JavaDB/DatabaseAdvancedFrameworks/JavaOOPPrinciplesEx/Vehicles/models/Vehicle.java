@@ -2,6 +2,8 @@ package Vehicles.models;
 
 import Vehicles.contracts.Mobile;
 
+import java.text.DecimalFormat;
+
 public abstract class Vehicle implements Mobile {
 
     private double fuelQuantity;
@@ -13,7 +15,7 @@ public abstract class Vehicle implements Mobile {
     }
 
     public void setFuelQuantity(double fuelQuantity) {
-        this.fuelQuantity = fuelQuantity;
+        this.fuelQuantity += fuelQuantity;
     }
 
     public void setFuelConsumption(double fuelConsumption) {
@@ -31,12 +33,25 @@ public abstract class Vehicle implements Mobile {
     }
 
     @Override
-    public void drive(double distance) {
+    public String drive(double distance) {
+        double fuelToBurn = distance * this.getFuelConsumption();
+        if (fuelToBurn > this.getFuelQuantity()){
+            throw new IllegalArgumentException(String.format(
+                    "%s needs refueling",
+                    this.getClass().getSimpleName()
+            ));
+        }
 
+        this.setFuelQuantity(-fuelToBurn);
+        return String.format(
+                "%s travelled %s km",
+                this.getClass().getSimpleName(),
+                new DecimalFormat("#.#############").format(distance)
+        );
     }
 
     @Override
-    public void refuel(double liters) {
-
+    public String toString() {
+        return String.format(": %.2f", this.fuelQuantity);
     }
 }

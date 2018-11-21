@@ -1,7 +1,5 @@
 package Vehicles.models;
 
-import Vehicles.contracts.Mobile;
-
 public class Truck extends Vehicle {
     private static final double AC_CONSUMPTION = 1.6;
     private static final double TANK_HOLE_EFFECT = 0.95;
@@ -12,12 +10,12 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    public void drive(double distance) {
-        //TODO
+    public void refuel(double liters) {
+        this.setFuelQuantity(liters * TANK_HOLE_EFFECT);
     }
 
     @Override
-    public void refuel(double liters) {
-        this.setFuelQuantity(liters * TANK_HOLE_EFFECT);
+    public String toString() {
+        return "Truck" + super.toString();
     }
 }
