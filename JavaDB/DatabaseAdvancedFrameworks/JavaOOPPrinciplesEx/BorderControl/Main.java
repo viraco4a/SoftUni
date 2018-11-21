@@ -15,7 +15,7 @@ public class Main {
         List<Identifiable> population = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String input = reader.readLine();
-            while ("End".equals(input)){
+            while (!"End".equals(input)){
                 String[] tokens = input.split("\\s+");
                 if (tokens.length == 3){
                     String name = tokens[0];
@@ -32,8 +32,12 @@ public class Main {
                 input = reader.readLine();
             }
 
-            String code = reader.readLine();
-            //TODO
+            String code = reader.readLine().trim();
+            population.stream()
+                    .filter(s -> s.getId().endsWith(code))
+                    .forEach(e ->{
+                        System.out.println(e.getId());
+                    });
         } catch (IOException e) {
             e.printStackTrace();
         }
