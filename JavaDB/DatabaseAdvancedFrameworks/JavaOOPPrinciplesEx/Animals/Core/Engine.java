@@ -25,7 +25,7 @@ public class Engine {
             try {
                 String input = reader.readLine();
 
-                if (STOP_COMMAND.equals(input)){
+                if (STOP_COMMAND.equalsIgnoreCase(input) || input == null){
                     break;
                 }
 

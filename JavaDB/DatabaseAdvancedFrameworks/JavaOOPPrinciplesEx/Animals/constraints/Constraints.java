@@ -6,7 +6,7 @@ public final class Constraints {
     public static final String MALE = "Male";
     public static final String FEMALE = "Female";
 
-    public static final String ANIMAL_INFO_STRING_FORMAT = "%s %s %s %s";
+    public static final String ANIMAL_INFO_STRING_FORMAT = "%s%n%s %s %s";
 
     public static final String DOG_SOUND = "BauBau";
     public static final String CAT_SOUND = "MiauMiau";

@@ -41,7 +41,9 @@ public abstract class Animal {
     }
 
     private void setGender(String gender) {
-        if (MALE.equals(gender) || FEMALE.equals(gender)){
+        if (gender == null || gender.isEmpty() ||
+                (!MALE.equalsIgnoreCase(gender) &&
+                        !FEMALE.equalsIgnoreCase(gender))){
             throw new IllegalArgumentException(INVALID_INPUT);
         }
 

@@ -1,6 +1,6 @@
 package Animals;
 
-import Mankind.Core.Engine;
+import Animals.Core.Engine;
 
 public class Main {
     public static void main(String[] args) {
