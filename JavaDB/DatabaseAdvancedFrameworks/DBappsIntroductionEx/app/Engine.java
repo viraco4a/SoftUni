@@ -2,7 +2,6 @@ package app;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,7 +15,7 @@ public class Engine implements Runnable {
 
     public void run() {
         try {
-            this.increaseMinionsAge();
+            this.increaseAgeStoredProcedure();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -306,33 +305,77 @@ public class Engine implements Runnable {
     /**
      * Problem 8. Increase Minions Age
      */
-    private void increaseMinionsAge() throws  SQLException{
+    private void increaseMinionsAge() throws SQLException {
         Scanner scanner = new Scanner(System.in);
-        String allMinionsSQL = "SELECT * FROM minions";
-        String someMinionsSQL = "SELECT * FROM minions WHERE id IN ?";
-        String ids = Arrays.toString(scanner.nextLine().split("\\s+"))
-                .replaceAll("\\[", "(")
-                .replaceAll("]", ")");
-        PreparedStatement minionsSatement = this.connection
-                .prepareStatement(
-                        someMinionsSQL,
-                        ResultSet.TYPE_FORWARD_ONLY,
-                        ResultSet.CONCUR_UPDATABLE
-                );
+        String[] ids = scanner.nextLine().split("\\s+");
 
-        PreparedStatement allMinionsStatement = this.connection
-                .prepareStatement(allMinionsSQL);
-        ResultSet minions = minionsSatement.executeQuery();
+        Statement statement = this.connection.createStatement();
 
-        while (minions.next()){
-            String minionName = minions.getString("name");
-            String name = toTitleCase(minionName);
-            //TODO
+        for (String id : ids) {
+            String query = "" +
+                    "UPDATE minions\n" +
+                    "SET age = age + 1,\n" +
+                    "name = CONCAT(UPPER(SUBSTR(name, 1, 1)) + LOWER(SUBSTR(name, 2)))\n" +
+                    "WHERE id = " + id;
+            statement.executeUpdate(query);
         }
-        //TODO
+
+        String query = "SELECT CONCAT_WS(' ', m.name, m.age) AS output FROM minions AS m";
+
+        ResultSet rs = statement.executeQuery(query);
+
+        while (rs.next()){
+            System.out.println(rs.getString("name") + " " +
+                    rs.getInt("id"));
+        }
+
+        rs.close();
+        this.connection.close();
     }
 
-    private String toTitleCase(String minionName) {
-        //TODO
+    /**
+     * Problem 9. Increase Age Stored Procedure
+     */
+    private void increaseAgeStoredProcedure() throws SQLException {
+        String getOlderSQL = "{CALL usp_get_older (?)}";
+        String minionSQL = "SELECT m.name, m.age FROM minions AS m WHERE id = ?";
+
+        Scanner scanner = new Scanner(System.in);
+        int id = scanner.nextInt();
+
+        CallableStatement getOlderStoredProcedure = this.connection
+                .prepareCall(getOlderSQL);
+        PreparedStatement minionsStatement = this.connection
+                .prepareStatement(minionSQL);
+
+        getOlderStoredProcedure.setInt(1, id);
+        getOlderStoredProcedure.execute();
+
+        minionsStatement.setInt(1, id);
+        ResultSet rs = minionsStatement.executeQuery();
+        rs.first();
+        System.out.println(rs.getString("name") + " " + rs.getInt("age"));
+    }
+
+    private void test() throws SQLException {
+        Scanner scanner = new Scanner(System.in);
+        int id = scanner.nextInt();
+
+        String callProcedureSQL = "{CALL usp_get_older (?)}";
+        String minionsSQL = "SELECT m.name, m.age FROM minions AS m WHERE m.id = ?";
+
+        CallableStatement callableStatement = this.connection.prepareCall(callProcedureSQL);
+        PreparedStatement preparedStatement = this.connection.prepareStatement(minionsSQL);
+
+        callableStatement.setInt(1, id);
+        preparedStatement.setInt(1, id);
+
+        callableStatement.execute();
+
+        ResultSet rs = preparedStatement.executeQuery();
+
+        while (rs.next()){
+            System.out.println(rs.getString("name") + " " + rs.getInt("age"));
+        }
     }
 }
