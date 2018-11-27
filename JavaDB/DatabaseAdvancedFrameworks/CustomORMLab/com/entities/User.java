@@ -1,9 +1,26 @@
 package com.entities;
 
-public class Employee {
+import com.db.annotations.Column;
+import com.db.annotations.Entity;
+
+@Entity(name = "employees")
+public class User {
     private long id;
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    public User() {
+
+    }
+
+    public User(String firstName, String lastName) {
+        setFirstName(firstName);
+        setLastName(lastName);
+    }
 
     public String getLastName() {
         return lastName;

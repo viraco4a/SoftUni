@@ -2,7 +2,7 @@ package com;
 
 import com.db.EntityDbContext;
 import com.db.base.DbContext;
-import com.entities.Employee;
+import com.entities.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,8 +14,8 @@ public class App {
 
     public static void main(String[] args) throws SQLException, IllegalAccessException, InstantiationException, NoSuchFieldException {
         Connection connection = getConnection();
-        DbContext<Employee> userDbContext =
-                getDbContext(connection, Employee.class);
+        DbContext<User> userDbContext =
+                getDbContext(connection, User.class);
 
         userDbContext.find()
                 .forEach(System.out::println);
