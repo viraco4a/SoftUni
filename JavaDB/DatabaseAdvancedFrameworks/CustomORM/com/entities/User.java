@@ -4,9 +4,9 @@ import com.db.annotations.Column;
 import com.db.annotations.Entity;
 import com.db.annotations.PrimaryKey;
 
-@Entity(name = "employees")
+@Entity(name = "students")
 public class User {
-    @PrimaryKey(name = "employee_id")
+    @PrimaryKey(name = "id")
     private long id;
 
     @Column(name = "first_name")

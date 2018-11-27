@@ -18,21 +18,10 @@ public class App {
         DbContext<User> userDbContext =
                 getDbContext(connection, User.class);
 
-        User user = userDbContext.findFirst();
-        user.setLastName("Goshov");
-        userDbContext.persist(user);
-        System.out.println(userDbContext.findFirst());
-
-
-//        DbContext<Room> roomDbContext =
-//                getDbContext(connection, Room.class);
-//        roomDbContext.find()
-//                .forEach(System.out::println);
-
         connection.close();
     }
 
-    private static <T> DbContext<T> getDbContext(Connection connection, Class<T> klass){
+    private static <T> DbContext<T> getDbContext(Connection connection, Class<T> klass) throws SQLException {
         return new EntityDbContext<>(connection, klass);
     }
 

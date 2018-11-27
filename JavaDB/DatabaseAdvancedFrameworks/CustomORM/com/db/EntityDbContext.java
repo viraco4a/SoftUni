@@ -17,6 +17,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * CREATE TABLE employees (
+ * id INT(11) PRIMARY KEY AUTO_INCREMENT,
+ * first_name VARCHAR(40),
+ * last_name VARCHAR(40)
+ * )
+ */
 public class EntityDbContext<T> implements DbContext<T> {
     private static final String SELECT_QUERY_TEMPLATE = "SELECT * FROM {0}";
     private static final String SELECT_WHERE_QUERY_TEMPLATE = "SELECT * FROM {0} WHERE {1}";
@@ -26,20 +33,27 @@ public class EntityDbContext<T> implements DbContext<T> {
     private static final String INSERT_QUERY_TEMPLATE = "INSERT INTO {0} ({1}) VALUES ({2})";
     private static final String UPDATE_QUERY_TEMPLATE = "UPDATE {0} SET {1} WHERE {2}={3}";
     private static final String SET_QUERY_TEMPLATE = " {0}={1} ";
+    private static final String CHECK_TABLE_EXISTS_QUERY_TEMPLATE = "SELECT TABLE_NAME FROM information_schema.TABLES\n" +
+            "WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = '%s'";
 
     private final Connection connection;
     private final Class<T> klass;
 
-    public EntityDbContext(Connection connection, Class<T> klass) {
+    public EntityDbContext(Connection connection, Class<T> klass) throws SQLException {
         this.connection = connection;
         this.klass = klass;
+        if (this.checkIfTableExists()) {
+            this.updateTable();
+        } else {
+            this.createTable();
+        }
     }
 
     public boolean persist(T entity) throws IllegalAccessException, SQLException {
-        Field priamryKeyField = getPrimaryKeyField();
-        priamryKeyField.setAccessible(true);
-        long primaryKey = (long) priamryKeyField.get(entity);
-        if (primaryKey > 0){
+        Field primaryKeyField = getPrimaryKeyField();
+        primaryKeyField.setAccessible(true);
+        long primaryKey = (long) primaryKeyField.get(entity);
+        if (primaryKey > 0) {
             return update(entity);
         }
 
@@ -54,8 +68,8 @@ public class EntityDbContext<T> implements DbContext<T> {
     public List<T> find(String where)
             throws SQLException, IllegalAccessException, InstantiationException {
         String queryTemplate = where == null
-                        ? SELECT_QUERY_TEMPLATE
-                        : SELECT_WHERE_QUERY_TEMPLATE;
+                ? SELECT_QUERY_TEMPLATE
+                : SELECT_WHERE_QUERY_TEMPLATE;
         return find(queryTemplate, where);
     }
 
@@ -114,7 +128,7 @@ public class EntityDbContext<T> implements DbContext<T> {
             throws SQLException, InstantiationException, IllegalAccessException {
         List<T> result = new ArrayList<>();
 
-        while(resultSet.next()){
+        while (resultSet.next()) {
             T entity = this.createEntity(resultSet);
             result.add(entity);
         }
@@ -136,15 +150,15 @@ public class EntityDbContext<T> implements DbContext<T> {
     }
 
     private void setColumnsFields(List<Field> columnFields, ResultSet resultSet, T entity) {
-        columnFields.forEach(field ->{
+        columnFields.forEach(field -> {
             String columnName = field.getAnnotation(Column.class)
                     .name();
             try {
                 field.setAccessible(true);
-                if(field.getType() == Long.class || field.getType() == long.class) {
+                if (field.getType() == Long.class || field.getType() == long.class) {
                     long value = resultSet.getLong(columnName);
                     field.set(entity, value);
-                } else if (field.getType() == String.class){
+                } else if (field.getType() == String.class) {
                     String value = resultSet.getString(columnName);
                     field.set(entity, value);
                 }
@@ -198,7 +212,7 @@ public class EntityDbContext<T> implements DbContext<T> {
         String columnValues = values
                 .stream()
                 .map(value -> {
-                    if (value instanceof String){
+                    if (value instanceof String) {
                         return "\'" + value + "\' ";
                     }
 
@@ -219,26 +233,26 @@ public class EntityDbContext<T> implements DbContext<T> {
     private boolean update(T entity) throws SQLException, IllegalAccessException {
         List<String> updateQueries =
                 getColumnFields().stream()
-                .map(field -> {
-                    field.setAccessible(true);
-                    try {
-                        String columnName = field.getAnnotation(Column.class).name();
-                        Object value = field.get(entity);
-                        if (value instanceof String){
-                            value = "\'" + value + "\'";
-                        }
+                        .map(field -> {
+                            field.setAccessible(true);
+                            try {
+                                String columnName = field.getAnnotation(Column.class).name();
+                                Object value = field.get(entity);
+                                if (value instanceof String) {
+                                    value = "\'" + value + "\'";
+                                }
 
-                        return MessageFormat.format(
-                                SET_QUERY_TEMPLATE,
-                                columnName,
-                                value
-                        );
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    }
-                    return null;
-                })
-                .collect(Collectors.toList());
+                                return MessageFormat.format(
+                                        SET_QUERY_TEMPLATE,
+                                        columnName,
+                                        value
+                                );
+                            } catch (IllegalAccessException e) {
+                                e.printStackTrace();
+                            }
+                            return null;
+                        })
+                        .collect(Collectors.toList());
 
         String updateQueriesString = String.join(", ", updateQueries);
 
@@ -259,5 +273,81 @@ public class EntityDbContext<T> implements DbContext<T> {
         );
 
         return connection.prepareStatement(queryString).execute();
+    }
+
+    private boolean checkIfTableExists() throws SQLException {
+        String queryTemplate = String.format(
+                CHECK_TABLE_EXISTS_QUERY_TEMPLATE,
+                getTableName()
+        );
+
+        PreparedStatement preparedStatement = this.connection
+                .prepareStatement(queryTemplate);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        if (resultSet.next()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    private void createTable() throws SQLException {
+        Field primaryKeyField = getPrimaryKeyField();
+        String primaryKeyColumnName = primaryKeyField.getAnnotation(PrimaryKey.class)
+                .name();
+        String primaryKeyColumnType = getColumnTypeString(primaryKeyField);
+        String primaryKeyColumnDefinition = String
+                .format(
+                        "%s %s PRIMARY KEY AUTO_INCREMENT",
+                        primaryKeyColumnName,
+                        primaryKeyColumnType
+                );
+        List<Field> columnsFields = getColumnFields();
+        List<String> columnsParams = new ArrayList<>();
+        columnsFields
+                .forEach(field -> {
+                    String columnName = field.getDeclaredAnnotation(Column.class).name();
+                    String columnType = getColumnTypeString(field);
+
+                    String columnDefinition = String
+                            .format(
+                                    "%s %s",
+                                    columnName,
+                                    columnType
+                            );
+
+                    columnsParams.add(columnDefinition);
+                });
+
+        String createStatementBody = String
+                .format(
+                        "%s, %s",
+                        primaryKeyColumnDefinition,
+                        String.join(", ", columnsParams)
+                );
+
+        String query = String.format(
+                "CREATE TABLE %s(%s)",
+                this.getTableName(),
+                createStatementBody
+        );
+
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        preparedStatement.execute();
+    }
+
+    private void updateTable() {
+    }
+
+    private String getColumnTypeString(Field filed) {
+        if (filed.getType() == Long.class || filed.getType() == long.class) {
+            return "INT";
+        } else if (filed.getType() == String.class) {
+            return "VARCHAR(255)";
+        }
+
+        return null;
     }
 }
