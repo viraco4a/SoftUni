@@ -2,9 +2,11 @@ package com.entities;
 
 import com.db.annotations.Column;
 import com.db.annotations.Entity;
+import com.db.annotations.PrimaryKey;
 
 @Entity(name = "employees")
 public class User {
+    @PrimaryKey(name = "employee_id")
     private long id;
 
     @Column(name = "first_name")
@@ -44,5 +46,11 @@ public class User {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%d | %s | %s",
+                getId(), getFirstName(), getLastName());
     }
 }
