@@ -17,13 +17,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * CREATE TABLE employees (
- * id INT(11) PRIMARY KEY AUTO_INCREMENT,
- * first_name VARCHAR(40),
- * last_name VARCHAR(40)
- * )
- */
 public class EntityDbContext<T> implements DbContext<T> {
     private static final String SELECT_QUERY_TEMPLATE = "SELECT * FROM {0}";
     private static final String SELECT_WHERE_QUERY_TEMPLATE = "SELECT * FROM {0} WHERE {1}";
@@ -96,6 +89,22 @@ public class EntityDbContext<T> implements DbContext<T> {
                 id
         );
         return findFirst(whereString);
+    }
+
+    @Override
+    public boolean delete(String where) throws SQLException {
+        String query = String.format(
+                "DELETE FROM %s WHERE %s",
+                getTableName(),
+                where
+        );
+
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+
+        preparedStatement.execute();
+
+        System.out.println();
+        return false;
     }
 
     private List<T> find(String template, String where)
@@ -338,16 +347,80 @@ public class EntityDbContext<T> implements DbContext<T> {
         preparedStatement.execute();
     }
 
-    private void updateTable() {
+    private void updateTable() throws SQLException {
+        List<String> entityColumnNames = getColumnFields()
+                .stream()
+                .map(field -> {
+                    return field.getDeclaredAnnotation(Column.class).name();
+                })
+                .collect(Collectors.toList());
+        entityColumnNames.add(getPrimaryKeyField()
+                .getDeclaredAnnotation(PrimaryKey.class).name());
+
+        List<String> databaseTableColumnNames = getDatabaseTableColumnNames();
+
+        List<String> newColumnsNames = entityColumnNames
+                .stream()
+                .filter(columnName -> !databaseTableColumnNames.contains(columnName))
+                .collect(Collectors.toList());
+
+        List<Field> newFields = getColumnFields()
+                .stream()
+                .filter(field -> {
+                    return newColumnsNames.contains(
+                            field.getDeclaredAnnotation(Column.class).name());
+                })
+                .collect(Collectors.toList());
+
+        List<String> columnsDefinitions = new ArrayList<>();
+
+        newFields
+                .stream()
+                .forEach(field -> {
+                String columnDefinition = String
+                        .format(
+                                    "ADD COLUMN %s %s",
+                                field.getDeclaredAnnotation(Column.class).name(),
+                                getColumnTypeString(field)
+                        );
+                columnsDefinitions.add(columnDefinition);
+        });
+
+        String query = String.format(
+                "ALTER TABLE %s %s",
+                getTableName(),
+                String.join(", ", columnsDefinitions)
+        );
+
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+
+        preparedStatement.execute();
     }
 
     private String getColumnTypeString(Field filed) {
-        if (filed.getType() == Long.class || filed.getType() == long.class) {
+        if (filed.getType() == Long.class || filed.getType() == long.class ||
+                filed.getType() == int.class) {
+
             return "INT";
         } else if (filed.getType() == String.class) {
             return "VARCHAR(255)";
         }
 
         return null;
+    }
+
+    private List<String> getDatabaseTableColumnNames() throws SQLException {
+        List<String> columnsNames = new ArrayList<>();
+        String query = String.format(""+
+                "SELECT COLUMN_NAME FROM information_schema.COLUMNS\n" +
+                "WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = '%s'",
+                getTableName());
+        PreparedStatement preparedStatement = this.connection.prepareStatement(query);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()){
+            columnsNames.add(resultSet.getString(1));
+        }
+
+        return columnsNames;
     }
 }

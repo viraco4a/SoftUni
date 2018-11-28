@@ -15,6 +15,12 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
+    @Column(name = "age")
+    private int age;
+
+    @Column(name = "kur")
+    private String kur;
+
     public User() {
 
     }
@@ -22,6 +28,22 @@ public class User {
     public User(String firstName, String lastName) {
         setFirstName(firstName);
         setLastName(lastName);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getKur() {
+        return kur;
+    }
+
+    public void setKur(String kur) {
+        this.kur = kur;
     }
 
     public String getLastName() {

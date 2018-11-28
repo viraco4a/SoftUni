@@ -16,4 +16,6 @@ public interface DbContext<T> {
     T findFirst(String where) throws SQLException, InstantiationException, IllegalAccessException;
 
     T findById(long id) throws IllegalAccessException, SQLException, InstantiationException;
+
+    boolean delete(String where) throws SQLException;
 }

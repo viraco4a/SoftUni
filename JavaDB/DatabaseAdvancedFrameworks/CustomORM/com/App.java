@@ -18,6 +18,12 @@ public class App {
         DbContext<User> userDbContext =
                 getDbContext(connection, User.class);
 
+        User user = new User("Pesho", "Peshev");
+        user.setAge(25);
+        user.setKur("1234567890");
+
+        userDbContext.delete("id = 1");
+
         connection.close();
     }
 
