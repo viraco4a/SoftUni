@@ -13,7 +13,7 @@ public class Visitation extends BaseEntity {
     public Visitation() {
     }
 
-    @Column(name = "visitation_date")
+    @Column(name = "visitation_date", nullable = false)
     public Date getVisitationDate() {
         return visitationDate;
     }
@@ -22,7 +22,7 @@ public class Visitation extends BaseEntity {
         this.visitationDate = visitationDate;
     }
 
-    @Column(name = "comments")
+    @Column(name = "comments", length = 100)
     public String getComments() {
         return comments;
     }
