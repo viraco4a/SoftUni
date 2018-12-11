@@ -4,7 +4,8 @@ import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public abstract class BillingDetail {
+public abstract class BillingDetail extends BaseEntity {
+
     private User owner;
 
     public BillingDetail() {

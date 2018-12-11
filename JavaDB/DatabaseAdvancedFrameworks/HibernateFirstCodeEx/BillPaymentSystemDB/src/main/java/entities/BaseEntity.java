@@ -5,6 +5,7 @@ import javax.persistence.*;
 @MappedSuperclass
 public abstract class BaseEntity {
     private long id;
+    private String number;
 
     public BaseEntity() {
     }
@@ -18,5 +19,14 @@ public abstract class BaseEntity {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    @Column(name = "number", unique = true, length = 30)
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 }
