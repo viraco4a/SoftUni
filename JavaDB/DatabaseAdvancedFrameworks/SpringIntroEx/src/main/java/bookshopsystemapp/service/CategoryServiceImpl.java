@@ -1,5 +1,6 @@
 package bookshopsystemapp.service;
 
+import bookshopsystemapp.domain.entities.Category;
 import bookshopsystemapp.repository.CategoryRepository;
 import bookshopsystemapp.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import java.io.IOException;
 @Service
 public class CategoryServiceImpl implements CategoryService {
     private final static String CATEGORIES_FILE_PATH =
-            "C:\\Coding\\SoftUni\\JavaDB\\DatabaseAdvancedFrameworks\\SpringIntroEx\\src\\main\\resources\\files\\categories.txt";
+            "D:\\Coding\\SoftUni\\JavaDB\\DatabaseAdvancedFrameworks\\SpringDataIntroEx\\src\\main\\resources\\files\\categories.txt";
     private final CategoryRepository categoryRepository;
     private final FileUtil fileUtil;
 
@@ -30,7 +31,10 @@ public class CategoryServiceImpl implements CategoryService {
                 this.fileUtil.getFileContent(CATEGORIES_FILE_PATH);
 
         for (String line : categoryFileContent) {
-            //TODO
+            Category category = new Category();
+            category.setName(line);
+
+            this.categoryRepository.saveAndFlush(category);
         }
     }
 }

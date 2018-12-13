@@ -77,7 +77,7 @@ public class Book extends BaseEntity {
     }
 
     @Enumerated(EnumType.ORDINAL)
-    @Column(name = "age_restriction", nullable = false)
+    @Column(name = "age_restriction")
     public AgeRestriction getAgeRestriction() {
         return ageRestriction;
     }
@@ -102,7 +102,10 @@ public class Book extends BaseEntity {
         this.author = author;
     }
 
-    @ManyToMany(targetEntity = Category.class)
+    @ManyToMany(
+            targetEntity = Category.class,
+            cascade = CascadeType.ALL
+    )
     @JoinTable(
             name = "books_categories",
             joinColumns = @JoinColumn(

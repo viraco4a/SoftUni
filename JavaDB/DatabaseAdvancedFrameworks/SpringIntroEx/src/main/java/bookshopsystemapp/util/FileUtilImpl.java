@@ -8,6 +8,7 @@ import java.util.List;
 
 @Component
 public class FileUtilImpl implements FileUtil {
+
     @Override
     public String[] getFileContent(String filePath) throws IOException {
         File file = new File(filePath);
