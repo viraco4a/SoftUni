@@ -66,10 +66,21 @@ public class ShampooServiceImpl implements ShampooService {
         List<Shampoo> shampoos = this.shampooRepository
                 .findByIngredientsIn(ingredients);
 
-        return shampoos
-                .stream()
-                .map(Shampoo::getBrand)
-                .collect(Collectors.toList());
+        return getStrings(shampoos);
+    }
+
+    @Override
+    public List<String> selectShampoosByIngredientsCount(int number) {
+        List<Shampoo> shampoos = this.shampooRepository
+                .findAllByIngredientsCountLess(number);
+
+        return getStrings(shampoos);
+    }
+
+    @Override
+    public BigDecimal SelectIngredientPricesByShampooBrand(String brand) {
+        return this.shampooRepository
+                .getTotalIngredientsCostForShampoo(brand);
     }
 
     private List<String> getCollect(List<Shampoo> shampoos) {
@@ -81,5 +92,12 @@ public class ShampooServiceImpl implements ShampooService {
                                 s.getSize(),
                                 s.getPrice())
                 ).collect(Collectors.toList());
+    }
+
+    private List<String> getStrings(List<Shampoo> shampoos) {
+        return shampoos
+                .stream()
+                .map(Shampoo::getBrand)
+                .collect(Collectors.toList());
     }
 }

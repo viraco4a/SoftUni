@@ -28,4 +28,16 @@ public interface ShampooRepository extends JpaRepository<Shampoo, Long> {
             "JOIN s.ingredients AS i " +
             "WHERE i IN :ingredients")
     List<Shampoo> findByIngredientsIn(@Param(value = "ingredients") Set<Ingredient> ingredients);
+
+    @Query("" +
+            "SELECT s FROM springdataadvquering.domain.entities.Shampoo AS s " +
+            "WHERE s.ingredients.size < :count")
+    List<Shampoo> findAllByIngredientsCountLess(@Param(value = "count") int count);
+
+    @Query("" +
+            "SELECT sum(i.price) " +
+            "FROM springdataadvquering.domain.entities.Shampoo AS s " +
+            "JOIN s.ingredients AS i " +
+            "WHERE s.brand = :brand")
+    BigDecimal getTotalIngredientsCostForShampoo(@Param("brand") String shampooBrand);
 }

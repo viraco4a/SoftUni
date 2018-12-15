@@ -1,10 +1,8 @@
 package springdataadvquering.controller;
 
-import jdk.nashorn.api.tree.WhileLoopTree;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Controller;
-import springdataadvquering.domain.entities.Ingredient;
 import springdataadvquering.service.IngredientService;
 import springdataadvquering.service.ShampooService;
 
@@ -30,7 +28,7 @@ public class AppController implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         scanner = new Scanner(System.in);
-        this.selectShampoosByIngredients();
+        this.selectShampoosBySIzeOrLabel();
     }
 
     /**
@@ -114,5 +112,54 @@ public class AppController implements CommandLineRunner {
         List<String> result = this.shampooService
                 .selectShampoosByIngredients(lines);
         result.forEach(System.out::println);
+    }
+
+    /**
+     * Task 8: Select Shampoos By Ingredients Count
+     */
+    private void selectShampoosByIngredientsCount(){
+        int number = Integer.parseInt(scanner.nextLine());
+        List<String> result = this.shampooService
+                .selectShampoosByIngredientsCount(number);
+        result.forEach(System.out::println);
+    }
+
+    /**
+     * Task 9: Select Ingredient Name and SHampoo Brand By Name
+     */
+    private void selectIngredientNameAndShampooBrandByName(){
+        String brand = scanner.nextLine();
+        BigDecimal result = this.shampooService
+                .SelectIngredientPricesByShampooBrand(brand);
+        System.out.println(result);
+    }
+
+    /**
+     * Task 10: Delete Ingredients by name
+     */
+    private void deleteIngredientsByName(){
+        String ingredientToDelete = scanner.nextLine();
+        this.ingredientService.deleteIngredientByName(ingredientToDelete);
+    }
+
+    /**
+     * Task 11: Delete Ingredients by name
+     */
+    private void updateIngredientsByPrice(){
+        this.ingredientService.increaseAllIngredientsPrice();
+    }
+
+    /**
+     * Task 12: Delete Ingredients by name
+     */
+    private void updateIngredientsByNames(){
+        List<String> ingredients = new ArrayList<>();
+        String input = scanner.nextLine();
+        while (!input.equals("")){
+            ingredients.add(input);
+            input = scanner.nextLine();
+        }
+        this.ingredientService
+                .increaseIngredientsPriceFromList(ingredients);
     }
 }

@@ -39,4 +39,20 @@ public class IngredientServiceImpl implements IngredientService {
                 .map(Ingredient::getName)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public void deleteIngredientByName(String ingredientName) {
+        this.ingredientRepository.deleteIngredientByName(ingredientName);
+    }
+
+    @Override
+    public void increaseAllIngredientsPrice() {
+        this.ingredientRepository.increaseAllIngredientsPriceBy10Percents();
+    }
+
+    @Override
+    public void increaseIngredientsPriceFromList(List<String> ingredientNames) {
+        this.ingredientRepository
+                .increaseIngredientsPriceBy10PercentsFromList(ingredientNames);
+    }
 }

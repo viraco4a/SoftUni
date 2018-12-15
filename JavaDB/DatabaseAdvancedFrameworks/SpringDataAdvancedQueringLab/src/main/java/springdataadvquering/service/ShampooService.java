@@ -14,4 +14,8 @@ public interface ShampooService {
     Integer countShampoosWithPriceBiggerThan(BigDecimal maxPrice);
 
     List<String> selectShampoosByIngredients(List<String> ingredientNames);
+
+    List<String> selectShampoosByIngredientsCount(int number);
+
+    BigDecimal SelectIngredientPricesByShampooBrand(String brand);
 }
