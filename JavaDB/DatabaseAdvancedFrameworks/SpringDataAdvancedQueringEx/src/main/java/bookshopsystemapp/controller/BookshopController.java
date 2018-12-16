@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Controller;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 @Controller
@@ -33,7 +34,7 @@ public class BookshopController implements CommandLineRunner {
 //        this.authorService.seedAuthors();
 //        this.categoryService.seedCategories();
 //        this.bookService.seedBooks();
-        this.booksByPrice();
+        this.booksReleasedBeforeDate();
     }
 
     /**
@@ -51,13 +52,15 @@ public class BookshopController implements CommandLineRunner {
     /**
      * Task 2: Golden Books
      */
+
     private void goldedBooks(){
         this.bookService
                 .getBookTitleOfGoldenEditionBookWithLessThen5000Copies()
                 .forEach(System.out::println);
     }
+
     /**
-     * Task 3: Golden Books
+     * Task 3: Books By Price
      */
     private void booksByPrice(){
         this.bookService
@@ -65,4 +68,25 @@ public class BookshopController implements CommandLineRunner {
                 .forEach(System.out::println);
     }
 
+    /**
+     * Task 4: Not Released Books
+     */
+    private void notReleasedBooks(){
+        String yearAsString = scanner.nextLine();
+
+        this.bookService
+                .notReleasedBooks(yearAsString)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * Task 5: Books Released Before Date
+     */
+    private void booksReleasedBeforeDate(){
+        String dateAsString = scanner.nextLine();
+
+        this.bookService
+                .booksReleasedBeforeDate(dateAsString)
+                .forEach(System.out::println);
+    }
 }

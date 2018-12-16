@@ -147,6 +147,31 @@ public class BookServiceImpl implements BookService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public List<String> notReleasedBooks(String yearAsString) {
+        LocalDate before = LocalDate.parse(yearAsString + "-01-01");
+        LocalDate after = LocalDate.parse(yearAsString + "-12-31");
+
+        return this.bookRepository
+                .findAllByReleaseDateBeforeOrReleaseDateAfter(
+                        before,
+                        after)
+                .stream()
+                .map(Book::getTitle)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<String> booksReleasedBeforeDate(String dateAsString) {
+        LocalDate before = LocalDate.parse(dateAsString,
+                DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+        return this.bookRepository
+                .findAllByReleaseDateBefore(before)
+                .stream()
+                .map(Book::getTitle)
+                .collect(Collectors.toList());
+    }
+
     private Author getRandomAuthor() {
         Random random = new Random();
 

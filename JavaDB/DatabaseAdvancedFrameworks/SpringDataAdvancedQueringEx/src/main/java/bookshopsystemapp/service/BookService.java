@@ -19,4 +19,8 @@ public interface BookService {
     List<String> getBookTitleOfGoldenEditionBookWithLessThen5000Copies();
 
     List<String> getBookTitleAndPriceForBooksWithPriceUnder5AndHigherThan40();
+
+    List<String> notReleasedBooks(String yearAsString);
+
+    List<String> booksReleasedBeforeDate(String dateAsString);
 }
