@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Controller;
 
-import java.time.LocalDate;
 import java.util.Scanner;
 
 @Controller
@@ -34,7 +33,7 @@ public class BookshopController implements CommandLineRunner {
 //        this.authorService.seedAuthors();
 //        this.categoryService.seedCategories();
 //        this.bookService.seedBooks();
-        this.booksReleasedBeforeDate();
+        this.booksTitlesByAgeRestriction();
     }
 
     /**
@@ -87,6 +86,56 @@ public class BookshopController implements CommandLineRunner {
 
         this.bookService
                 .booksReleasedBeforeDate(dateAsString)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * Task 6: Authors Search
+     */
+    private void authorsSearch(){
+        String endString = scanner.nextLine();
+
+        this.authorService
+                .authorsSearch(endString)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * Task 7: Books Search
+     */
+    private void bookSearch(){
+        String text = scanner.nextLine();
+
+        this.bookService
+                .booksSearch(text)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * Task 8: Book Titles Search
+     */
+    private void bookTitlesSearch(){
+        String lastNameStartWithString = scanner.nextLine();
+
+        this.bookService
+                .bookTitlesSearch(lastNameStartWithString)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * Task 9: Count Books
+     */
+    private void countBooks(){
+        int number = Integer.parseInt(scanner.nextLine());
+        System.out.println(this.bookService.countBooks(number));
+    }
+
+    /**
+     * Task 10: Took Book Copies
+     */
+    private void totalBookCopies(){
+        this.authorService
+                .totalBookCopies()
                 .forEach(System.out::println);
     }
 }

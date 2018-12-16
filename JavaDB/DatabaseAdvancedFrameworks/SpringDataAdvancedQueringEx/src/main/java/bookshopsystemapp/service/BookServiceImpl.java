@@ -172,6 +172,35 @@ public class BookServiceImpl implements BookService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public List<String> booksSearch(String text) {
+        return this.bookRepository
+                .findAllByTitleContains(text)
+                .stream()
+                .map(Book::getTitle)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<String> bookTitlesSearch(String lastNameStartWithString) {
+        List<Author> authors = this.authorRepository
+                .findAllByLastNameStartingWith(lastNameStartWithString);
+        return this.bookRepository
+                .findAllByAuthorIsIn(authors)
+                .stream()
+                .map(book -> String.format("%s (%s %s)",
+                        book.getTitle(),
+                        book.getAuthor().getFirstName(),
+                        book.getAuthor().getLastName()))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public Integer countBooks(int length) {
+        return this.bookRepository
+                .countBooks(length);
+    }
+
     private Author getRandomAuthor() {
         Random random = new Random();
 

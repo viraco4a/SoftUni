@@ -23,4 +23,10 @@ public interface BookService {
     List<String> notReleasedBooks(String yearAsString);
 
     List<String> booksReleasedBeforeDate(String dateAsString);
+
+    List<String> booksSearch(String text);
+
+    List<String> bookTitlesSearch(String lastNameStartWithString);
+
+    Integer countBooks(int length);
 }

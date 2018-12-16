@@ -1,9 +1,12 @@
 package bookshopsystemapp.repository;
 
 import bookshopsystemapp.domain.entities.AgeRestriction;
+import bookshopsystemapp.domain.entities.Author;
 import bookshopsystemapp.domain.entities.Book;
 import bookshopsystemapp.domain.entities.EditionType;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -29,4 +32,16 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
     List<Book> findAllByReleaseDateBeforeOrReleaseDateAfter(
             LocalDate before,
             LocalDate after);
+
+    List<Book> findAllByTitleContains(String text);
+
+    List<Book> findAllByAuthorIsIn(final List<Author> authors);
+
+    @Query("" +
+            "SELECT COUNT(b) " +
+            "FROM bookshopsystemapp.domain.entities.Book as b " +
+            "WHERE LENGTH(b.title) > :length")
+    Integer countBooks(@Param(value = "length") final int length);
+
+
 }
