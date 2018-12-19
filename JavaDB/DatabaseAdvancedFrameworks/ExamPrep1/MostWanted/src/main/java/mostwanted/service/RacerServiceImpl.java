@@ -15,12 +15,13 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 
 @Service
 public class RacerServiceImpl implements RacerService{
 
     private final static String RACERS_JSON_FILE_PATH =
-            System.getProperty("user.dir" + "src/main/resources/files/racers.json");
+            System.getProperty("user.dir") + "/src/main/resources/files/racers.json";
 
     private final RacerRepository racerRepository;
     private final TownRepository townRepository;
@@ -66,7 +67,7 @@ public class RacerServiceImpl implements RacerService{
         Arrays.stream(racerImportDtos)
                 .forEach(racerImportDto -> {
                     Town townEntity = this.townRepository
-                            .findByName(racerImportDto.getTownName())
+                            .findByName(racerImportDto.getHomeTown())
                             .orElse(null);
 
                     Racer racerEntity = this.racerRepository
@@ -81,7 +82,7 @@ public class RacerServiceImpl implements RacerService{
                         return;
                     }
 
-                    if (this.validationUtil.isValid(racerImportDto) ||
+                    if (!this.validationUtil.isValid(racerImportDto) ||
                     townEntity == null){
                         importResult
                                 .append(Constants.INCORRECT_DATA_MESSAGE)
@@ -91,6 +92,7 @@ public class RacerServiceImpl implements RacerService{
                     }
 
                     racerEntity = this.modelMapper.map(racerImportDto, Racer.class);
+                    racerEntity.setHomeTown(townEntity);
                     this.racerRepository.saveAndFlush(racerEntity);
 
                     importResult
@@ -106,6 +108,34 @@ public class RacerServiceImpl implements RacerService{
 
     @Override
     public String exportRacingCars() {
-        return null;
+        StringBuilder exportResult = new StringBuilder();
+        List<Racer> racers = this.racerRepository.exportRacingCars();
+
+        racers.stream().forEach(racer -> {
+            exportResult
+                    .append(String.format("Name: %s", racer.getName()))
+                    .append(System.lineSeparator());
+            if (racer.getAge() != null) {
+                exportResult
+                        .append(String.format("Age: %d", racer.getAge()))
+                        .append(System.lineSeparator());
+            }
+
+            exportResult
+                    .append("Cars:")
+                    .append(System.lineSeparator());
+            racer.getCars().stream().forEach(car -> {
+                exportResult
+                        .append(String.format("\t%s %s %d",
+                                car.getBrand(),
+                                car.getModel(),
+                                car.getYearOfProduction()))
+                        .append(System.lineSeparator());
+            });
+
+            exportResult.append(System.lineSeparator());
+        });
+
+        return exportResult.toString().trim();
     }
 }

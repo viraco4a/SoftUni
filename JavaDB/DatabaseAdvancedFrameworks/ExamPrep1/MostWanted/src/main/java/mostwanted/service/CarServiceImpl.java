@@ -1,8 +1,10 @@
 package mostwanted.service;
 
 import com.google.gson.Gson;
+import mostwanted.common.Constants;
 import mostwanted.domain.dtos.CarImportDto;
 import mostwanted.domain.entities.Car;
+import mostwanted.domain.entities.Racer;
 import mostwanted.repository.CarRepository;
 import mostwanted.repository.RacerRepository;
 import mostwanted.util.FileUtil;
@@ -64,7 +66,37 @@ public class CarServiceImpl implements CarService {
 
         Arrays.stream(carImportDtos)
                 .forEach(carImportDto -> {
-                    //Car carEntity = this.carRepository.findById(carImportDto.get) // TODO id not workable - no id in dto
+                    Racer racerEntity = this.racerRepository
+                            .findByName(carImportDto.getRacerName())
+                            .orElse(null);
+
+                    if (!this.validationUtil.isValid(carImportDto) ||
+                    racerEntity == null){
+                        importResult
+                                .append(Constants.INCORRECT_DATA_MESSAGE)
+                                .append(System.lineSeparator());
+
+                        return;
+                    }
+
+                    Car carEntity = this.modelMapper.map(carImportDto, Car.class);
+                    carEntity.setRacer(racerEntity);
+                    this.carRepository.saveAndFlush(carEntity);
+
+                    String carImportResult = String.format(
+                            "%s %s @ %s",
+                            carEntity.getBrand(),
+                            carEntity.getModel(),
+                            carEntity.getYearOfProduction()
+                    );
+
+                    importResult
+                            .append(String.format(
+                                    Constants.SUCCESSFUL_IMPORT_MESSAGE,
+                                    carEntity.getClass().getSimpleName(),
+                                    carImportResult
+                            ))
+                            .append(System.lineSeparator());
                 });
 
         return importResult.toString().trim();

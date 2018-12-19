@@ -1,8 +1,9 @@
 package mostwanted.domain.dtos;
 
 import com.google.gson.annotations.Expose;
-import com.sun.istack.NotNull;
 
+
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 public class RacerImportDto {
@@ -16,7 +17,7 @@ public class RacerImportDto {
     private BigDecimal bounty;
 
     @Expose
-    private String townName;
+    private String homeTown;
 
     public RacerImportDto() {
     }
@@ -46,11 +47,11 @@ public class RacerImportDto {
         this.bounty = bounty;
     }
 
-    public String getTownName() {
-        return townName;
+    public String getHomeTown() {
+        return homeTown;
     }
 
-    public void setTownName(String townName) {
-        this.townName = townName;
+    public void setHomeTown(String homeTown) {
+        this.homeTown = homeTown;
     }
 }

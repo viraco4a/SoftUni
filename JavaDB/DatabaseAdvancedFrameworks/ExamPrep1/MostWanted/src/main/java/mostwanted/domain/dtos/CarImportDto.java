@@ -1,10 +1,9 @@
 package mostwanted.domain.dtos;
 
 import com.google.gson.annotations.Expose;
-import com.sun.istack.NotNull;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 
 public class CarImportDto {
     @Expose
@@ -17,7 +16,7 @@ public class CarImportDto {
     private BigDecimal price;
 
     @Expose
-    private LocalDate yearOfProduction;
+    private Integer yearOfProduction;
 
     @Expose
     private Double maxSpeed;
@@ -58,11 +57,11 @@ public class CarImportDto {
     }
 
     @NotNull
-    public LocalDate getYearOfProduction() {
+    public Integer getYearOfProduction() {
         return yearOfProduction;
     }
 
-    public void setYearOfProduction(LocalDate yearOfProduction) {
+    public void setYearOfProduction(Integer yearOfProduction) {
         this.yearOfProduction = yearOfProduction;
     }
 
