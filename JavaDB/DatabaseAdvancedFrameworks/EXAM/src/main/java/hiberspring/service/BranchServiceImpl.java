@@ -30,6 +30,7 @@ public class BranchServiceImpl implements BranchService{
     private final Gson gson;
     private final ModelMapper modelMapper;
 
+    //kur
     @Autowired
     public BranchServiceImpl(BranchRepository branchRepository,
                              TownRepository townRepository,
