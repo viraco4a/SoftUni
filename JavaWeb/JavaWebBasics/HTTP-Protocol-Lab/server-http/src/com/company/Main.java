@@ -15,7 +15,11 @@ public class Main {
         InputStream inputStream = socket.getInputStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
-        reader.lines().forEach(System.out::println);
+        String line;
+        while ((line = reader.readLine()) != null){
+            System.out.println(line);
+        }
+
         socket.close();
     }
 }
