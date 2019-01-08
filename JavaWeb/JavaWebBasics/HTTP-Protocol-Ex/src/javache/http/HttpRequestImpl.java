@@ -3,6 +3,7 @@ package javache.http;
 import javache.constants.NonSpecificConstants;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,54 +21,48 @@ public class HttpRequestImpl implements HttpRequest {
     }
 
     @Override
-    public HashMap<String, String> getHeaders() {
-        //TODO
-        return null;
+    public Map<String, String> getHeaders() {
+        return Collections.unmodifiableMap(this.headers);
     }
 
     @Override
-    public HashMap<String, String> getBodyParameters() {
-        //TODO
-        return null;
+    public Map<String, String> getBodyParameters() {
+        return Collections.unmodifiableMap(this.bodyParameters);
     }
 
     @Override
     public String getMethod() {
-        //TODO
-        return null;
+        return this.method;
     }
 
     @Override
     public void setMethod(String method) {
-        //TODO
-
+        this.method = method;
     }
 
     @Override
     public String getRequestUrl() {
-        //TODO
-        return null;
+        return this.requestUrl;
     }
 
     @Override
     public void setRequestUrl(String requestUrl) {
-        //TODO
+        this.requestUrl = requestUrl;
     }
 
     @Override
     public void addHeader(String header, String value) {
-        //TODO
+        this.headers.putIfAbsent(header, value);
     }
 
     @Override
     public void addBodyParameter(String parameter, String value) {
-        //TODO
+        this.bodyParameters.putIfAbsent(parameter, value);
     }
 
     @Override
     public boolean isResource() {
-        //TODO
-        return false;
+        return this.getRequestUrl().contains(".");
     }
 
     private void parseRequestContent(String requestContent) {
@@ -109,6 +104,12 @@ public class HttpRequestImpl implements HttpRequest {
     }
 
     private void parseBodyParameters(String bodyParameters) {
-        //TODO
+        if (this.getMethod().equals("POST")){
+            String[] parameters = bodyParameters.split("&");
+            for (String parameter : parameters) {
+                String[] parameterTokens = parameter.split("=");
+                this.addBodyParameter(parameterTokens[0], parameterTokens[1]);
+            }
+        }
     }
 }
