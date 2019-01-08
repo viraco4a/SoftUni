@@ -1,10 +1,7 @@
 package javache.handlers;
 
 import javache.constants.ErrorMessages;
-import javache.http.HttpRequest;
-import javache.http.HttpRequestImpl;
-import javache.http.HttpResponse;
-import javache.http.HttpResponseImpl;
+import javache.http.*;
 import javache.utility.Helpers;
 
 import java.io.File;
@@ -130,18 +127,33 @@ public class RequestHandler {
     }
 
     private byte[] badRequest(byte[] content) {
-        return null; //TODO
+        this.httpResponse.setStatusCode(HttpStatus.BAD_REQUEST);
+        this.httpResponse.setContent(content);
+        return this.httpResponse.getBytes();
     }
 
-    private byte[] ok(byte[] result) {
-        return null; //TODO
+    private byte[] redirect(byte[] content, String location){
+        this.httpResponse.setStatusCode(HttpStatus.SEE_OTHER);
+        this.httpResponse.addHeader("Location", location);
+        this.httpResponse.setContent(content);
+        return this.httpResponse.getBytes();
     }
 
-    private byte[] notFound(byte[] result) {
-        return null; //TODO
+    private byte[] ok(byte[] content) {
+        this.httpResponse.setStatusCode(HttpStatus.OK);
+        this.httpResponse.setContent(content);
+        return this.httpResponse.getBytes();
     }
 
-    private byte[] internalServerError(byte[] bytes) {
-        return null; //TODO
+    private byte[] notFound(byte[] content) {
+        this.httpResponse.setStatusCode(HttpStatus.NOT_FOUND);
+        this.httpResponse.setContent(content);
+        return this.httpResponse.getBytes();
+    }
+
+    private byte[] internalServerError(byte[] content) {
+        this.httpResponse.setStatusCode(HttpStatus.INTERNAL_SERVER_ERROR);
+        this.httpResponse.setContent(content);
+        return this.httpResponse.getBytes();
     }
 }
