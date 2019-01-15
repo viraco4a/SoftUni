@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8475a1b1-c195-4e58-9709-c47c7124037a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Requirements-and-Resources/Requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Requirements-and-Resources/Requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Requirements-and-Resources/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Requirements-and-Resources/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Solution/Requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Solution/Requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Solution/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page/Solution/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.zip" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="357">
               <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
@@ -95,8 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,6 +109,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -115,6 +118,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547016915919" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Introduction-to-HTML-Exercise/L1_07_Article_Page" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -144,17 +148,18 @@
       <updated>1546965464142</updated>
       <workItem from="1546965466742" duration="1792000" />
       <workItem from="1547018204058" duration="9084000" />
+      <workItem from="1547192603840" duration="866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10876000" />
+    <option name="totallyTimeSpent" value="11742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -190,7 +195,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="357">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
