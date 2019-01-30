@@ -75,6 +75,7 @@ public class Application {
 
                 count++;
             }
+
             String responseBody = String.format(
                     "Greetings %s! You have successfully created %s with %s, %s.",
                     new String(Base64
@@ -86,9 +87,9 @@ public class Application {
                     first, second, third
             );
             response.append(responseBody);
-
-            System.out.println(response.toString());
         }
+
+        System.out.println(response.toString());
     }
 
     private static void getResponseHeaders(Map<String, String> headers, StringBuilder response) {
@@ -153,7 +154,7 @@ public class Application {
     private static List<String> getRequest() throws IOException {
         List<String> request = new ArrayList<>();
 
-        String line = null;
+        String line;
 
         while ((line = reader.readLine()) != null && line.length() > 0){
             request.add(line);
@@ -166,5 +167,4 @@ public class Application {
         }
         return request;
     }
-
 }
