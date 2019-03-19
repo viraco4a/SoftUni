@@ -5,64 +5,39 @@ import java.util.Arrays;
 
 public class ReverseMatrixDiagonals {
     private static int[][] matrix;
+    private static int cols;
     private static int startRow;
     private static int startCol;
-    private static int currentRow;
-    private static int currentCol;
-    private static int rows;
-    private static int cols;
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        readMatrix(reader);
-        StringBuilder sb = new StringBuilder();
-        sb.append(matrix[startRow][startCol]).append(" ").append(System.lineSeparator());
-        startCol--;
-        currentRow = startRow;
-        currentCol = startCol;
-        boolean mustBreak = false;
-        while (!(startCol == 0 && startRow == 0)) {
-            while (true) {
-                mustBreak = false;
-                sb.append(matrix[currentRow][currentCol]).append(" ");
-                currentRow--;
-                currentCol++;
 
-                if (currentCol == cols) {
-                    startCol--;
-                    currentCol = startCol;
-                    if (rows == cols){
-                        startRow--;
-                        //TODO
-                    }
-                    currentRow = startRow;
-                    mustBreak = true;
-                }
-                if (currentRow < 0) {
-                    startRow--;
-                    currentRow = startRow;
-                    currentCol = startCol;
-                    mustBreak = true;
-                }
-                if (mustBreak) {
-                    break;
-                }
+        readMatrix(reader);
+
+        StringBuilder sb = new StringBuilder();
+
+        while (startRow != -1) {
+            int row = startRow;
+            int col = startCol;
+            while (row >= 0 && col < cols) {
+                sb.append(matrix[row--][col++]).append(" ");
             }
             sb.append(System.lineSeparator());
-        }
+            startCol--;
 
-        sb.append(matrix[0][0]);
+            if (startCol < 0) {
+                startCol = 0;
+                startRow--;
+            }
+        }
 
         System.out.println(sb.toString());
     }
 
     private static void readMatrix(BufferedReader reader) throws IOException {
-        int[] dimensions = Arrays.stream(reader.readLine().split("\\s+"))
-                .mapToInt(Integer::parseInt).toArray();
-
-        cols = dimensions[1];
-        rows = dimensions[0];
-
+        String[] line = reader.readLine().split("\\s+");
+        int rows = Integer.parseInt(line[0]);
+        cols = Integer.parseInt(line[1]);
         matrix = new int[rows][cols];
 
         for (int i = 0; i < rows; i++) {
