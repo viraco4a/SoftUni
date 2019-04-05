@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909c0cbb-2f5b-4421-9770-80f8daf14595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AcademyGraduation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CitiesByContinentAndCountry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sets-And-Maps-Lab-2/AverageStudentsGrades.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sets-And-Maps-Lab-2/AverageStudentsGrades.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AverageStudentsGrades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AverageStudentsGrades.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CitiesByContinentAndCountry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+            <state relative-caret-position="316">
+              <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554290900139</updated>
       <workItem from="1554290903463" duration="10052000" />
-      <workItem from="1554454871018" duration="5702000" />
+      <workItem from="1554454871018" duration="5959000" />
     </task>
     <task id="LOCAL-00001" summary="Java Adv maps and sets Lab part 1">
       <created>1554303866395</created>
@@ -188,11 +183,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554303866395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Java Adv maps and sets Lab final">
+      <created>1554461728927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554461728937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15754000" />
+    <option name="totallyTimeSpent" value="16011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
@@ -207,7 +209,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -235,7 +237,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Java Adv maps and sets Lab part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java Adv maps and sets Lab part 1" />
+    <MESSAGE value="Java Adv maps and sets Lab final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java Adv maps and sets Lab final" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ParkingLot.java">
@@ -318,8 +321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CitiesByContinentAndCountry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        <state relative-caret-position="316">
+          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
