@@ -17,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SortLines.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="68">
               <caret line="10" selection-start-line="10" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/NestedFolders.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,26 +91,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FilesAndStreams_Lab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FilesAndStreams_Lab" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FilesAndStreams_Lab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FilesAndStreams_Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -191,11 +172,12 @@
       <updated>1554897849769</updated>
       <workItem from="1554897852777" duration="1977000" />
       <workItem from="1555597599750" duration="9233000" />
+      <workItem from="1556106400513" duration="583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11210000" />
+    <option name="totallyTimeSpent" value="11793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
@@ -302,7 +284,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SortLines.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="68">
           <caret line="10" selection-start-line="10" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -320,7 +302,7 @@
     <entry file="file://$PROJECT_DIR$/src/NestedFolders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
