@@ -2,7 +2,7 @@
 ## Final Project 
 
 ## Project name: 
-## Project author:
+## Project author: Kaloyan Zlatkov
 
 ### Terms and conditions:
 * Use Jupyter notebook for text and maths. You can use any programming language you would like.
