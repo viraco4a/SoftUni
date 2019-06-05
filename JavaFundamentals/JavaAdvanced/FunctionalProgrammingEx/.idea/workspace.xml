@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3dafa87-9d6a-47d0-9102-8ecee7128a25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CustomComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindTheSmallestElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListOfPredicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PredicateForNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PredicateParty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReverseAndExclude.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThePartyReservationFilterModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunctionalProgrammingEx/AppliedArithmetic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunctionalProgrammingEx/AppliedArithmetic.class" afterDir="false" />
-    </list>
+    <list default="true" id="b3dafa87-9d6a-47d0-9102-8ecee7128a25" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,32 +14,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PredicateParty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="62" selection-start-line="62" selection-end-line="74" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ThePartyReservationFilterModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="57" column="73" lean-forward="true" selection-start-line="57" selection-start-column="73" selection-end-line="58" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -195,23 +160,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559656758445</updated>
-      <workItem from="1559656761190" duration="13818000" />
+      <workItem from="1559656761190" duration="14513000" />
     </task>
+    <task id="LOCAL-00001" summary="Java Advanced Funcional Programming Ex final">
+      <created>1559727130152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559727130152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13818000" />
+    <option name="totallyTimeSpent" value="14513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24945295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -221,7 +193,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -239,6 +211,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Java Advanced Funcional Programming Ex final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java Advanced Funcional Programming Ex final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,20 +337,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PredicateParty.java">
+    <entry file="file://$PROJECT_DIR$/src/ThePartyReservationFilterModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="62" selection-start-line="62" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ThePartyReservationFilterModule.java">
+    <entry file="file://$PROJECT_DIR$/src/PredicateParty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="57" column="73" lean-forward="true" selection-start-line="57" selection-start-column="73" selection-end-line="58" selection-end-column="64" />
+        <state relative-caret-position="197">
+          <caret line="62" selection-start-line="62" selection-end-line="74" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
