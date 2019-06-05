@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3dafa87-9d6a-47d0-9102-8ecee7128a25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppliedArithmetic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Consumer_Print.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomMinFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KnightsOfHonor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FindTheSmallestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ListOfPredicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PredicateForNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PredicateParty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ReverseAndExclude.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThePartyReservationFilterModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunctionalProgrammingEx/AppliedArithmetic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunctionalProgrammingEx/AppliedArithmetic.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +26,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CustomMinFunction.java">
+        <entry file="file://$PROJECT_DIR$/src/PredicateParty.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="197">
+              <caret line="62" selection-start-line="62" selection-end-line="74" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,10 +38,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppliedArithmetic.java">
+        <entry file="file://$PROJECT_DIR$/src/ThePartyReservationFilterModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="33" column="32" lean-forward="true" selection-end-line="49" />
+            <state relative-caret-position="95">
+              <caret line="57" column="73" lean-forward="true" selection-start-line="57" selection-start-column="73" selection-end-line="58" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +68,13 @@
         <option value="$PROJECT_DIR$/src/KnightsOfHonor.java" />
         <option value="$PROJECT_DIR$/src/CustomMinFunction.java" />
         <option value="$PROJECT_DIR$/src/AppliedArithmetic.java" />
+        <option value="$PROJECT_DIR$/src/ReverseAndExclude.java" />
+        <option value="$PROJECT_DIR$/src/PredicateForNames.java" />
+        <option value="$PROJECT_DIR$/src/FindTheSmallestElement.java" />
+        <option value="$PROJECT_DIR$/src/CustomComparator.java" />
+        <option value="$PROJECT_DIR$/src/ListOfPredicates.java" />
+        <option value="$PROJECT_DIR$/src/PredicateParty.java" />
+        <option value="$PROJECT_DIR$/src/ThePartyReservationFilterModule.java" />
       </list>
     </option>
   </component>
@@ -111,6 +122,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -127,30 +139,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AppliedArithmetic">
-    <configuration name="AppliedArithmetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppliedArithmetic" />
+  <component name="RunManager" selected="Application.ThePartyReservationFilterModule">
+    <configuration name="CustomComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CustomComparator" />
       <module name="FunctionalProgrammingEx" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Consumer_Print" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Consumer_Print" />
+    <configuration name="FindTheSmallestElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FindTheSmallestElement" />
       <module name="FunctionalProgrammingEx" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomMinFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CustomMinFunction" />
+    <configuration name="ListOfPredicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ListOfPredicates" />
       <module name="FunctionalProgrammingEx" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnightsOfHonor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KnightsOfHonor" />
+    <configuration name="PredicateParty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PredicateParty" />
+      <module name="FunctionalProgrammingEx" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThePartyReservationFilterModule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThePartyReservationFilterModule" />
       <module name="FunctionalProgrammingEx" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,10 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppliedArithmetic" />
-        <item itemvalue="Application.CustomMinFunction" />
-        <item itemvalue="Application.KnightsOfHonor" />
-        <item itemvalue="Application.Consumer_Print" />
+        <item itemvalue="Application.ThePartyReservationFilterModule" />
+        <item itemvalue="Application.PredicateParty" />
+        <item itemvalue="Application.ListOfPredicates" />
+        <item itemvalue="Application.CustomComparator" />
+        <item itemvalue="Application.FindTheSmallestElement" />
       </list>
     </recent_temporary>
   </component>
@@ -175,12 +195,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559656758445</updated>
-      <workItem from="1559656761190" duration="4087000" />
+      <workItem from="1559656761190" duration="13818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4087000" />
+    <option name="totallyTimeSpent" value="13818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
@@ -272,8 +292,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppliedArithmetic.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReverseAndExclude.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PredicateForNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindTheSmallestElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="33" column="32" lean-forward="true" selection-end-line="49" />
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListOfPredicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding>
+            <element signature="e#2038#2039#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PredicateParty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="62" selection-start-line="62" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ThePartyReservationFilterModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="57" column="73" lean-forward="true" selection-start-line="57" selection-start-column="73" selection-end-line="58" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
