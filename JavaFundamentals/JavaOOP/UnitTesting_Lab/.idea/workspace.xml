@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11bf221-0781-4669-b406-881d8ced2177" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Target.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rpg_lab/Dummy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpg_lab/Dummy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rpg_lab/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rpg_lab/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rpg_tests/HeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rpg_tests/HeroTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e11bf221-0781-4669-b406-881d8ced2177" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/rpg_tests/HeroTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="238">
+              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#643#665#0" />
@@ -332,7 +324,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560262365339</updated>
-      <workItem from="1560262366791" duration="10957000" />
+      <workItem from="1560262366791" duration="11126000" />
     </task>
     <task id="LOCAL-00001" summary="Java OOP Unit Testing Lab part 1">
       <created>1560263386771</created>
@@ -355,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560333381608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Java OOP Unit Testing Lab final">
+      <created>1560335189727</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560335189727</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -391,7 +390,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10957000" />
+    <option name="totallyTimeSpent" value="11126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
@@ -412,7 +411,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3298969" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,7 +435,8 @@
     <MESSAGE value="Java OOP Unit Testing Lab part 1" />
     <MESSAGE value="Java OOP Unit Testing Lab part 2" />
     <MESSAGE value="Java OOP Unit Testing Lab part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java OOP Unit Testing Lab part 3" />
+    <MESSAGE value="Java OOP Unit Testing Lab final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java OOP Unit Testing Lab final" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/rpg_tests/AxeTests.java">
@@ -534,8 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rpg_tests/HeroTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="238">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#643#665#0" />
