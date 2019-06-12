@@ -5,7 +5,7 @@ public interface Target {
 
     void takeAttack(int attackPoints);
 
-    int giveExperience();
+    Weapon giveExperience();
 
     boolean isDead();
 }
