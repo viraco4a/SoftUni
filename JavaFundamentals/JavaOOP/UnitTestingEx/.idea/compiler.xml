@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="UnitTestingEx" />
+        <module name="unit-testing-ex" />
       </profile>
     </annotationProcessing>
   </component>
