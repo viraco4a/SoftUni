@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67db507a-ae16-4c02-8198-d123255dd05d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GenericScale/Scale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListUtilities/ListUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListUtilities/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics_Ex/src/GenericBox/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics_Ex/src/GenericBoxInteger/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics_Ex/src/GenericBoxInteger/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generics_Ex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Generics_Ex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Generics_Ex/src/GenericBox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Generics_Ex/src/GenericBox/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Generics_Lab/GenericArrayCreator/ArrayCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Generics_Lab/GenericArrayCreator/ArrayCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericScale/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericScale/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenericArrayCreator.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenericScale.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JarOfT.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListUtilities.zip" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -217,7 +221,7 @@
       <option name="presentableId" value="Default" />
       <updated>1560420785255</updated>
       <workItem from="1560420786612" duration="7167000" />
-      <workItem from="1561101257179" duration="2181000" />
+      <workItem from="1561101257179" duration="2749000" />
     </task>
     <task id="LOCAL-00001" summary="Java Advanced Generics Lab part 1">
       <created>1560436153150</created>
@@ -230,7 +234,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9348000" />
+    <option name="totallyTimeSpent" value="9916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1006" extended-state="0" />
@@ -246,7 +250,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39977092" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
