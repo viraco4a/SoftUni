@@ -9,10 +9,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int[] nuimbers = Arrays.stream(reader.readLine().split(", "))
+        int[] numbers = Arrays.stream(reader.readLine().split(", "))
                 .mapToInt(Integer::parseInt).toArray();
 
-        Lake lake = new Lake(nuimbers);
+        Lake lake = new Lake(numbers);
 
         String redundant = reader.readLine();
 
