@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25fc81ae-625b-4b0c-935f-2796ae79fe3e" name="Default Changelist" comment="Java OOP Unit tests Ex part 4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BubbleSortTest.java" afterDir="false" />
+    <list default="true" id="25fc81ae-625b-4b0c-935f-2796ae79fe3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListIteratorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,36 +19,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ListIteratorTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="255">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#1972#1973#0" expanded="true" />
-                <element signature="e#2031#2032#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BubbleSortTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,6 +80,8 @@
         <option value="$PROJECT_DIR$/src/test/java/BubbleSortTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListIteratorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Category.java" />
       </list>
     </option>
   </component>
@@ -257,7 +259,7 @@
       <workItem from="1560346254370" duration="6005000" />
       <workItem from="1560411105762" duration="6434000" />
       <workItem from="1560669883828" duration="6000" />
-      <workItem from="1561465065498" duration="7334000" />
+      <workItem from="1561465065498" duration="9363000" />
     </task>
     <task id="LOCAL-00001" summary="Java OOP Unit tests Ex part 3">
       <created>1561473055713</created>
@@ -266,13 +268,17 @@
       <option name="project" value="LOCAL" />
       <updated>1561473055713</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Java OOP Unit tests Ex part 4">
+      <created>1561473903847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561473903847</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ListIteratorTest_checkPrintOperation - 2019.06.25 at 17h 25m 10s.xml">
-      <configuration name="ListIteratorTest.checkPrintOperation" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ListIteratorTest_checkPrintOperation - 2019.06.25 at 17h 25m 25s.xml">
       <configuration name="ListIteratorTest.checkPrintOperation" configurationId="JUnit" />
     </history-entry>
@@ -300,9 +306,12 @@
     <history-entry file="BubbleSortTest_testIfBubbleSortWorksWithSimilarElements - 2019.06.25 at 17h 43m 10s.xml">
       <configuration name="BubbleSortTest.testIfBubbleSortWorksWithSimilarElements" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BubbleSortTest - 2019.06.25 at 17h 44m 54s.xml">
+      <configuration name="BubbleSortTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19779000" />
+    <option name="totallyTimeSpent" value="21808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
@@ -318,7 +327,7 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.3298969" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36082473" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36082473" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39862543" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,7 +337,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32760596" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32760596" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -489,10 +498,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BubbleSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
           </folding>
         </state>
       </provider>
