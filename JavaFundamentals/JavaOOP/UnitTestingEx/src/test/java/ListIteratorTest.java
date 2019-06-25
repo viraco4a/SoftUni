@@ -10,12 +10,11 @@ public class ListIteratorTest {
 
     private ListIterator listIterator;
     private ListIterator emptyListIterator;
-    private String[] strings;
 
     @Before
     public void initializeDatabase() throws OperationNotSupportedException {
-        this.strings = new String[] {"one", "two", "three"};
-        this.listIterator = new ListIterator(this.strings);
+        String[] strings = new String[]{"one", "two", "three"};
+        this.listIterator = new ListIterator(strings);
     }
 
     @Rule
