@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e83f38c2-d339-4583-ac67-334b67cfaf97" name="Default Changelist" comment="" />
+    <list default="true" id="e83f38c2-d339-4583-ac67-334b67cfaf97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ComparingObjects/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ComparingObjects/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StrategyPattern/AgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StrategyPattern/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StrategyPattern/NameComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StrategyPattern/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IteratorsAndComparators_Ex/Froggy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IteratorsAndComparators_Ex/Froggy/Main.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,31 +19,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Froggy/Lake.java">
+        <entry file="file://$PROJECT_DIR$/src/StrategyPattern/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#222#223#0" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Froggy/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/StrategyPattern/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +72,12 @@
         <option value="$PROJECT_DIR$/src/StackIterator/Main.java" />
         <option value="$PROJECT_DIR$/src/Froggy/Lake.java" />
         <option value="$PROJECT_DIR$/src/Froggy/Main.java" />
+        <option value="$PROJECT_DIR$/src/ComparingObjects/Person.java" />
+        <option value="$PROJECT_DIR$/src/ComparingObjects/Main.java" />
+        <option value="$PROJECT_DIR$/src/StrategyPattern/NameComparator.java" />
+        <option value="$PROJECT_DIR$/src/StrategyPattern/AgeComparator.java" />
+        <option value="$PROJECT_DIR$/src/StrategyPattern/Person.java" />
+        <option value="$PROJECT_DIR$/src/StrategyPattern/Main.java" />
       </list>
     </option>
   </component>
@@ -86,7 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -103,13 +117,13 @@
               <item name="IteratorsAndComparators_Ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="IteratorsAndComparators_Ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Froggy" type="462c0819:PsiDirectoryNode" />
+              <item name="StrategyPattern" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StackIterator.Main" />
       <module name="IteratorsAndComparators_Ex" />
@@ -160,6 +174,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ComparingObjects.Main" />
+      <module name="IteratorsAndComparators_Ex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ComparingObjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StrategyPattern.Main" />
+      <module name="IteratorsAndComparators_Ex" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StrategyPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ListyIterator.Main" />
       <module name="IteratorsAndComparators_Ex" />
@@ -169,6 +209,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -187,6 +229,7 @@
       <updated>1561120421782</updated>
       <workItem from="1561120423970" duration="8369000" />
       <workItem from="1561464342906" duration="602000" />
+      <workItem from="1561641331317" duration="4247000" />
     </task>
     <task id="LOCAL-00001" summary="Java Advanced Iterators and Comparators Ex part 1">
       <created>1561127809387</created>
@@ -199,12 +242,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8971000" />
+    <option name="totallyTimeSpent" value="13218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1006" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945295" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24835886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -213,7 +257,7 @@
       <window_info id="Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -306,9 +350,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Froggy/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Froggy/Lake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#155#156#0" expanded="true" />
@@ -319,10 +373,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Froggy/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ComparingObjects/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        <state relative-caret-position="282">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ComparingObjects/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StrategyPattern/AgeComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StrategyPattern/NameComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StrategyPattern/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StrategyPattern/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
