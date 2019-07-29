@@ -14,7 +14,7 @@ public class Main {
         Galaxy galaxy = new Galaxy(dimensions[0], dimensions[1]);
         Ivo ivo = new Ivo();
         Evil evil = new Evil();
-        String command = "";
+        String command;
 
         while (!"Let the Force be with you".equals(command = reader.readLine())) {
             int[] ivoS = readInput(command);
