@@ -1,5 +1,5 @@
 
-package JediGalaxy.greedyTimes;
+package JediGalaxy.greedyTimesOld;
 
 import java.util.Collection;
 import java.util.LinkedHashMap;
