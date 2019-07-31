@@ -9,8 +9,9 @@ public abstract class PartOfPizza {
     }
 
     private void setWeight(double weight) {
-        //TODO check
-        this.weight = weight;
+        if(validateWeight(weight)) {
+            this.weight = weight;
+        }
     }
 
     protected double getWeight() {
@@ -18,4 +19,6 @@ public abstract class PartOfPizza {
     }
 
     public abstract double calculateCalories();
+
+    protected abstract boolean validateWeight(double weight);
 }

@@ -46,4 +46,10 @@ public class Dough extends PartOfPizza {
     public double calculateCalories() {
         return CALORY_MODIFIER * this.getWeight() * this.flourType.getCalories() * this.bakingTechnique.getCalories();
     }
+
+    @Override
+    protected boolean validateWeight(double weight) {
+        Validator.validateDoughWeight(weight);
+        return true;
+    }
 }
