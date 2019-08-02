@@ -2,9 +2,9 @@ package word;
 
 public class Command {
     private String text;
-    private TextTransform textTransform;
+    private word.TextTransform textTransform;
 
-    public Command(String text, TextTransform textTransform){
+    public Command(String text, word.TextTransform textTransform){
         this.text = text;
         this.textTransform = textTransform;
     }
@@ -12,7 +12,7 @@ public class Command {
         return this.text;
     }
 
-    public TextTransform getTextTransform() {
+    public word.TextTransform getTextTransform() {
         return this.textTransform;
     }
 
