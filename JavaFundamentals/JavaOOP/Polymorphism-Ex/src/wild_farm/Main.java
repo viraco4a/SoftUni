@@ -19,12 +19,13 @@ public class Main {
             FoodFactory foodFactory = new FoodFactory();
             Food food = foodFactory.getFood(reader.readLine().split("\\s+"));
 
+            animal.makeSound();
+
             try {
                 animal.eat(food);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
-            animal.makeSound();
             animals.add(animal);
         }
 
