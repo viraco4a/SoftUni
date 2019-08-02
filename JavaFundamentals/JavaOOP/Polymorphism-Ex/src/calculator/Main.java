@@ -1,5 +1,7 @@
 package calculator;
 
+import calculator.initialization.Extensions;
+
 import java.util.Scanner;
 
 public class Main {

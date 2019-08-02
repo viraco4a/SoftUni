@@ -1,5 +1,7 @@
 package calculator;
 
+import calculator.interfaces.Operation;
+
 public class CalculationEngine {
     private int result;
     private Operation currentOperation;
