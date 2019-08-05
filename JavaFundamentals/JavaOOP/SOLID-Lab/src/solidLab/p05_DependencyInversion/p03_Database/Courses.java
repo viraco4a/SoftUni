@@ -1,9 +1,19 @@
 package solidLab.p05_DependencyInversion.p03_Database;
 
 public class Courses {
+    private Data database;
+
+    public Courses(Data database) {
+        this.setDatabase(database);
+    }
+
+    public void setDatabase(Data database) {
+        this.database = database;
+    }
+
     public void printAll()
     {
-        Data database = new Data();
+//        Data database = new Data();
         Iterable<String> courses = database.courseNames();
 
         //print courses
@@ -11,7 +21,7 @@ public class Courses {
 
     public void printIds()
     {
-        Data database = new Data();
+//        Data database = new Data();
         Iterable<Integer>coursesIds = database.courseIds();
 
         //print course ids
@@ -19,7 +29,7 @@ public class Courses {
 
     public void printById(int id)
     {
-        Data database = new Data();
+//        Data database = new Data();
         String course = database.getCourseById(id);
 
         // print course
@@ -27,7 +37,7 @@ public class Courses {
 
     public void search(String substring)
     {
-        Data database = new Data();
+//        Data database = new Data();
         Iterable<String> courses = database.search(substring);
 
         // print courses
