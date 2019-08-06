@@ -1,6 +1,5 @@
 package harvestingFields;
 
-import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,48 +10,60 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        RichSoilLand richSoilLand = new RichSoilLand();
-        Class klass = richSoilLand.getClass();
 
-        String line;
-        while (!"HARVEST".equals(line = reader.readLine())) {
-            Field[] declaredFields = klass.getDeclaredFields();
-            StringBuilder sb = new StringBuilder();
+        Class richSoilLandClass = RichSoilLand.class;
 
-            if (line.equals("all")) {
-                Arrays.stream(declaredFields)
-                        .forEach(field -> {
-                            String currentMod = getModifier(field.getModifiers());
-                            sb.append(String.format("%s %s %s",
-                                    currentMod,
-                                    field.getType().getSimpleName(),
-                                    field.getName())
-                            ).append(System.lineSeparator());
-                        });
-                System.out.println(sb.toString().trim());
-                continue;
+        Field[] declaredFields = richSoilLandClass.getDeclaredFields();
+
+        String command = "";
+
+        while (!"HARVEST".equals(command=reader.readLine())) {
+            switch (command) {
+                case "private":
+                    printPrivateFields(declaredFields);
+                    break;
+                case "protected":
+                    printProtectedFields(declaredFields);
+                    break;
+                case "public":
+                    printPublicFields(declaredFields);
+                    break;
+                case "all":
+                    printAllFields(declaredFields);
+                    break;
             }
-            String input = line;
-			Arrays.stream(declaredFields)
-					.filter(field -> {
-						String currentMod = getModifier(field.getModifiers());
-						return currentMod.equals(input);
-					}).forEach(field -> {
-						sb.append(String.format("%s %s %s",
-								input,
-								field.getType().getSimpleName(),
-								field.getName()
-						)).append(System.lineSeparator());
-			});
-			System.out.println(sb.toString());
         }
     }
 
-    private static String getModifier(int mod) {
-        if (Modifier.isProtected(mod)) {
-            return "protected";
-        } else {
-            return "private";
-        }
+    private static void printPrivateFields(Field[] fields) {
+        Arrays.stream(fields)
+                .filter(f -> Modifier.isPrivate(f.getModifiers()))
+                .forEach(f -> System.out.println(String.format("%s %s %s", Modifier.toString(f.getModifiers()),
+                        f.getType().getSimpleName(),
+                        f.getName())));
+    }
+
+    private static void printProtectedFields(Field[] fields) {
+        Arrays.stream(fields)
+                .filter(f -> Modifier.isProtected(f.getModifiers()))
+                .forEach(f -> System.out.println(String.format("%s %s %s", Modifier.toString(f.getModifiers()),
+                        f.getType().getSimpleName(),
+                        f.getName())));
+    }
+
+    private static void printPublicFields(Field[] fields) {
+        Arrays.stream(fields)
+                .filter(f -> Modifier.isPublic(f.getModifiers()))
+                .forEach(f -> System.out.println(String.format("%s %s %s", Modifier.toString(f.getModifiers()),
+                        f.getType().getSimpleName(),
+                        f.getName())));
+    }
+
+    private static void printAllFields(Field[] fields) {
+        Arrays.stream(fields)
+                .forEach(f -> System.out.println(String.format("%s %s %s",
+                        Modifier.toString(f.getModifiers()),
+                        f.getType().getSimpleName(),
+                        f.getName())));
     }
 }
