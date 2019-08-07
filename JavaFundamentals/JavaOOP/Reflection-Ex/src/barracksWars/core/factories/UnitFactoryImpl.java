@@ -14,10 +14,10 @@ public class UnitFactoryImpl implements UnitFactory {
 
 	@Override
 	public Unit createUnit(String unitType) throws ExecutionControl.NotImplementedException {
-		String className = UNITS_PACKAGE_NAME + unitType;
+		String unitTotalName = UNITS_PACKAGE_NAME + unitType;
 
 		try {
-			Class klass = Class.forName(className);
+			Class klass = Class.forName(unitTotalName);
 
 			Constructor constructor = klass.getDeclaredConstructors()[0];
 			constructor.setAccessible(true);
@@ -26,7 +26,6 @@ public class UnitFactoryImpl implements UnitFactory {
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
 			e.printStackTrace();
 		}
-
 		throw new ExecutionControl.NotImplementedException("message");
 	}
 }
