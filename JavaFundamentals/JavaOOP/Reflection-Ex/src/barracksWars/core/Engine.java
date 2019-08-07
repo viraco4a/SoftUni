@@ -2,14 +2,15 @@ package barracksWars.core;
 
 import barracksWars.interfaces.Repository;
 import barracksWars.interfaces.Runnable;
-import barracksWars.interfaces.Unit;
 import barracksWars.interfaces.UnitFactory;
 import jdk.jshell.spi.ExecutionControl;
-
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class Engine implements Runnable {
 
@@ -43,39 +44,25 @@ public class Engine implements Runnable {
 		}
 	}
 
-	// TODO: refactor for problem 4
 	private String interpretCommand(String[] data, String commandName) throws ExecutionControl.NotImplementedException {
-		String result;
-		switch (commandName) {
-			case "add":
-				result = this.addUnitCommand(data);
-				break;
-			case "report":
-				result = this.reportCommand(data);
-				break;
-			case "fight":
-				result = this.fightCommand(data);
-				break;
-			default:
-				throw new RuntimeException("Invalid command!");
+		String result = "fight";
+
+		String toUpper = commandName.substring(0, 1).toUpperCase() + commandName.substring(1);
+
+		try {
+			Class klass = Class.forName("barracksWars.core.commands" + toUpper);
+			Constructor constructor = klass.getDeclaredConstructor(String[].class, Repository.class, UnitFactory.class);
+			constructor.setAccessible(true);
+
+			Object o = constructor.newInstance(data, this.repository, this.unitFactory);
+
+			Method execute = klass.getDeclaredMethod("execute");
+
+			result = (String) execute.invoke(o);
+		} catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+			e.printStackTrace();
 		}
+
 		return result;
-	}
-
-	private String reportCommand(String[] data) {
-		String output = this.repository.getStatistics();
-		return output;
-	}
-
-	private String addUnitCommand(String[] data) throws ExecutionControl.NotImplementedException {
-		String unitType = data[1];
-		Unit unitToAdd = this.unitFactory.createUnit(unitType);
-		this.repository.addUnit(unitToAdd);
-		String output = unitType + " added!";
-		return output;
-	}
-	
-	private String fightCommand(String[] data) {
-		return "fight";
 	}
 }
