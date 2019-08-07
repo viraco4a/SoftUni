@@ -38,7 +38,7 @@ public class UnitRepository implements Repository {
 		return statBuilder.toString();
 	}
 
-	public void removeUnit(String unitType) throws ExecutionControl.NotImplementedException {
+	public void removeUnit(String unitType) {
 		if (!this.amountOfUnits.containsKey(unitType) || this.amountOfUnits.get(unitType) == 0) {
 			throw new IllegalArgumentException("No such units in repository.");
 		}

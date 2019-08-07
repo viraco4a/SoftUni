@@ -1,20 +1,26 @@
 package barracksWars.core.commands;
 
+import barracksWars.annotations.Inject;
 import barracksWars.interfaces.Repository;
 import barracksWars.interfaces.Unit;
 import barracksWars.interfaces.UnitFactory;
-import jdk.jshell.spi.ExecutionControl;
 
 public class Add extends Command {
-    public Add(String[] data, Repository repository, UnitFactory unitFactory) {
-        super(data, repository, unitFactory);
+    @Inject
+    private Repository repository;
+
+    @Inject
+    private UnitFactory unitFactory;
+
+    public Add(String[] data) {
+        super(data);
     }
 
     @Override
-    public String execute() throws ExecutionControl.NotImplementedException {
+    public String execute() {
         String unitType = super.getData()[1];
-        Unit unitToAdd = super.getUnitFactory().createUnit(unitType);
-        super.getRepository().addUnit(unitToAdd);
+        Unit unitToAdd = this.unitFactory.createUnit(unitType);
+        this.repository.addUnit(unitToAdd);
 
         return unitType + " added!";
     }

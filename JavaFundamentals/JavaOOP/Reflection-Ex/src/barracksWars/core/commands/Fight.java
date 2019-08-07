@@ -5,12 +5,12 @@ import barracksWars.interfaces.UnitFactory;
 import jdk.jshell.spi.ExecutionControl;
 
 public class Fight extends Command {
-    protected Fight(String[] data, Repository repository, UnitFactory unitFactory) {
-        super(data, repository, unitFactory);
+    public Fight(String[] data) {
+        super(data);
     }
 
     @Override
-    public String execute() throws ExecutionControl.NotImplementedException {
+    public String execute() {
         return "fight";
     }
 }

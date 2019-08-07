@@ -13,7 +13,7 @@ public class UnitFactoryImpl implements UnitFactory {
 			"barracksWars.models.units.";
 
 	@Override
-	public Unit createUnit(String unitType) throws ExecutionControl.NotImplementedException {
+	public Unit createUnit(String unitType) {
 		String unitTotalName = UNITS_PACKAGE_NAME + unitType;
 
 		try {
@@ -26,6 +26,6 @@ public class UnitFactoryImpl implements UnitFactory {
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
 			e.printStackTrace();
 		}
-		throw new ExecutionControl.NotImplementedException("message");
+		return null;
 	}
 }

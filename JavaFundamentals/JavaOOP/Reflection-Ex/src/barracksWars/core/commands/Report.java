@@ -1,16 +1,19 @@
 package barracksWars.core.commands;
 
+import barracksWars.annotations.Inject;
 import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.UnitFactory;
-import jdk.jshell.spi.ExecutionControl;
 
 public class Report extends Command {
-    protected Report(String[] data, Repository repository, UnitFactory unitFactory) {
-        super(data, repository, unitFactory);
+
+    @Inject
+    private Repository repository;
+
+    public Report(String[] data) {
+        super(data);
     }
 
     @Override
-    public String execute() throws ExecutionControl.NotImplementedException {
-        return super.getRepository().getStatistics();
+    public String execute(){
+        return this.repository.getStatistics();
     }
 }
