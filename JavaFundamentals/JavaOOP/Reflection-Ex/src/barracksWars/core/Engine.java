@@ -50,7 +50,7 @@ public class Engine implements Runnable {
 		String toUpper = commandName.substring(0, 1).toUpperCase() + commandName.substring(1);
 
 		try {
-			Class klass = Class.forName("barracksWars.core.commands" + toUpper);
+			Class klass = Class.forName("barracksWars.core.commands." + toUpper);
 			Constructor constructor = klass.getDeclaredConstructor(String[].class, Repository.class, UnitFactory.class);
 			constructor.setAccessible(true);
 
