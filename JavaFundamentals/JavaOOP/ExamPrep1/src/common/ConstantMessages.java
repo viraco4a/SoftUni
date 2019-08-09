@@ -31,4 +31,13 @@ public class ConstantMessages {
 
     public static final String DAMAGE_POINTS_LESS_THAN_ZERO =
             "Damage points cannot be less than zero.";
+
+    public static final String CARD_NAME_NULL_OR_EMPTY =
+            "Card's name cannot be null or an empty string.";
+
+    public static final String CARD_DAMAGE_LESS_THAN_ZERO =
+            "Card's damage points cannot be less than zero.";
+
+    public static final String CARD_HP_LESS_THAN_ZERO =
+            "Card's HP cannot be less than zero.";
 }
