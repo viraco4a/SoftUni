@@ -14,8 +14,8 @@ public abstract class BaseCard implements Card {
 
     protected BaseCard(String name, int damagePoints, int healthPoints) {
         this.setName(name);
-        this.setDamagePoints(damagePoints);
         this.setHealthPoints(healthPoints);
+        this.setDamagePoints(damagePoints);
     }
 
     @Override
