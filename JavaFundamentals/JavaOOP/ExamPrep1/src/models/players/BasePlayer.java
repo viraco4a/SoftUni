@@ -79,13 +79,10 @@ public abstract class BasePlayer implements Player {
 
     @Override
     public String toString() {
+        int cardCount = this.getCardRepository().getCount();
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format(PLAYER_REPORT_INFO,
-                this.getUsername(),
-                this.getHealth(),
-                this.getCardRepository().getCount()
-                )
-        ).append(System.lineSeparator());
+        sb.append(String.format(PLAYER_REPORT_INFO, this.getUsername(), this.getHealth(), cardCount))
+                .append(System.lineSeparator());
         this.getCardRepository().getCards().forEach(
                 c -> sb.append(c.toString()).append(System.lineSeparator())
         );

@@ -34,9 +34,9 @@ public class ManagerControllerImpl implements ManagerController {
     @Override
     public String addPlayer(String type, String username) {
         Player player = null;
-        if (type.equals(Beginner.class.getSimpleName())) {
+        if (Beginner.class.getSimpleName().equals(type)) {
             player = new Beginner(new CardRepositoryImpl(), username);
-       } else if (type.equals(Advanced.class.getSimpleName())) {
+       } else if (Advanced.class.getSimpleName().equals(type)) {
             player = new Advanced(new CardRepositoryImpl(), username);
        }
         this.playerRepository.add(player);

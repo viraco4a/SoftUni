@@ -66,7 +66,7 @@ public class BattleFieldImpl implements Battlefield {
     }
 
     private void applyBeginnerBonus(Player player) {
-        if (Beginner.class.getSimpleName().equals(player.getClass().getSimpleName())) {
+        if (!Beginner.class.getSimpleName().equals(player.getClass().getSimpleName())) {
             return;
         }
 
