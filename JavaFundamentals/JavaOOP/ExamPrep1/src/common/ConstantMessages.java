@@ -40,4 +40,7 @@ public class ConstantMessages {
 
     public static final String CARD_HP_LESS_THAN_ZERO =
             "Card's HP cannot be less than zero.";
+
+    public static final String PLAYER_IS_DEAD =
+            "Player is dead!";
 }
