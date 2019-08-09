@@ -7,16 +7,18 @@ import static common.ConstantMessages.*;
 
 public abstract class BasePlayer implements Player {
     private static final int HEALTH_POINTS_MIN = 0;
+    private static final int DAMAGE_POINTS_MIN = 0;
 
     private String username;
     private int health;
     private CardRepository cardRepository;
     private boolean isDead;
 
-    public BasePlayer(String username, int health, CardRepository cardRepository) {
+    protected BasePlayer(String username, int health, CardRepository cardRepository) {
         this.setUsername(username);
         this.setHealth(health);
         this.setCardRepository(cardRepository);
+        this.setDead(false);
     }
 
     @Override
@@ -54,7 +56,7 @@ public abstract class BasePlayer implements Player {
     }
 
     private void setDead(boolean dead) {
-        isDead = dead;
+        this.isDead = dead;
     }
 
     @Override
@@ -64,9 +66,14 @@ public abstract class BasePlayer implements Player {
 
     @Override
     public void takeDamage(int damagePoints) {
-        if (damagePoints < HEALTH_POINTS_MIN) {
+        if (damagePoints < DAMAGE_POINTS_MIN) {
             throw new IllegalArgumentException(DAMAGE_POINTS_LESS_THAN_ZERO);
         }
-        this.setHealth(this.getHealth() - damagePoints);
+        this.health -= damagePoints;
+
+        if (health <= HEALTH_POINTS_MIN) {
+            this.setHealth(HEALTH_POINTS_MIN);
+            this.setDead(true);
+        }
     }
 }
