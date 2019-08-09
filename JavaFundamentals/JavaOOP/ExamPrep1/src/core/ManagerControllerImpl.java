@@ -78,6 +78,9 @@ public class ManagerControllerImpl implements ManagerController {
 
     @Override
     public String report() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        this.playerRepository.getPlayers()
+                .forEach(sb::append);
+        return sb.toString().trim();
     }
 }
