@@ -14,10 +14,10 @@ public abstract class BasePlayer implements Player {
     private CardRepository cardRepository;
     private boolean isDead;
 
-    protected BasePlayer(String username, int health, CardRepository cardRepository) {
+    protected BasePlayer(CardRepository cardRepository, String username, int health) {
+        this.setCardRepository(cardRepository);
         this.setUsername(username);
         this.setHealth(health);
-        this.setCardRepository(cardRepository);
         this.setDead(false);
     }
 
