@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static common.ConstantMessages.PLAYER_IS_NULL;
+import static common.ConstantMessages.*;
 
 public class PlayerRepositoryImpl implements PlayerRepository {
 
@@ -36,7 +36,7 @@ public class PlayerRepositoryImpl implements PlayerRepository {
         }
         if (this.players.containsKey(player.getUsername())) {
             throw new IllegalArgumentException(String.format(
-                    "Player %s already exists!",
+                    PLAYER_ALREADY_EXISTS,
                     player.getUsername()
             ));
         }

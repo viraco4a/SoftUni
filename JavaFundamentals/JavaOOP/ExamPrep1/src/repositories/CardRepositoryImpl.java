@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static common.ConstantMessages.CARD_IS_NULL;
+import static common.ConstantMessages.*;
 
 public class CardRepositoryImpl implements CardRepository {
     private Map<String, Card> cards;
@@ -35,7 +35,7 @@ public class CardRepositoryImpl implements CardRepository {
         }
         if (this.cards.containsKey(card.getName())) {
             throw new IllegalArgumentException(String.format(
-                    "Card %s already exists!",
+                    CARD_ALREADY_EXISTS,
                     card.getName()
             ));
         }
