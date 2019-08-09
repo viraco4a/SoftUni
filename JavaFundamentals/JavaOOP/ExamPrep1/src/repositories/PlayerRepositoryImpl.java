@@ -3,20 +3,19 @@ package repositories;
 import models.players.interfaces.Player;
 import repositories.interfaces.PlayerRepository;
 
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static common.ConstantMessages.*;
+import static common.ConstantMessages.PLAYER_IS_NULL;
 
 public class PlayerRepositoryImpl implements PlayerRepository {
 
     private Map<String, Player> players;
 
     public PlayerRepositoryImpl() {
-        this.players = new HashMap<>();
+        this.players = new LinkedHashMap<>();
     }
 
     @Override
