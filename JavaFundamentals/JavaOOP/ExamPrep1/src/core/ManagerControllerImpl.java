@@ -14,8 +14,6 @@ import repositories.PlayerRepositoryImpl;
 import repositories.interfaces.CardRepository;
 import repositories.interfaces.PlayerRepository;
 
-import java.awt.desktop.QuitStrategy;
-
 import static common.ConstantMessages.*;
 
 
@@ -60,7 +58,7 @@ public class ManagerControllerImpl implements ManagerController {
 
     @Override
     public String addPlayerCard(String username, String cardName) {
-        Card card = this.cardRepository.find(username);
+        Card card = this.cardRepository.find(cardName);
         Player player = this.playerRepository.find(username);
 
         player.getCardRepository().add(card);
@@ -70,17 +68,21 @@ public class ManagerControllerImpl implements ManagerController {
 
     @Override
     public String fight(String attackUser, String enemyUser) {
-        Player attacker = this.playerRepository.find(attackUser);
-        Player enemy = this.playerRepository.find(enemyUser);
-        this.battlefield.fight(attacker, enemy);
-        return String.format(FIGHT_INFO, attacker.getHealth(), enemy.getHealth());
+        Player attackPlayer = this.playerRepository.find(attackUser);
+        Player enemyPlayer = this.playerRepository.find(enemyUser);
+
+        this.battlefield.fight(attackPlayer, enemyPlayer);
+        return String.format(FIGHT_INFO, attackPlayer.getHealth(), enemyPlayer.getHealth());
     }
 
     @Override
     public String report() {
         StringBuilder sb = new StringBuilder();
-        this.playerRepository.getPlayers()
-                .forEach(sb::append);
+//        this.playerRepository.getPlayers()
+//                .forEach(p -> sb.append(p.toString()).append(System.lineSeparator()));
+        for (Player player : this.playerRepository.getPlayers()) {
+            sb.append(player.toString()).append(System.lineSeparator());
+        }
         return sb.toString().trim();
     }
 }
