@@ -43,4 +43,7 @@ public class ConstantMessages {
 
     public static final String PLAYER_IS_DEAD =
             "Player is dead!";
+
+    public static final String PLAYER_IS_NULL =
+            "Player cannot be null";
 }
