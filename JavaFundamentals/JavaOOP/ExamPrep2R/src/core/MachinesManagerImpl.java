@@ -44,22 +44,23 @@ public class MachinesManagerImpl implements MachinesManager {
 
     @Override
     public String manufactureTank(String name, double attackPoints, double defensePoints) {
-        Tank tank = this.machineFactory.createTank(name, attackPoints, defensePoints);
         if (this.machines.containsKey(name)) {
             return String.format(machineExists, name);
-        } else {
-            this.machines.put(name, tank);
-            return String.format(tankManufactured, name, attackPoints, defensePoints);
         }
+
+        Tank tank = this.machineFactory.createTank(name, attackPoints, defensePoints);
+        this.machines.put(name, tank);
+        return String.format(tankManufactured, name, attackPoints, defensePoints);
+
     }
 
     @Override
     public String manufactureFighter(String name, double attackPoints, double defensePoints) {
-        Fighter fighter = this.machineFactory.createFighter(name, attackPoints, defensePoints);
         if (this.machines.containsKey(name)) {
             return String.format(machineExists, name);
         }
 
+        Fighter fighter = this.machineFactory.createFighter(name, attackPoints, defensePoints);
         this.machines.put(name, fighter);
         return String.format(fighterManufactured, name, attackPoints, defensePoints);
 
