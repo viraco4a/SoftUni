@@ -27,4 +27,10 @@ public class OutputMessages {
     public static final String notSupportedOperation = "Machine %s does not support this operation";
 
     public static final String attackSuccessful = "Machine %s was attacked by machine %s - current health: %.2f";
+
+    public static final String NULL_MACHINE_NAME =
+            "Machine name cannot be null or empty.";
+
+    public static final String NULL_PILOT =
+            "Pilot cannot be null.";
 }
