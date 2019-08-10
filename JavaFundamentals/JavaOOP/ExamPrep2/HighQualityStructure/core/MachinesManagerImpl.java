@@ -56,15 +56,34 @@ public class MachinesManagerImpl implements MachinesManager {
         Fighter fighter = this.machineFactory.createFighter(name, attackPoints, defensePoints);
         if (this.machines.containsKey(name)) {
             return String.format(machineExists, name);
-        } else {
-            this.machines.put(name, fighter);
-            return String.format(fighterManufactured, name, attackPoints, defensePoints);
         }
+
+        this.machines.put(name, fighter);
+        return String.format(fighterManufactured, name, attackPoints, defensePoints);
+
     }
 
     @Override
     public String engageMachine(String selectedPilotName, String selectedMachineName) {
-        return null;
+        if (!this.pilots.containsKey(selectedPilotName)) {
+            return String.format(pilotNotFound, selectedPilotName);
+        }
+
+        if (!this.machines.containsKey(selectedMachineName)) {
+            return String.format(machineNotFound, selectedMachineName);
+        }
+
+        Pilot pilot = this.pilots.get(selectedPilotName);
+        Machine machine = this.machines.get(selectedPilotName);
+
+        if (machine.getPilot() != null) {
+            return String.format(machineHasPilotAlready, selectedMachineName);
+        }
+
+        machine.setPilot(pilot);
+        pilot.addMachine(machine);
+
+        return String.format(machineEngaged, selectedPilotName, selectedMachineName);
     }
 
     @Override
