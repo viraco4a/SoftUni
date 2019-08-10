@@ -26,7 +26,7 @@ public class EngineImpl implements Engine {
                 if (Command.Exit.name().equals(result)) {
                     break;
                 }
-            } catch (IOException e) {
+            } catch (IOException | IllegalArgumentException e) {
                 result = e.getMessage();
             }
 
