@@ -13,10 +13,10 @@ public class TankImpl extends BaseMachine implements Tank {
 
     public TankImpl(String name, double attackPoints, double defensePoints) {
         super(name, attackPoints, defensePoints, TANK_DEFAULT_HEALTH);
-        this.defenseMode = false;
-        this.toggleDefenseMode();
         this.attackPointsModifier = TANK_DEFAULT_ATTACK_MODIFIER;
         this.deffencePointsModifier = TANK_DEFAULT_DEFENSE_MODIFIER;
+        this.defenseMode = false;
+        this.toggleDefenseMode();
     }
 
     @Override

@@ -13,10 +13,10 @@ public class FighterImpl extends BaseMachine implements Fighter {
 
     public FighterImpl(String name, double attackPoints, double defensePoints) {
         super(name, attackPoints, defensePoints, FIGHTER_DEFAULT_HEALTH);
-        this.aggressiveMode = false;
-        this.toggleAggressiveMode();
         this.attackPointsModifier = FIGHTER_DEFAULT_ATTACK_MODIFIER;
         this.deffencePointsModifier = FIGHTER_DEFAULT_DEFENSE_MODIFIER;
+        this.aggressiveMode = false;
+        this.toggleAggressiveMode();
     }
 
     @Override
