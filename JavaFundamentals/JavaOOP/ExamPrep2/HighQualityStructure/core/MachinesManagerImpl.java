@@ -125,11 +125,29 @@ public class MachinesManagerImpl implements MachinesManager {
 
     @Override
     public String toggleFighterAggressiveMode(String fighterName) {
-        return null;
+        if (!this.machines.containsKey(fighterName)) {
+            return String.format(machineNotFound, fighterName);
+        }
+        if (machines.get(fighterName) instanceof Tank) {
+            return String.format(notSupportedOperation, fighterName);
+        }
+        Fighter fighter = (Fighter) this.machines.get(fighterName);
+        fighter.toggleAggressiveMode();
+
+        return String.format(fighterOperationSuccessful, fighterName);
     }
 
     @Override
     public String toggleTankDefenseMode(String tankName) {
-        return null;
+        if (!this.machines.containsKey(tankName)) {
+            return String.format(machineNotFound, tankName);
+        }
+        if (machines.get(tankName) instanceof Fighter) {
+            return String.format(notSupportedOperation, tankName);
+        }
+        Tank tank = (Tank) this.machines.get(tankName);
+        tank.toggleDefenseMode();
+
+        return String.format(tankOperationSuccessful, tankName);
     }
 }
