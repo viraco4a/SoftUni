@@ -45,4 +45,10 @@ public class RaceEntryTest {
         this.raceEntry.addRider(rider);
         Assert.assertEquals(15, this.raceEntry.calculateAverageHorsePower(), 0.1);
     }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void shouldThrowWhenModifyingReturnedCollection(){
+        this.raceEntry.addRider(UNIT_RIDER);
+        this.raceEntry.getRiders().remove(UNIT_RIDER);
+    }
 }
