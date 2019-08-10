@@ -7,6 +7,10 @@ import entities.interfaces.Fighter;
 import entities.interfaces.Tank;
 
 public class MachineFactoryImpl implements MachineFactory {
+
+    public MachineFactoryImpl() {
+    }
+
     @Override
     public Tank createTank(String name, double attackPoints, double defensePoints) {
         return new TankImpl(name, attackPoints, defensePoints);
