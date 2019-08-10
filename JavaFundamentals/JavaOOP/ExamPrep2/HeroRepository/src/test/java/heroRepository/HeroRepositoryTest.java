@@ -56,4 +56,28 @@ public class HeroRepositoryTest {
         this.heroRepository.remove(this.hero.getName());
         Assert.assertEquals(0, this.heroRepository.getCount());
     }
+
+    @Test
+    public void ShouldReturnCorrectHighestStrength() {
+        this.heroRepository.add(this.hero);
+        Item item2 = new Item(9, 9, 9);
+        this.heroRepository.add(new Hero("Gosho", 5, item2));
+        Assert.assertEquals(this.hero, this.heroRepository.getHeroWithHighestStrength());
+    }
+
+    @Test
+    public void ShouldReturnCorrectHighestAgility() {
+        this.heroRepository.add(this.hero);
+        Item item2 = new Item(9, 9, 9);
+        this.heroRepository.add(new Hero("Gosho", 5, item2));
+        Assert.assertEquals(this.hero, this.heroRepository.getHeroWithHighestStrength());
+    }
+
+    @Test
+    public void ShouldReturnCorrectHighestIntelligence() {
+        this.heroRepository.add(this.hero);
+        Item item2 = new Item(9, 9, 9);
+        this.heroRepository.add(new Hero("Gosho", 5, item2));
+        Assert.assertEquals(this.hero, this.heroRepository.getHeroWithHighestStrength());
+    }
 }
