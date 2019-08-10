@@ -39,4 +39,7 @@ public class OutputMessages {
 
     public static final String BASE_MACHINE_NULL_TARGET =
             "Attack target cannot be null or empty string.";
+
+    public static final String NULL_MACHINE_ADDED_TO_PILOT =
+            "Null machine cannot be added to the pilot.";
 }

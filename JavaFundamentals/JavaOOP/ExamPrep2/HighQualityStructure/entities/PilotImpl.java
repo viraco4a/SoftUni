@@ -33,6 +33,9 @@ public class PilotImpl implements Pilot {
 
     @Override
     public void addMachine(Machine machine) {
+        if (machine == null) {
+            throw new NullPointerException(NULL_MACHINE_ADDED_TO_PILOT);
+        }
         this.machines.put(machine.getName(), machine);
     }
 
@@ -44,7 +47,7 @@ public class PilotImpl implements Pilot {
 
     @Override
     public String report() {
-        //todo
+        //TODO
         return null;
     }
 }
