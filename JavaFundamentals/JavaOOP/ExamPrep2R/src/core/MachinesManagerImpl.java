@@ -103,8 +103,8 @@ public class MachinesManagerImpl implements MachinesManager {
         attackingMachine.attack(defendingMachineName);
 
         if (attackingMachine.getAttackPoints() > defendingkMachine.getDefensePoints()) {
-            defendingkMachine.setHealthPoints(
-                    defendingkMachine.getHealthPoints() - attackingMachine.getAttackPoints()
+            defendingkMachine.setHealthPoints(defendingkMachine.getHealthPoints() -
+                    (attackingMachine.getAttackPoints() - defendingkMachine.getDefensePoints())
             );
             if (defendingkMachine.getHealthPoints() < MINIMUM_HEALTH) {
                 defendingkMachine.setHealthPoints(MINIMUM_HEALTH);
