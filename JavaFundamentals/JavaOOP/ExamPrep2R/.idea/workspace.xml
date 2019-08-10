@@ -2,6 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d788e8be-fe2d-40a5-9c89-297d40f96555" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/common/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/common/OutputMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/MachineFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/MachinesManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/PilotFactoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/interfaces/MachineFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/interfaces/MachinesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/core/interfaces/PilotFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/BaseMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/FighterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/PilotImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/TankImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/interfaces/Fighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/interfaces/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/interfaces/Pilot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/main/java/entities/interfaces/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExamPrep2RR/src/test/java/ZeroTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/MachinesManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state relative-caret-position="51">
+              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -37,6 +59,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
@@ -46,17 +76,20 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/entities/PilotImpl.java" />
         <option value="$PROJECT_DIR$/src/entities/BaseMachine.java" />
-        <option value="$PROJECT_DIR$/src/core/MachinesManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/entities/FighterImpl.java" />
         <option value="$PROJECT_DIR$/src/entities/TankImpl.java" />
         <option value="$PROJECT_DIR$/src/common/OutputMessages.java" />
         <option value="$PROJECT_DIR$/src/core/PilotFactoryImpl.java" />
         <option value="$PROJECT_DIR$/src/core/MachineFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/core/MachinesManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/core/MachinesManagerImplTest.java" />
+        <option value="$PROJECT_DIR$/src/core/test.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="800" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="800" />
     <option name="height" value="838" />
   </component>
@@ -109,6 +142,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExamPrep2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -123,6 +159,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="core" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Coding\GitHub\SoftUni\JavaFundamentals\JavaOOP\ExamPrep2R\src" />
     </key>
@@ -163,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565441777751</updated>
-      <workItem from="1565441780831" duration="4750000" />
+      <workItem from="1565441780831" duration="5952000" />
     </task>
     <task id="LOCAL-00001" summary="Java OOP exam prep 2 task 1 50/50, task 2 120/150">
       <created>1565442153221</created>
@@ -235,14 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565450469654</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Java OOP exam prep 2 task 1 50/50, task 2 120/150">
+      <created>1565450868227</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565450868227</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4750000" />
+    <option name="totallyTimeSpent" value="5952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="0" width="800" height="838" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="854" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -250,7 +299,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2527027" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12017995" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32963988" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -260,7 +309,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34419262" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3365651" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38919666" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,10 +439,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/MachinesManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/MachinesManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        <state relative-caret-position="51">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>
