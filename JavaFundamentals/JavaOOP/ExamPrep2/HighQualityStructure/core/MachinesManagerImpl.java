@@ -13,6 +13,8 @@ import java.util.Map;
 import static common.OutputMessages.*;
 
 public class MachinesManagerImpl implements MachinesManager {
+    private static final double MINIMUM_HEALTH = 0;
+
     private PilotFactory pilotFactory;
     private MachineFactory machineFactory;
     private Map<String, Pilot> pilots;
@@ -88,6 +90,31 @@ public class MachinesManagerImpl implements MachinesManager {
 
     @Override
     public String attackMachines(String attackingMachineName, String defendingMachineName) {
+        if (!this.machines.containsKey(attackingMachineName)) {
+            return String.format(machineNotFound, attackingMachineName);
+        }
+        if (!this.machines.containsKey(defendingMachineName)) {
+            return String.format(machineNotFound, defendingMachineName);
+        }
+
+        Machine attackingMachine = this.machines.get(attackingMachineName);
+        Machine defendingkMachine = this.machines.get(defendingMachineName);
+
+        attackingMachine.attack(defendingMachineName);
+
+        if (attackingMachine.getAttackPoints() > defendingkMachine.getDefensePoints()) {
+            defendingkMachine.setHealthPoints(
+                    defendingkMachine.getHealthPoints() - attackingMachine.getAttackPoints()
+            );
+            if (defendingkMachine.getHealthPoints() < MINIMUM_HEALTH) {
+                defendingkMachine.setHealthPoints(MINIMUM_HEALTH);
+            }
+            return String.format(attackSuccessful,
+                    defendingMachineName,
+                    attackingMachine,
+                    defendingkMachine.getHealthPoints()
+                    );
+        }
         return null;
     }
 
