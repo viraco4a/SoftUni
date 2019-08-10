@@ -76,7 +76,7 @@ public class MachinesManagerImpl implements MachinesManager {
         }
 
         Pilot pilot = this.pilots.get(selectedPilotName);
-        Machine machine = this.machines.get(selectedPilotName);
+        Machine machine = this.machines.get(selectedMachineName);
 
         if (machine.getPilot() != null) {
             return String.format(machineHasPilotAlready, selectedMachineName);
@@ -123,7 +123,7 @@ public class MachinesManagerImpl implements MachinesManager {
         if (!this.pilots.containsKey(pilotName)) {
             return String.format(pilotNotFound, pilotName);
         }
-        Pilot pilot = this.pilotFactory.createPilot(pilotName);
+        Pilot pilot = this.pilots.get(pilotName);
 
         return pilot.report();
 

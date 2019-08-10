@@ -64,7 +64,6 @@ public class PilotImpl implements Pilot {
         if (this.getMachines().size() != 0) {
             this.getMachines().forEach(m ->
                     sb
-                            .append("- ")
                             .append(m.toString())
                             .append(System.lineSeparator()
                             )

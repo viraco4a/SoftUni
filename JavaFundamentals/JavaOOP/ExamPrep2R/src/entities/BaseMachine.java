@@ -97,8 +97,11 @@ public abstract class BaseMachine implements Machine {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
+                .append("- ")
+                .append(this.getName())
+                .append(System.lineSeparator())
                 .append(" *Type: ")
-                .append(this.getClass().getSimpleName())
+                .append(this.getClass().getInterfaces()[0].getSimpleName())
                 .append(System.lineSeparator());
         sb
                 .append(" *Health: ")
