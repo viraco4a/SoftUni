@@ -30,4 +30,19 @@ public class RaceEntryTest {
         this.raceEntry.addRider(UNIT_RIDER);
         this.raceEntry.addRider(UNIT_RIDER);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void StartingRaceWithBelowMinParticipantsEx() {
+        this.raceEntry.addRider(UNIT_RIDER);
+        this.raceEntry.calculateAverageHorsePower();
+    }
+
+    @Test
+    public void CheckIfAverageHorsePowerIsCorrectlyCalc() {
+        this.raceEntry.addRider(UNIT_RIDER);
+        UnitMotorcycle motorcycle = new UnitMotorcycle("M1", 20, 20);
+        UnitRider rider = new UnitRider("R2", motorcycle);
+        this.raceEntry.addRider(rider);
+        Assert.assertEquals(15, this.raceEntry.calculateAverageHorsePower(), 0.1);
+    }
 }
