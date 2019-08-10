@@ -1,11 +1,11 @@
-package core;
+package src.core;
 
-import core.interfaces.MachineFactory;
-import core.interfaces.PilotFactory;
-import core.interfaces.MachinesManager;
+import src.core.interfaces.MachineFactory;
+import src.core.interfaces.PilotFactory;
+import src.core.interfaces.MachinesManager;
 
-import entities.interfaces.Machine;
-import entities.interfaces.Pilot;
+import src.entities.interfaces.Machine;
+import src.entities.interfaces.Pilot;
 
 import java.util.Map;
 

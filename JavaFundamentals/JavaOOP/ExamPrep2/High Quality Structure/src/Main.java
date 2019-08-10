@@ -1,10 +1,12 @@
-import core.MachinesManagerImpl;
+package src;
 
-import core.interfaces.MachineFactory;
-import core.interfaces.PilotFactory;
-import core.interfaces.MachinesManager;
-import entities.interfaces.Machine;
-import entities.interfaces.Pilot;
+import src.core.MachinesManagerImpl;
+
+import src.core.interfaces.MachineFactory;
+import src.core.interfaces.PilotFactory;
+import src.core.interfaces.MachinesManager;
+import src.entities.interfaces.Machine;
+import src.entities.interfaces.Pilot;
 
 
 import java.util.LinkedHashMap;

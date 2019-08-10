@@ -1,4 +1,4 @@
-package entities.interfaces;
+package src.entities.interfaces;
 
 public interface Tank extends Machine {
 
