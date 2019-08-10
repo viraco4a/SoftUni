@@ -109,13 +109,12 @@ public class MachinesManagerImpl implements MachinesManager {
             if (defendingkMachine.getHealthPoints() < MINIMUM_HEALTH) {
                 defendingkMachine.setHealthPoints(MINIMUM_HEALTH);
             }
-            return String.format(attackSuccessful,
-                    defendingMachineName,
-                    attackingMachineName,
-                    defendingkMachine.getHealthPoints()
-            );
         }
-        return null;
+        return String.format(attackSuccessful,
+                defendingMachineName,
+                attackingMachineName,
+                defendingkMachine.getHealthPoints()
+        );
     }
 
     @Override
