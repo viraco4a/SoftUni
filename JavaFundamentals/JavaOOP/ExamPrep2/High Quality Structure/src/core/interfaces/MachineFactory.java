@@ -1,7 +1,7 @@
 package src.core.interfaces;
 
-import entities.interfaces.Fighter;
-import entities.interfaces.Tank;
+import src.entities.interfaces.Fighter;
+import src.entities.interfaces.Tank;
 
 public interface MachineFactory {
     Tank createTank(String name, double attackPoints, double defensePoints);
