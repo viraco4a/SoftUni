@@ -1,0 +1,50 @@
+package entities;
+
+import entities.interfaces.Machine;
+import entities.interfaces.Pilot;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import static common.OutputMessages.*;
+
+public class PilotImpl implements Pilot {
+    private String name;
+    private Map<String, Machine> machines;
+
+    public PilotImpl(String name) {
+        this.setName(name);
+        this.machines = new LinkedHashMap<>();
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException(NULL_PILOT_NAME);
+        }
+        this.name = name;
+    }
+
+    @Override
+    public void addMachine(Machine machine) {
+        this.machines.put(machine.getName(), machine);
+    }
+
+    @Override
+    public List<Machine> getMachines() {
+        return this.machines.values().stream()
+                .collect(Collectors.toUnmodifiableList());
+    }
+
+    @Override
+    public String report() {
+        //todo
+        return null;
+    }
+}

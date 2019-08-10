@@ -33,4 +33,10 @@ public class OutputMessages {
 
     public static final String NULL_PILOT =
             "Pilot cannot be null.";
+
+    public static final String NULL_PILOT_NAME =
+            " Pilot name cannot be null or empty string.";
+
+    public static final String BASE_MACHINE_NULL_TARGET =
+            "Attack target cannot be null or empty string.";
 }

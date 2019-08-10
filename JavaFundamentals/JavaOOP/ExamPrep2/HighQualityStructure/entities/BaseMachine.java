@@ -4,6 +4,7 @@ import entities.interfaces.Machine;
 import entities.interfaces.Pilot;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static common.OutputMessages.*;
@@ -16,7 +17,7 @@ public abstract class BaseMachine implements Machine {
     private double healthPoints;
     private List<String> targets;
 
-    public BaseMachine(String name, double attackPoints,
+    protected BaseMachine(String name, double attackPoints,
                        double defensePoints, double healthPoints) {
         this.setName(name);
         this.setAttackPoints(attackPoints);
@@ -56,7 +57,7 @@ public abstract class BaseMachine implements Machine {
         return this.attackPoints;
     }
 
-    private void setAttackPoints(double attackPoints) {
+    protected void setAttackPoints(double attackPoints) {
         this.attackPoints = attackPoints;
     }
 
@@ -65,7 +66,7 @@ public abstract class BaseMachine implements Machine {
         return this.defensePoints;
     }
 
-    private void setDefensePoints(double defensePoints) {
+    protected void setDefensePoints(double defensePoints) {
         this.defensePoints = defensePoints;
     }
 
@@ -77,5 +78,18 @@ public abstract class BaseMachine implements Machine {
     @Override
     public void setHealthPoints(double healthPoints) {
         this.healthPoints = healthPoints;
+    }
+
+    @Override
+    public List<String> getTargets() {
+        return Collections.unmodifiableList(this.targets);
+    }
+
+    @Override
+    public void attack(String target) {
+        if (target == null || target.trim().isEmpty()) {
+            throw new IllegalArgumentException(BASE_MACHINE_NULL_TARGET);
+        }
+        this.targets.add(target);
     }
 }
