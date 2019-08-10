@@ -46,4 +46,16 @@ public class SoftParkTest {
         this.park.parkCar("A2", this.car);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testParkCarThrowsExceptionRemovingWhenCarSpotNotExist() {
+        this.park.parkCar("A1", this.car);
+        this.park.removeCar("D1", this.car);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testParkCarThrowsExceptionCarForThatSpotDoesntExist() {
+        this.park.parkCar("A1", this.car);
+        Car car2 = new Car("aa", "4321");
+        this.park.removeCar("A1", car2);
+    }
 }
