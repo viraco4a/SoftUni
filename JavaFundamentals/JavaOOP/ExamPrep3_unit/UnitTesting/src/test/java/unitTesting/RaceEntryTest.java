@@ -21,7 +21,13 @@ public class RaceEntryTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void AddNullRider() {
+    public void AddNullRiderEx() {
         this.raceEntry.addRider(null);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void AddingAlreadyAddedRiderEx() {
+        this.raceEntry.addRider(UNIT_RIDER);
+        this.raceEntry.addRider(UNIT_RIDER);
     }
 }
