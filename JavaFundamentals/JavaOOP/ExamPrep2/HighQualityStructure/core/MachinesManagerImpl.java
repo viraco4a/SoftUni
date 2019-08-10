@@ -1,25 +1,37 @@
 package core;
 
 import core.interfaces.MachineFactory;
-import core.interfaces.PilotFactory;
 import core.interfaces.MachinesManager;
-
+import core.interfaces.PilotFactory;
 import entities.interfaces.Machine;
 import entities.interfaces.Pilot;
 
 import java.util.Map;
 
+import static common.OutputMessages.*;
+
 public class MachinesManagerImpl implements MachinesManager {
+    private PilotFactory pilotFactory;
+    private MachineFactory machineFactory;
+    private Map<String, Pilot> pilots;
+    private Map<String, Machine> machines;
 
-    public MachinesManagerImpl(PilotFactory pilotFactory, MachineFactory machineFactory, Map<String, Pilot> pilots, Map<String, Machine> machines) {
-     //TODO: Implement me
-
+    public MachinesManagerImpl(PilotFactory pilotFactory,
+                               MachineFactory machineFactory,
+                               Map<String, Pilot> pilots,
+                               Map<String, Machine> machines) {
+        this.pilotFactory = pilotFactory;
+        this.machineFactory = machineFactory;
+        this.pilots = pilots;
+        this.machines = machines;
     }
 
 
     @Override
     public String hirePilot(String name) {
-        return null;
+        Pilot pilot = this.pilotFactory.createPilot(name);
+        this.pilots.put(name, pilot);
+        return String.format(pilotHired,name);
     }
 
     @Override
