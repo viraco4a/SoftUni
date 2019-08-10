@@ -92,4 +92,34 @@ public abstract class BaseMachine implements Machine {
         }
         this.targets.add(target);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append(" *Type: ")
+                .append(this.getClass().getSimpleName())
+                .append(System.lineSeparator());
+        sb
+                .append(" *Health: ")
+                .append(this.getHealthPoints())
+                .append(System.lineSeparator());
+        sb
+                .append(" *Attack: ")
+                .append(this.getAttackPoints())
+                .append(System.lineSeparator());
+        sb
+                .append(" *Defense: ")
+                .append(this.getDefensePoints())
+                .append(System.lineSeparator());
+        sb.append(" *Targets: ");
+        if (this.getTargets().size() == 0) {
+            sb.append("None");
+            return sb.toString().trim() + System.lineSeparator();
+        } else {
+            this.getTargets().forEach(t -> sb.append(t).append(", "));
+            String result = sb.toString().trim();
+            return result.substring(0, result.length() - 1) + System.lineSeparator();
+        }
+    }
 }

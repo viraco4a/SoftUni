@@ -47,7 +47,28 @@ public class PilotImpl implements Pilot {
 
     @Override
     public String report() {
-        //TODO
-        return null;
+        return this.toString();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb
+                .append(this.getName())
+                .append(" - ")
+                .append(this.getMachines().size())
+                .append(" machines")
+                .append(System.lineSeparator());
+
+        if (this.getMachines().size() != 0) {
+            this.getMachines().forEach(m ->
+                    sb
+                            .append("- ")
+                            .append(m.toString())
+                            .append(System.lineSeparator()
+                            )
+            );
+        }
+        return sb.toString().trim();
     }
 }

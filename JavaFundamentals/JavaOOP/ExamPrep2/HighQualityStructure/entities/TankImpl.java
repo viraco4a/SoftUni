@@ -36,4 +36,10 @@ public class TankImpl extends BaseMachine implements Tank {
             this.setAttackPoints(this.getAttackPoints() - this.attackPointsModifier);
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format(" *Defense Mode(%s)",
+                this.getDefenseMode() ? "ON" : "OFF");
+    }
 }

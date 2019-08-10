@@ -111,16 +111,22 @@ public class MachinesManagerImpl implements MachinesManager {
             }
             return String.format(attackSuccessful,
                     defendingMachineName,
-                    attackingMachine,
+                    attackingMachineName,
                     defendingkMachine.getHealthPoints()
-                    );
+            );
         }
         return null;
     }
 
     @Override
     public String pilotReport(String pilotName) {
-        return null;
+        if (!this.pilots.containsKey(pilotName)) {
+            return String.format(pilotNotFound, pilotName);
+        }
+        Pilot pilot = this.pilotFactory.createPilot(pilotName);
+
+        return pilot.report();
+
     }
 
     @Override

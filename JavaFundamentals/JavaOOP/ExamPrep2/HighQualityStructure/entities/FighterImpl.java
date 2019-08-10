@@ -36,4 +36,10 @@ public class FighterImpl extends BaseMachine implements Fighter {
             this.setDefensePoints(this.getDefensePoints() - this.deffencePointsModifier);
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format(" *Aggressive Mode(%s)",
+                this.getAggressiveMode() ? "ON" : "OFF");
+    }
 }
