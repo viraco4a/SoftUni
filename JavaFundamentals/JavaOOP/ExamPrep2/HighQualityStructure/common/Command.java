@@ -1,6 +1,6 @@
 package common;
 
-public enum Commands {
+public enum Command {
     Hire,
     Report,
     ManufactureTank,

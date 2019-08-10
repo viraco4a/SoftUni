@@ -1,14 +1,12 @@
 import core.Engine;
 import core.MachineFactoryImpl;
 import core.MachinesManagerImpl;
-
 import core.PilotFactoryImpl;
 import core.interfaces.MachineFactory;
-import core.interfaces.PilotFactory;
 import core.interfaces.MachinesManager;
+import core.interfaces.PilotFactory;
 import entities.interfaces.Machine;
 import entities.interfaces.Pilot;
-
 
 import java.util.LinkedHashMap;
 import java.util.Map;
