@@ -24,12 +24,12 @@ public class TankImpl extends BaseMachine implements Tank {
     public void toggleDefenseMode() {
         if (this.getDefenseMode()) {
             this.defenseMode = false;
-            this.setDefensePoints(this.getDefensePoints() - TANK_DEFAULT_DEFENSE_MODIFIER);
-            this.setAttackPoints(this.getAttackPoints() + TANK_DEFAULT_ATTACK_MODIFIER);
+            super.setDefensePoints(super.getDefensePoints() - TANK_DEFAULT_DEFENSE_MODIFIER);
+            super.setAttackPoints(super.getAttackPoints() + TANK_DEFAULT_ATTACK_MODIFIER);
         } else {
             this.defenseMode = true;
-            this.setDefensePoints(this.getDefensePoints() + TANK_DEFAULT_DEFENSE_MODIFIER);
-            this.setAttackPoints(this.getAttackPoints() - TANK_DEFAULT_ATTACK_MODIFIER);
+            super.setDefensePoints(super.getDefensePoints() + TANK_DEFAULT_DEFENSE_MODIFIER);
+            super.setAttackPoints(super.getAttackPoints() - TANK_DEFAULT_ATTACK_MODIFIER);
         }
     }
 
