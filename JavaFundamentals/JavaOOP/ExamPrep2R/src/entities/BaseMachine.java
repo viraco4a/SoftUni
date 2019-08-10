@@ -105,15 +105,15 @@ public abstract class BaseMachine implements Machine {
                 .append(System.lineSeparator());
         sb
                 .append(" *Health: ")
-                .append(this.getHealthPoints())
+                .append(String.format("%.2f", this.getHealthPoints()))
                 .append(System.lineSeparator());
         sb
                 .append(" *Attack: ")
-                .append(this.getAttackPoints())
+                .append(String.format("%.2f", this.getAttackPoints()))
                 .append(System.lineSeparator());
         sb
                 .append(" *Defense: ")
-                .append(this.getDefensePoints())
+                .append(String.format("%.2f", this.getDefensePoints()))
                 .append(System.lineSeparator());
         sb.append(" *Targets: ");
         if (this.getTargets().size() == 0) {
