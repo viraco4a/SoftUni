@@ -1,4 +1,4 @@
-package src.entities.interfaces;
+package entities.interfaces;
 
 import java.util.List;
 

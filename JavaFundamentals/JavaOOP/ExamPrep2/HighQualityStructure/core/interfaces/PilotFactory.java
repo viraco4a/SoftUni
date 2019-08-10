@@ -1,6 +1,6 @@
-package src.core.interfaces;
+package core.interfaces;
 
-import src.entities.interfaces.Pilot;
+import entities.interfaces.Pilot;
 
 public interface PilotFactory {
     Pilot createPilot(String name);

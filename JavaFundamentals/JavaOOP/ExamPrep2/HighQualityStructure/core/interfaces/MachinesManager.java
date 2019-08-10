@@ -1,4 +1,4 @@
-package src.core.interfaces;
+package core.interfaces;
 
 public  interface MachinesManager {
     String hirePilot(String name);
