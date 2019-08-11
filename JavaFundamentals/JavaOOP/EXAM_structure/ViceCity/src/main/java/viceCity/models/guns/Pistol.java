@@ -6,7 +6,7 @@ public class Pistol extends BaseGun {
     private static final int PISTOL_SHOTS_PER_FIRE = 1;
     private static final int ZERO = 0;
 
-    protected Pistol(String name) {
+    public Pistol(String name) {
         super(name, BULLETS_PER_BARREL_PISTOL, PISTOL_TOTAL_BULLETS);
     }
 
