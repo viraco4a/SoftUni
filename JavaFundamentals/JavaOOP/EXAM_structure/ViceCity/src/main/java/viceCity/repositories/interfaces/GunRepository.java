@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class GunRepository implements Repository {
+public class GunRepository<T> implements Repository {
     private Map<String, Gun> models;
 
     public GunRepository() {

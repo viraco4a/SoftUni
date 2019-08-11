@@ -1,6 +1,7 @@
 package viceCity.models.players;
 
 import viceCity.models.guns.Gun;
+import viceCity.repositories.interfaces.GunRepository;
 import viceCity.repositories.interfaces.Repository;
 
 import static viceCity.common.ExceptionMessages.*;
@@ -13,6 +14,7 @@ public abstract class BasePlayer implements Player {
     protected BasePlayer(String name, int lifePoints) {
         this.setName(name);
         this.setLifePoints(lifePoints);
+        this.gunRepository = new GunRepository<Gun>();
     }
 
     @Override

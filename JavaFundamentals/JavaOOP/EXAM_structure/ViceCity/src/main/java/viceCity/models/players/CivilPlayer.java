@@ -9,7 +9,6 @@ public class CivilPlayer extends BasePlayer {
 
     @Override
     public boolean isAlive() {
-        //TODO?
-        return false;
+        return super.getLifePoints() > 0;
     }
 }
