@@ -16,11 +16,14 @@ import static viceCity.common.ConstantMessages.*;
 
 public class ControllerImpl implements Controller {
     private static final String MAIN_PLAYER = "Vercetti";
+    private static final int MAIN_PLAYER_DEFAULT_HEALTH = 100;
+    private static final int CIVIL_DEFAULT_HEALTH = 50;
 
     private Player mainPlayer;
     private Set<Player> civilPlayers;
     private Deque<Gun> guns;
     private Neighbourhood neighbourhood;
+    private int civilPlayersCounter;
 
     public ControllerImpl() {
         this.mainPlayer = new MainPlayer();
@@ -33,6 +36,7 @@ public class ControllerImpl implements Controller {
     public String addPlayer(String name) {
         Player player = new CivilPlayer(name);
         this.civilPlayers.add(player);
+        this.civilPlayersCounter++;
         return String.format(PLAYER_ADDED, name);
     }
 
@@ -91,6 +95,41 @@ public class ControllerImpl implements Controller {
 
     @Override
     public String fight() {
-        return null;
+        boolean mainPlayerUnharmed = this.mainPlayer.getLifePoints() == MAIN_PLAYER_DEFAULT_HEALTH;
+        boolean civilPlayersUnharmed = checkCivilPlayersUnharmed();
+        if (mainPlayerUnharmed && civilPlayersUnharmed) {
+            return FIGHT_HOT_HAPPENED;
+        } else {
+            this.neighbourhood.action(this.mainPlayer, this.civilPlayers);
+            int deadCivilPlayers = this.civilPlayersCounter - this.civilPlayers.size();
+            int mainPlayerLifePoints = this.mainPlayer.getLifePoints();
+            int leftCivilPlayers = this.civilPlayers.size();
+            StringBuilder sb = new StringBuilder();
+            sb
+                    .append(FIGHT_HAPPENED)
+                    .append(System.lineSeparator())
+                    .append(String.format(MAIN_PLAYER_LIVE_POINTS_MESSAGE,
+                            mainPlayerLifePoints))
+                    .append(System.lineSeparator())
+                    .append(String.format(MAIN_PLAYER_KILLED_CIVIL_PLAYERS_MESSAGE,
+                            deadCivilPlayers))
+                    .append(System.lineSeparator())
+                    .append(String.format(CIVIL_PLAYERS_LEFT_MESSAGE,
+                            leftCivilPlayers))
+                    .append(System.lineSeparator());
+            return sb.toString();
+        }
+    }
+
+    private boolean checkCivilPlayersUnharmed() {
+        if (this.civilPlayers.size() < civilPlayersCounter) {
+            return false;
+        }
+        for (Player civilPlayer : this.civilPlayers) {
+            if (civilPlayer.getLifePoints() < CIVIL_DEFAULT_HEALTH) {
+                return false;
+            }
+        }
+        return true;
     }
 }
