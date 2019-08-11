@@ -65,7 +65,7 @@ public class ControllerImpl implements Controller {
         Gun gun = this.guns.poll();
         if (MAIN_PLAYER.equals(name)) {
             this.mainPlayer.getGunRepository().add(gun);
-            return String.format(GUN_ADDED_TO_MAIN_PLAYER, gun.getName(), MAIN_PLAYER);
+            return String.format(GUN_ADDED_TO_MAIN_PLAYER, gun.getName(), "Tommy " + MAIN_PLAYER);
         }
         if (!civilPlayerExists(name)) {
             return CIVIL_PLAYER_DOES_NOT_EXIST;

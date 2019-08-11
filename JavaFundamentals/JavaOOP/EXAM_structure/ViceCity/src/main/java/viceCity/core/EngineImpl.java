@@ -46,16 +46,20 @@ public class EngineImpl implements Engine {
 
         switch (command) {
             case AddPlayer:
-
+                String playerName = data[0];
+                result = addPlayer(playerName);
                 break;
             case AddGun:
-
+                String gunType = data[0];
+                String gunName = data[1];
+                result = addGun(gunType, gunName);
                 break;
             case AddGunToPlayer:
-
+                String playerName1 = data[0];
+                result = addGunToPlayer(playerName1);
                 break;
             case Fight:
-
+                result = fight();
                 break;
             case Exit:
                 result = Command.Exit.name();
@@ -63,5 +67,21 @@ public class EngineImpl implements Engine {
         }
 
         return result;
+    }
+
+    private String fight() {
+        return this.controller.fight();
+    }
+
+    private String addGunToPlayer(String playerName) {
+        return this.controller.addGunToPlayer(playerName);
+    }
+
+    private String addGun(String gunType, String gunName) {
+        return this.controller.addGun(gunType, gunName);
+    }
+
+    private String addPlayer(String playerName) {
+        return this.controller.addPlayer(playerName);
     }
 }
