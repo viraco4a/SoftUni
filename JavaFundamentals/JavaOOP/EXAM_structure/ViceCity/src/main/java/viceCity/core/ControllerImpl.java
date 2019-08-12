@@ -113,10 +113,10 @@ public class ControllerImpl implements Controller {
                 .append(FIGHT_HAPPENED)
                 .append(System.lineSeparator())
                 .append(String.format(MAIN_PLAYER_LIVE_POINTS_MESSAGE,
-                        deadCivilPlayers))
+                        mainPlayerLifePoints))
                 .append(System.lineSeparator())
                 .append(String.format(MAIN_PLAYER_KILLED_CIVIL_PLAYERS_MESSAGE,
-                        mainPlayerLifePoints))
+                        deadCivilPlayers))
                 .append(System.lineSeparator())
                 .append(String.format(CIVIL_PLAYERS_LEFT_MESSAGE,
                         leftCivilPlayers))
