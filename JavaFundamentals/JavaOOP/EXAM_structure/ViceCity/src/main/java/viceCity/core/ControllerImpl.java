@@ -95,30 +95,34 @@ public class ControllerImpl implements Controller {
 
     @Override
     public String fight() {
+        StringBuilder sb = new StringBuilder();
         boolean mainPlayerUnharmed = this.mainPlayer.getLifePoints() == MAIN_PLAYER_DEFAULT_HEALTH;
         boolean civilPlayersUnharmed = checkCivilPlayersUnharmed();
         if (mainPlayerUnharmed && civilPlayersUnharmed) {
-            return FIGHT_HOT_HAPPENED;
-        } else {
-            this.neighbourhood.action(this.mainPlayer, this.civilPlayers);
-            int deadCivilPlayers = this.civilPlayersCounter - this.civilPlayers.size();
-            int mainPlayerLifePoints = this.mainPlayer.getLifePoints();
-            int leftCivilPlayers = this.civilPlayers.size();
-            StringBuilder sb = new StringBuilder();
-            sb
-                    .append(FIGHT_HAPPENED)
-                    .append(System.lineSeparator())
-                    .append(String.format(MAIN_PLAYER_LIVE_POINTS_MESSAGE,
-                            mainPlayerLifePoints))
-                    .append(System.lineSeparator())
-                    .append(String.format(MAIN_PLAYER_KILLED_CIVIL_PLAYERS_MESSAGE,
-                            deadCivilPlayers))
-                    .append(System.lineSeparator())
-                    .append(String.format(CIVIL_PLAYERS_LEFT_MESSAGE,
-                            leftCivilPlayers))
-                    .append(System.lineSeparator());
-            return sb.toString();
+            sb.append(FIGHT_HOT_HAPPENED).append(System.lineSeparator());
         }
+        boolean mainPlayerNoGuns = this.mainPlayer.getGunRepository().getModels().size() == 0;
+        if (mainPlayerNoGuns) {
+            return sb.toString().trim();
+        }
+        this.neighbourhood.action(this.mainPlayer, this.civilPlayers);
+        int deadCivilPlayers = this.civilPlayersCounter - this.civilPlayers.size();
+        int mainPlayerLifePoints = this.mainPlayer.getLifePoints();
+        int leftCivilPlayers = this.civilPlayers.size();
+        sb
+                .append(FIGHT_HAPPENED)
+                .append(System.lineSeparator())
+                .append(String.format(MAIN_PLAYER_LIVE_POINTS_MESSAGE,
+                        deadCivilPlayers))
+                .append(System.lineSeparator())
+                .append(String.format(MAIN_PLAYER_KILLED_CIVIL_PLAYERS_MESSAGE,
+                        mainPlayerLifePoints))
+                .append(System.lineSeparator())
+                .append(String.format(CIVIL_PLAYERS_LEFT_MESSAGE,
+                        leftCivilPlayers))
+                .append(System.lineSeparator());
+        return sb.toString();
+
     }
 
     private boolean checkCivilPlayersUnharmed() {

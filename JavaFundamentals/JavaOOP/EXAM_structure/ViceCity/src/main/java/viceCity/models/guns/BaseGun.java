@@ -42,17 +42,11 @@ public abstract class BaseGun implements Gun {
         return this.totalBullets;
     }
 
-    private void setTotalBullets(int totalBullets) {
+    protected void setTotalBullets(int totalBullets) {
         if (totalBullets < 0) {
             throw new IllegalArgumentException(TOTAL_BULLETS_LESS_THAN_ZERO);
         }
         this.totalBullets = totalBullets;
-    }
-
-    protected void reload() {
-        int bullets = this.getBulletsPerBarrel();
-        this.setTotalBullets(this.getTotalBullets() - bullets);
-        this.setBulletsPerBarrel(bullets);
     }
 
     @Override

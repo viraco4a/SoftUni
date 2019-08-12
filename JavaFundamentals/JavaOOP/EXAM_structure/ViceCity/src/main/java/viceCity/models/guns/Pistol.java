@@ -13,12 +13,19 @@ public class Pistol extends BaseGun {
     @Override
     public int fire() {
         if (super.canFire()){
-            if (super.getBulletsPerBarrel() == 0) {
-                super.reload();
-            }
+
             super.setBulletsPerBarrel(super.getBulletsPerBarrel() - PISTOL_SHOTS_PER_FIRE);
+            if (super.getBulletsPerBarrel() == 0) {
+                this.reload();
+            }
             return PISTOL_SHOTS_PER_FIRE;
         }
         return ZERO;
+    }
+
+    protected void reload() {
+        int bullets = BULLETS_PER_BARREL_PISTOL;
+        this.setTotalBullets(this.getTotalBullets() - bullets);
+        this.setBulletsPerBarrel(bullets);
     }
 }

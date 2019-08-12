@@ -35,11 +35,15 @@ public class GangNeighbourhood implements Neighbourhood {
 
     private void playerAttacks(Player attackingPlayer, Player defendingPlayer) {
         for (Gun gun : attackingPlayer.getGunRepository().getModels()) {
-            if (gun.canFire()) {
-                int damage = gun.fire();
-                defendingPlayer.takeLifePoints(damage);
-                if (!defendingPlayer.isAlive()) {
-                    return;
+            while (true) {
+                if (gun.canFire()) {
+                    int damage = gun.fire();
+                    defendingPlayer.takeLifePoints(damage);
+                    if (!defendingPlayer.isAlive()) {
+                        return;
+                    }
+                } else {
+                    break;
                 }
             }
         }

@@ -14,11 +14,17 @@ public class Rifle extends BaseGun {
     public int fire() {
         if (super.canFire()){
             if (super.getBulletsPerBarrel() == 0) {
-                super.reload();
+                this.reload();
             }
             super.setBulletsPerBarrel(super.getBulletsPerBarrel() - RIFLE_SHOTS_PER_FIRE);
             return RIFLE_SHOTS_PER_FIRE;
         }
         return ZERO;
+    }
+
+    protected void reload() {
+        int bullets = BULLETS_PER_BARREL_RIFLE;
+        this.setTotalBullets(this.getTotalBullets() - bullets);
+        this.setBulletsPerBarrel(bullets);
     }
 }
